@@ -21,7 +21,8 @@ Monitoring and feedback are essential to DevOps, enabling teams to detect and re
 Continuous Monitoring: Continuous monitoring allows teams to track the performance and availability of their applications and infrastructure, enabling them to identify issues and respond quickly.
 Feedback Loops: Feedback loops ensure that teams receive feedback on their work, enabling them to make improvements and iterate quickly.
 Incident Management: Incident management practices enable teams to respond to incidents quickly and efficiently, minimizing downtime and restoring service as soon as possible.
-Real-World Examples
-One real-world example of DevOps in action is Netflix. Netflix uses a variety of DevOps practices to deliver its streaming services at scale. For example, Netflix uses infrastructure as code to manage its cloud infrastructure, enabling it to automate the provisioning and deployment of its services. Netflix also uses a range of continuous testing practices to ensure the reliability and quality of its services, including chaos engineering, which involves intentionally introducing failures to test the resilience of its systems.
+
+Examples
+One example of DevOps in action is Netflix. Netflix uses a variety of DevOps practices to deliver its streaming services at scale. For example, Netflix uses infrastructure as code to manage its cloud infrastructure, enabling it to automate the provisioning and deployment of its services. Netflix also uses a range of continuous testing practices to ensure the reliability and quality of its services, including chaos engineering, which involves intentionally introducing failures to test the resilience of its systems.
 
 Another example is Amazon Web Services (AWS). AWS uses DevOps practices to deliver cloud services to its customers. For example, AWS uses continuous integration and delivery to ensure that changes to its services are tested and deployed quickly. AWS also uses automation to manage its infrastructure, including the use of configuration management tools like Chef and Puppet.
