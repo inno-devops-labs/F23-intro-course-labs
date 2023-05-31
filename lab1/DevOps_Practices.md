@@ -1,0 +1,6 @@
+Automation - includes automatic assembly, testing and deployment of applications, which speeds up processes and eliminates manual actions. Example: Amazon AWS. Amazon uses DevOps to manage its infrastructure, which allows them to quickly deploy new services and update them without interruptions.
+Continuous integration and deployment is a practice that allows developers to automatically create, test and deploy code changes on production servers in the shortest possible time. Example: Netflix. Netflix uses continuous integration and deployment to deliver new features for its streaming services
+
+Culture of cooperation. DevOps is designed for close collaboration between development, testing and operation teams to quickly fix bugs and solve problems. Example: Etsy. Etsy is an online marketplace for creators that uses DevOps to automate the processes of building, testing and deploying applications. Here, decisions are made based on service performance data.
+
+Monitoring and logging. DevOps pays special attention to setting up infrastructure and application monitoring to quickly identify and fix problems. Example: Microsoft. Microsoft uses containers and tools to automatically deploy applications to the cloud, which helps them speed up the release of new features and updates. 
