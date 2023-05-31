@@ -4,7 +4,6 @@
 ## Table of Content
 
 - [Introduction to DevOps](#introduction-to-devops)
-  - [Table of Content](#table-of-content)
   - [Task 1: Research and Define DevOps Principles and Practices](#task-1-research-and-define-devops-principles-and-practices)
     - [Definition  of DevOps](#definition--of-devops)
     - [Principles](#principles)

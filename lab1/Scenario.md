@@ -3,7 +3,6 @@
 ## Email: u.ugwumadu@innopolis.university
 ## Table of Content
 - [Introduction to DevOps](#introduction-to-devops)
-  - [Table of Content](#table-of-content)
   - [Task 2: Apply DevOps Practices in a Scenario](#task-2-apply-devops-practices-in-a-scenario)
     - [Scenario](#scenario)
     - [Benefits](#benefits)
