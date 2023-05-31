@@ -1,7 +1,8 @@
 
-## Definition
-DevOps is a set of practices that aim to bridge the gap between software development and operations teams to ensure high quality. 
+# DevOps Definition
+DevOps is a set of principles and practices that aim to bridge the gap between software development and operations teams to ensure high quality. 
 
+# DevOps Practices
 ## Continuous Integration (CI)
 Continuous Integration is the practice of frequently integrating code changes from multiple developers into a shared repository. This simply means that we ensure that any new changes will not break any previous functionality.
 
