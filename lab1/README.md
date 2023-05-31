@@ -16,7 +16,7 @@ In this lab assignment, you will explore the core practices and concepts of DevO
 
 To earn an additional 4 points and further demonstrate your understanding of DevOps principles and practices, complete the following tasks:
 
-1. Create a file named `Scenario.md` in the `devops_intro` folder.
+1. Create a file named `Scenario.md` in the `lab1` folder.
 2. Invent a fictional scenario where a software development team encounters challenges that can be addressed by applying DevOps principles and practices.
 3. Describe the scenario in the `Scenario.md` file, including the specific challenges and the potential benefits of applying DevOps principles and practices.
 4. Identify at least three DevOps practices from Task 1 that can be applied to address the challenges in the scenario.
