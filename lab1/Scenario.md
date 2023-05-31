@@ -1,7 +1,7 @@
 # Scenario: Scaling a High-Traffic E-commerce Platform
 
 ## Introduction
-In this scenario, we have an e-commerce company that experiences significant traffic spikes during holiday seasons and promotions. The existing infrastructure struggles to handle the load, resulting in slow performance and occasional outages.
+In this scenario, a software development team have an e-commerce company that experiences significant traffic spikes during holiday seasons and promotions. The existing infrastructure struggles to handle the load, resulting in slow performance and occasional outages.
 
 ## Challenges
 1. Scalability and Performance: The current infrastructure is unable to scale dynamically to meet increasing customer demands during peak times. This leads to poor performance, slow response times, and potential revenue loss.
