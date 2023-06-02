@@ -5,7 +5,7 @@ Here is the list of key principles and practices within the DevOps workfield fro
 
 1. Both @Atlassian and @GitLab claims Colloboration and Communication enhancing premisses as one of the core principles of the DevOps workflow. I do personally agree with that concept since most of the development methodologies proven in the effectiveness of use after years and many success stories palced at the head the importance of close communication between different kind of stakeholders to ensure continuous feedback and the absence of colloboration blockers. 
 As an usecase example it is possible to refer into the following image, visualizing Agile DevOps lifecycle where each of development team has continious feedback flows with an opportunity to share common knowledge field between each of  working environments.
-[Image]
+![Image DevOps](https://github.com/Suselfluf/labs/blob/lab1/lab1/images/DevOps_SDLC.PNG)
 Absence of such communication flows will significantly affect the performance of the development team due to long delays in communication, which in sequence could damage time to market measure. 
 
 2. Automation of the software development lifecycle
