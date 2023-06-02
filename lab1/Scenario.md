@@ -1,7 +1,7 @@
 ## Task 2: Apply DevOps Practices in a Scenario
 
 
-### Context
+### __Context__
 
 A company N conducting web applications development for a short period of time on the market has been always suffering from a delays within the development cycles, what in sequence sometimes affected the final result of the application, since they could not do that on time. Organization incount 20 developers doing all the development routine mostly manually. Product manager himslef also takes participant within the development process as a developer.  
 
