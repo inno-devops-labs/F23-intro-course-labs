@@ -20,17 +20,3 @@ It is a common mistake in modern life when development team did not listen for t
 4. Monitoring and measuring appropriate metrics will save significant amount of affort to deliver the product. Timely observation for different metrics can say what aspect of process should be improoved to get back on track or to enhance the performance of the team as a whole. **Logging, **monitoring, **alerting and **tracking are included in that kind of principle. Having all necessary KPIs metrics nearby will help to handle and manage the direction and develeopment flow.
 
 As a real-world use case example it is possible to refer to our's industrial project previous semester sprint where we did have actively updating burdown chart in the ClickUp management tool so we were able to notice that we were late with planned results so we got alerted on time and were able to conduct the deployment on the time. 
-
-## Task 2: Apply DevOps Practices in a Scenario
-
-To earn an additional 4 points and further demonstrate your understanding of DevOps principles and practices, complete the following tasks:
-
-1. Create a file named `Scenario.md` in the `lab1` folder.
-2. Invent a fictional scenario where a software development team encounters challenges that can be addressed by applying DevOps principles and practices.
-3. Describe the scenario in the `Scenario.md` file, including the specific challenges and the potential benefits of applying DevOps principles and practices.
-4. Identify at least three DevOps practices from Task 1 that can be applied to address the challenges in the scenario.
-5. For each identified principle, provide a detailed explanation of how it can help overcome the challenges and achieve the desired outcomes.
-6. Don't copy-paste, please use your own words. A short and simple answer is sufficient.
-7. Use clear and concise language to convey your ideas effectively.
-
-Remember to include your report and files in the same folder as the lab assignment. Create a Pull Request to the main branch of the repository when you have completed the tasks. Ensure that you follow the instructions provided by your instructor for the specific lab assignment.
