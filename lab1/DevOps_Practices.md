@@ -19,5 +19,3 @@
 9. Automated Testing: Automating the testing process to ensure software quality and reduce manual effort. Example tools: Selenium, JUnit.
 
 10. Collaboration and Communication: Encouraging cross-functional teams to work together effectively. Example tools: Slack, Microsoft Teams.
-
-These are just brief summaries, and each principle and practice has its own nuances and broader concepts to explore.
