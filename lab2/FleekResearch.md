@@ -11,7 +11,7 @@
 Links:
 
 - [My hosted Website](https://black-water-2736.on.fleek.co/)
-- [IPFS link](https://ipfs.fleek.co/ipfs/)QmdW1GgNDD7b4bp3sZZMKsLUePjxihVX7P7K8Thf4HSJY3)
+- [IPFS link](https://ipfs.fleek.co/ipfs/QmdW1GgNDD7b4bp3sZZMKsLUePjxihVX7P7K8Thf4HSJY3)
 
 ## My own observations
 
