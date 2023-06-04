@@ -25,5 +25,5 @@
 - WHEN User types his username and password
 - AND Press "Enter" button
 - THEN User successfully logged-in to the system
-   This scenario is understandable for non-technical employees, in addition, scenarios can be written in BDD format in the requirements for the system.
-   Then we can run all the written test case in the automated pipeline and observer the reports.
+
+This scenario is understandable for non-technical employees, in addition, scenarios can be written in BDD format in the requirements for the system. Then we can run all the written test case in the automated pipeline and observer the reports.
