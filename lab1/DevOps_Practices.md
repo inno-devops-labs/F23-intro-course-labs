@@ -4,7 +4,7 @@
 
 There are different sources that describe principles and the best practices of DevOps.
 
-Amount of principles vary from 5 to 8. **Principles as follows**:
+### Amount of principles vary from 5 to 8. **Principles as follows**:
 - **Collaboration**: The interaction of software engineers and system administrators has given rise to the term developer operations or DevOps. This is the core of the DevOps team. Collaboration also depends on good information-sharing practices
 
 - **Customer Centric Action**(Decision Making): this principle is led by the question "Will this benefit the customer?". Moreover, DevOps teams use active monitoring strategy to overtake issues/bus/crashes
@@ -22,7 +22,7 @@ Amount of principles vary from 5 to 8. **Principles as follows**:
 - **Failure as a Learning Opportunity**: DevOps is an adaptable development approach where processes are continuously adjusted alongside ongoing software enhancements. To uphold this adaptability, failure is perceived as a chance to gain knowledge and enhance performance. Instead of striving to evade failure entirely, it is important to foster a culture of calculated risk-taking in appropriate situations
 
 
-Amount of practices vary from 8 to 16. **Practices as follows**:
+### Amount of practices vary from 8 to 16. **Practices as follows**:
 - Agile project management
 - CI/CD
 - Right tools
