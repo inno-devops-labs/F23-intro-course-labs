@@ -4,7 +4,7 @@
 2. Create a new project.
 3. Choose any GitHub repository with static files as a source.
 4. Choose the branch to deploy.
-5. Set-up deploy settings in the project.
+5. Set-up deploy settings in the project (I used default settings, IPFS Hosting Service).
 6. Deploy the repository by pressing button.
 
 ### Links:
