@@ -4,13 +4,13 @@
 
 #
 
-# Purpose and Benefits:
+# Purpose and Benefits
 
 ### Ansible allows for the automation of repetitive tasks, making it easier to manage and scale infrastructure. It provides a declarative language for defining configurations, making it more accessible and user-friendly.
 
 #
 
-# Key Features and Functionalities:
+# Key Features and Functionalities
 
 ### Infrastructure as Code (IaC) capabilities for managing configurations
 
@@ -22,7 +22,7 @@
 
 #
 
-# Use Cases and Examples:
+# Use Cases and Examples
 
 1. ### Provisioning and configuring servers and networking equipment
 2. ### Managing application deployments and updates across multiple servers
