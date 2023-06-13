@@ -1,6 +1,6 @@
 # Kubernetes
 
-![Kubernetes Logo](https://github.com/kubernetes/kubernetes/raw/master/logo/logo.png)
+![Kubernetes Logo](https://1000logos.net/wp-content/uploads/2022/07/Kubernetes-Logo-768x432.png)
 
 ## Description
 Kubernetes is an open-source container orchestration platform that automates the deployment, scaling, and management of containerized applications. It provides a robust and flexible infrastructure for running and coordinating distributed systems at scale.
