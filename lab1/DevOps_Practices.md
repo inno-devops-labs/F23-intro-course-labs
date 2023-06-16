@@ -7,7 +7,7 @@ between committing changes to the codebase and seeing the changes in production.
 
 Such as:
 
-- CD/CD
+- CI/CD
 - Monitoring
 - Deployment
 - Integration
