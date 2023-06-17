@@ -11,8 +11,31 @@ Version control systems - is a software or a collection of ready to use instrume
 
 ## Different types overview
 
-| Centralized | Distributed |
-| ------------- |:-------------:| 
-| Server - Client approach. Where server is a master repository, containing the entire project history and managing restrictions of an access for a particular user. After pulling code and commiting some changes your version becomes new version, which should be uploaded to the master repository. So the basic workflow involves in the centralized source control is getting the latest version of the code from a central repository that will contain other people’s code as well, making your own changes in the code, and then committing or merging those changes into the central repository. | Unlike the centralized systems it is possible to have multiple instances of local versions containing on different machines and the main repository containing on the server side.
+| Centralized                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |                                                                                    Distributed                                                                                     |
+| -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
+| Server - Client approach. Where server is a master repository, containing the entire project history and managing restrictions of an access for a particular user. After pulling code and commiting some changes your version becomes new version, which should be uploaded to the master repository. So the basic workflow involves in the centralized source control is getting the latest version of the code from a central repository that will contain other people’s code as well, making your own changes in the code, and then committing or merging those changes into the central repository. | Unlike the centralized systems it is possible to have multiple instances of local versions containing on different machines and the main repository containing on the server side. |
 
-## Comparison
+## Comparison of popular version control systems
+
+Certainly! Here's the comparison table rewritten in Markdown format:
+Git
+: distributed version control system the one which the most heard about in my opinion. Widely used throughout the world by both open-source and enterprise products. Git's conflict resolution requires manual intervention. It provides full offline capability, allowing users to work offline and sync changes later.
+
+Subversion
+: is a centralized version control system. Conflict resolution in Subversion is also manual and explicit. Subversion provides fewer flexible branching and merging options compared to other versions systems.
+
+Mercurial
+: distributed version control system that focuses on simplicity and ease of use. It has automatic conflict resolution, which simplifies the process.
+| Criteria | Git | Subversion (SVN) | Mercurial (Hg) |
+|--------------------|-------------------------------------|-----------------------------------|------------------------------------|
+| Type | Distributed | Centralized | Distributed |
+| Learning Curve | Moderate | Moderate | Easy |
+| Popularity | Widely used | Widely used | Less popular |
+| Performance | Fast | Slower | Fast |
+| Branching and Merging | Efficient and easy to use | Supportive, but less flexible | Efficient and easy to use |
+| Conflict Resolution | Manual and explicit | Manual and explicit | Automatic and explicit |
+| Offline Usage | Full offline capability | Partial offline capability | Full offline capability |
+| Repository Size | Small repository size | Large repository size | Small repository size |
+| Integration | Strong integration with IDEs, tools | Good integration with IDEs, tools | Good integration with IDEs, tools |
+| Scalability | Excellent | Good | Excellent |
+| Community Support | Large and active community | Active community | Active community |
