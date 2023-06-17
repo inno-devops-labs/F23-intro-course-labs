@@ -12,6 +12,7 @@ Version control systems - is a software or a collection of ready to use instrume
 ## Different types overview
 
 | Centralized | Distributed |
+| ------------- |:-------------:| 
 | Server - Client approach. Where server is a master repository, containing the entire project history and managing restrictions of an access for a particular user. After pulling code and commiting some changes your version becomes new version, which should be uploaded to the master repository. So the basic workflow involves in the centralized source control is getting the latest version of the code from a central repository that will contain other people’s code as well, making your own changes in the code, and then committing or merging those changes into the central repository. | Unlike the centralized systems it is possible to have multiple instances of local versions containing on different machines and the main repository containing on the server side.
 
 ## Comparison
