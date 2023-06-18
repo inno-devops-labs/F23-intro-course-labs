@@ -38,6 +38,5 @@ Each of these version control systems has its strengths and caters to different 
 
 **References:**
 - [Git - About Version Control](https://git-scm.com/about/version-control)
-- [Subversion - What is Subversion?](https://subversion.apache.org/overview.html)
 - [Mercurial - Introduction to Mercurial](https://www.mercurial-scm.org/guide)
 - [Atlassian - Distributed Version Control Systems vs. Centralized Version Control Systems](https://www.atlassian.com/blog/software-teams/version-control-centralized-dvcs)
