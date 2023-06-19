@@ -15,5 +15,3 @@ Version control systems (VCS) are tools that manage changes to files, enabling c
 - Git: Distributed, fast, scalable, strong branching and merging.
 - Subversion: Centralized, strong directory-level change tracking, easy to use. It offers strong support for tracking directory-level changes and is known for its simplicity and ease of use.
 - Mercurial: Distributed, simple, intuitive command set.
-
-## Task 2: Practice with Git Reset Command
