@@ -7,7 +7,7 @@
 
 The first of the three modes you can use with Git reset is --soft for the Git reset soft command. This option moves HEAD back to the specified commit, undoes all the changes made between where HEAD was pointing and the specified commit, and saves all the changes in the index. In other words, Git re-adds the changes as staged, ready to be committed again.
 ### commit changes
-![alt commit](./images/sc-soft-commit)
+![alt commit](./images/sc-soft-commit.png)
 
 ### reset
 ![alt reset](./images/sc-soft-reset)
