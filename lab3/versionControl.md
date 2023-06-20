@@ -1,4 +1,4 @@
-# Kubernetes
+# Version Control
 
 ```
 DevOps Toolchain Category: Version Control
@@ -78,7 +78,7 @@ Similar to Git, it is distributed and versatile. Often used for both small and l
 A real world simle example coudld be in the development of a simple web application. Imagine a team of software developers working on a web application. The team is made up of 2 backend developers and 2 frontend developers.
 Frontend can divide their tasks and collaborate in the development of UI features and pages, while backend developers would collaborate on the development of backend services or API.
 
-Using version control,
+Using version control would,
 
 - Each developer have access the latest version of the code (front or back)
 - Developers can track the development history and see what changes their peers implemented.
