@@ -19,12 +19,12 @@ In this lab, you will learn about version control systems and their importance i
 **To earn an additional 4 points**, follow these steps to practice using different ways to use the `git reset` command:
 
 1. Create a new branch named "git-reset-practice" in your Git repository.
-2. Perform the following actions on the branch:
-   a. Make several commits with different changes to a file.
-   b. Use `git reset` with different options (soft, mixed, hard) to undo the commits and observe the changes.
-   c. Experiment with resetting to a specific commit using commit hashes or relative references (e.g., HEAD~2).
-   d. Take note of the differences and outcomes of each `git reset` variation.
-3. Document your practice in a Markdown file named "GitResetPractice.md" in the lab3 folder and include the following details:
+   1. Perform the following actions on the branch:
+      1. Make several commits with different changes to a file. 
+      2. Use `git reset` with different options (soft, mixed, hard) to undo the commits and observe the changes.
+      3. Experiment with resetting to a specific commit using commit hashes or relative references (e.g., HEAD~2).
+      4. Take note of the differences and outcomes of each `git reset` variation.
+2. Document your practice in a Markdown file named "GitResetPractice.md" in the lab3 folder and include the following details:
    - Steps you took to perform the Git reset operations.
    - Description of the different `git reset` options used and their effects.
    - Examples and outputs of the commands executed.
