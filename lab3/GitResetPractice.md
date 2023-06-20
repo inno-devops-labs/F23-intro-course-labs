@@ -8,9 +8,19 @@
 git branch git-reset-practice
 ```
 
-2. Made several commits with different changes to a file named "example.txt".
+2. Change to new branch "git-reset-practice" using the command:
 
-3. Used git reset with different options to undo the commits and observe the changes.
+```
+git checkout git-reset-practice
+```
+
+3. Made several commits with different changes to a file named "example.txt".
+```
+git add .   // To add all changes
+git commit -m 'commit tag name'
+```
+
+4. Used git reset with different options to undo the commits and observe the changes.
 
 ## Git Reset Options and Effects
 
