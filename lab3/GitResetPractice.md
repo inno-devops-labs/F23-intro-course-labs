@@ -75,7 +75,7 @@ git reset --hard HEAD~2
 The following outputs were observed:
 
 ```
-HEAD is now at abcd123 Commit message
+HEAD is now at c3d3655 Lab1 & Lab2
 ```
 
 **Explanation:** The `--hard` option moved the HEAD and the branch pointer to the commit before the last two commits (`HEAD~2`). All changes from the undone commits, both in the staging area and the working directory, are discarded. The working directory is now reverted to the state of the specified commit.
