@@ -39,3 +39,6 @@ Subversion is a simple, centralized version control system. It allows atomic com
 3. **Mercurial**: Mercurial is a simple, easy-to-use distributed version control system. Its command-line interface is simple and efficient, especially for Windows users. Mercurial's data integrity and reliability suit projects of all sizes.
 
 4. **Perforce**: Perforce is a centralized version control system for enterprise projects. It supports big binary files, is secure, and scalable. Perforce is fast and has strong branch management, but most uses require a commercial license.
+
+### Concept
+We consider a team of developers working on a software project. They can use a version control system to keep track of changes made to the source code files. Each time a developer makes a modification, the version control system records the specific changes made, who made them, and when they were made. This allows the team to have a complete history of the project's evolution and facilitates collaboration and coordination among team members.
