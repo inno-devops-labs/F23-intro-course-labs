@@ -21,3 +21,4 @@
 * The staging area is changed to match that commit.
 
 1 commit
+2 commit
