@@ -8,7 +8,7 @@ In this lab, you will explore the principles of GitOps and Site Reliability Engi
 
 1. Research and identify key metrics used in Site Reliability Engineering (SRE) to measure system reliability, availability, and performance.
 2. Choose two large companies or organizations known for their robust systems and search for their Service Level Agreements (SLAs) or publicly available reliability metrics.
-3. Create a Markdown file named "SREMetricsAndSLAs.md" in the lab4 folder and provide the following information:
+3. Create a Markdown file named "SREMetricsAndSLAs.md" in the lab5 folder and provide the following information:
    - List and explain the key metrics used in SRE.
    - Share the SLAs or reliability metrics you found for the two companies, along with any notable observations or insights.
    - Discuss the importance of these metrics and how they contribute to the overall reliability and performance of software systems.
@@ -31,8 +31,8 @@ To earn an additional 4 points, [follow these steps](https://developer.hashicorp
    - Define variables.
    - Query Data with Outputs.
 
-4. Publish your configuration files, put them in the lab4 folder.
-5. Document your installation and deployment process in a Markdown file named "TerraformAndNginx.md" in the lab4 folder and include the following details:
+4. Publish your configuration files, put them in the lab5 folder.
+5. Document your installation and deployment process in a Markdown file named "TerraformAndNginx.md" in the lab5 folder and include the following details:
    - Include the version number of Terraform in your report.
    - The steps you followed to install Terraform.
    - The commands you executed to initialize and apply the Terraform configuration.
