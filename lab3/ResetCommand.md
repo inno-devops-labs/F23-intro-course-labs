@@ -11,3 +11,4 @@ The branch pointer is moved to the second commit while keeping the changes in th
 
 1 commit
 2 commit
+3 commit
