@@ -8,7 +8,7 @@ Date:   Tue Jun 20 12:35:43 2023 +0300
     + lab 3 git tool
 
 
-3. Performed git reset --soft using commit hashes (e.g. 11db3814f9b664897fb6a8494c0fcf869f938542) and relative references (HEAD~1 and HEAD~2)
+3. Performed git reset --soft using commit hashes (e.g. 11db3814f9b664897fb6a8494c0fcf869f938542) and relative references (HEAD-1 and HEAD-2)
 4. The branch pointer moved to the specified commit, the changes were kept in the staging area and could be committed again, useful for reorganising commits
 5. Performed git reset (the default option is --mixed anyways)
 6. The branch pointer was moved to the specified commit, the staging area changes were reset to the specified commit, but all files were kept the same so I could decide which changes to include in the 
