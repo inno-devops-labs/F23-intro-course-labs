@@ -10,3 +10,4 @@ The branch pointer is moved to the second commit while keeping the changes in th
 ## Mixed reset
 
 1 commit
+2 commit
