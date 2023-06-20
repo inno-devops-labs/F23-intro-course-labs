@@ -10,7 +10,7 @@ The first of the three modes you can use with Git reset is --soft for the Git re
 ![alt commit](./images/sc-soft-commit.png)
 
 ### reset
-![alt reset](./images/sc-soft-reset)
+![alt reset](./images/sc-soft-reset.png)
 
 ## reset mixed
 > git reset --mixed **commit**
@@ -19,7 +19,7 @@ Similar to Git reset soft, performing a Git reset with the `--mixed` option will
 
 
 ### staged changes
-![alt staged](./images/sc-mixed-staged)
+![alt staged](./images/sc-mixed-staged.png)
 
 ## reset hard
 > git reset --hard **commit**
@@ -29,10 +29,10 @@ Unlike with the Git reset soft and mixed, Git reset hard carries some danger, as
 Git reset hard should be used with extreme caution and only for local changes you’re sure you want to eliminate. Performing a Git reset –hard when working on a shared branch with commits that can be accessed by other contributors can cause issues with your Git history.
 
 ### reset
-![alt reset](./images/sc-hard-reset)
+![alt reset](./images/sc-hard-reset.png)
 
 ### staged changes
-![alt staged](./images/sc-hard-staged)
+![alt staged](./images/sc-hard-staged.png)
 
 ## Reflection on Benefits and Use Cases of Git Reset
 
