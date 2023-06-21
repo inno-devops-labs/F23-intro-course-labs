@@ -3,9 +3,9 @@
 DevOps is a set of practices intended to reduce the time between committing a change to a system and the change being placed into normal production, while ensuring high quality. The core principles and practices of DevOps include:
 1. Collaboration and Communication:
 
-    - Shared Goals: Encourages the alignment of goals between development and operations teams to foster collaboration and teamwork.
+    - Shared Goals: Encourages the alignment of goals between development and operations teams to improve collaboration and teamwork.
     - Shared Responsibility: Emphasizes collective ownership of the entire software development lifecycle, from planning and development to deployment and maintenance.
-    - Effective Communication: Encourages open and transparent communication channels to facilitate knowledge sharing and problem-solving.
+    - Effective Communication: Encourages open and transparent means of communication to ease interaction and problem solving.
 
 2. Automation:
 
@@ -23,17 +23,9 @@ DevOps is a set of practices intended to reduce the time between committing a ch
 
     - Rapid Feedback Loops: Establishes mechanisms for receiving feedback from users, stakeholders, and production environments, enabling teams to iterate and improve quickly.
     - Monitoring and Logging: Utilizes logging, metrics, and monitoring tools to gain insights into application behavior, identify bottlenecks, and address issues promptly.
-    - Post-Incident Reviews: Conducts thorough post-mortem reviews after incidents or outages to learn from mistakes, improve processes, and prevent similar issues in the future.
+    - Post-Incident Reviews: Conducts detailed reviews after incidents or outages to learn from mistakes, improve processes, and prevent similar issues in the future.
 
 5. Infrastructure Scalability and Resilience:
 
     - Elasticity: Enables infrastructure and applications to scale dynamically based on workload demands, ensuring optimal performance and resource utilization.
     - Resilience Engineering: Designs systems that can withstand failures and disruptions, employing redundancy, fault tolerance, and disaster recovery strategies.
-
-6. DevOps Toolchain:
-
-    - Version Control: Utilizes version control systems (e.g., Git) to manage code changes, track revisions, and enable collaboration among team members.
-    - Continuous Integration/Continuous Delivery (CI/CD) Tools: Employs tools like Jenkins, Travis CI, or GitLab CI/CD to automate the build, test, and deployment processes.
-    - Configuration Management: Utilizes tools like Ansible, Puppet, or Chef to manage and automate the configuration of infrastructure and environments.
-    - Containerization and Orchestration: Adopts technologies such as Docker and Kubernetes to create lightweight, portable containers and manage containerized applications.
-    - Monitoring and Alerting Tools: Utilizes tools like Prometheus, Grafana, or New Relic to monitor the health, performance, and availability of applications and infrastructure.
