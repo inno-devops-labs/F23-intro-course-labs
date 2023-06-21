@@ -9,14 +9,14 @@ A software development team is working on a web application and facing several c
 
 DevOps Practices to Address the Challenges:
 1. *Continuous Integration (CI):* 
-  - Automates the process of integrating code changes into a shared repository.
-  - Enables developers to identify integration issues early on and collaborate to resolve them quickly.
-  - Automates the deployment process, reducing the risk of errors and inconsistencies between environments.
+    - Automates the process of integrating code changes into a shared repository.
+    - Enables developers to identify integration issues early on and collaborate to resolve them quickly.
+    - Automates the deployment process, reducing the risk of errors and inconsistencies between environments.
 2. *Continuous Delivery (CD):*
-  - Automates the deployment pipeline.
-  - Ensures that the application can be deployed with consistency across different environments.
-  - Establishes a systematic feedback loop, allowing testers, developers, and operations to provide timely feedback.
+    - Automates the deployment pipeline.
+    - Ensures that the application can be deployed with consistency across different environments.
+    - Establishes a systematic feedback loop, allowing testers, developers, and operations to provide timely feedback.
 4. *Automated Testing:* 
-  - Develop automated tests that cover functional, integration, and performance aspects of the application.
-  - Run tests automatically upon code changes or deployments, providing fast and accurate feedback on the quality of the software.
-  - Enable developers to catch and fix issues early in the development cycle, leading to faster development and more reliable software.
+    - Develop automated tests that cover functional, integration, and performance aspects of the application.
+    - Run tests automatically upon code changes or deployments, providing fast and accurate feedback on the quality of the software.
+    - Enable developers to catch and fix issues early in the development cycle, leading to faster development and more reliable software.
