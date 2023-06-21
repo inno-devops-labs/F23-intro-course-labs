@@ -1,3 +1,10 @@
+# Student Information
+Name: Md Motasim Bhuiyan
+
+Email: m.bhuiyan@innopolis.university
+
+Group: BS21-CS-01
+
 # Scenario
 The scenario contains a case where a team of developers try to create a social media where people can share images, see other profiles, rate images and comment. The social media has a microservice architecture and some of the microservices need better/more server than others.
 
