@@ -32,7 +32,7 @@ Deploy started at 8:09:53 PM 06/21/2023
 The process is kinda similar to [GitHub Pages](https://pages.github.com/),
 except that it uses IPFS and Bunny DNS
 
-You repository must contain an `index.html` in the root directory which will be
+The repository must contain an `index.html` in the root directory which will be
 served.
 
 I've used [HTTP Connectivity Test](https://tools.bunny.net/http-test?query=https://weathered-block-4654.on.fleek.co) to test the response time of the website.
