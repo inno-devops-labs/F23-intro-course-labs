@@ -11,4 +11,4 @@
 ### DevOps principles and practices:
 - **Collaboration:** frequent communication helps to track progress in work, make specifics in priorities, better coordinate work and better understand customer needs. 
 - **Automation:** automation reduces the number of human errors, increases productivity and simplifies the deployment process. This includes clarifying the roles performing deployments, optimizing the deployment process, and automating the process using appropriate tools.
-- **Infrastructure as Code:** By implementing infrastructure as code, the team can automate infrastructure preparation and management, providing greater flexibility, scalability and reliability
+- **Infrastructure as Code:** By implementing infrastructure as code, the team can automate infrastructure preparation and management, providing greater flexibility, scalability and reliability.
