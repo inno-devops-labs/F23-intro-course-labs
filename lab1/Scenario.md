@@ -1,3 +1,8 @@
+## Demid Efremov
+## d.efremov@innopolis.university
+## telegram: @Not_A_Snek
+&nbsp;
+
 # Scenario
 A group of developers are working on a forum website. They have separate development, test and operational teams. Their product is actively evolving and improving as their target auditory grows. However, with the inevitable growth of their team and size of their code base, their deveopment processes slow down making them less able to adapt.
 
