@@ -1,6 +1,6 @@
 ## Steps to set up a project on Fleek
   - Sign in to your Fleek.co account or create a new account if you don't have one.
-  - Click on the "Create New Project" button to start setting up your project.
+  - Click on the 'Create New Project' button to start setting up your project.
   - Choose the repository or codebase you want to deploy to Fleek.
   - Customize the build settings according to your project requirements.
   - After configuring the build settings, Fleek will build your project and generate a preview of how it will look when deployed.
