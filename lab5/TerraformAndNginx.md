@@ -2,31 +2,14 @@
 
 ## Task 2: Terraform Installation and Nginx Deployment
 
-To earn an additional 4 points, [follow these steps](https://developer.hashicorp.com/terraform/tutorials/docker-get-started) to install Terraform and deploy an Nginx container:
+- I have installed Terraform v1.5.1
+- To install I downloaded zip archive, unarchived it and added folder path to env variables (I have laptop with windows OS)
+- To init the project i created the directory first, then added main.tf file inside it with config from the tutorial. Using cmd i "init" and "apply" my project and it builts me 2 resources:
+"Apply complete! Resources: 2 added, 0 changed, 0 destroyed." Docker ps command showed that there is 1 active container. "terrafrom destroy" command deleted my container.
+- To change the infrastructure i modified main.tf file and then execute "apply" command again.
+- To destroy it i used "terraform destroy" and then approved the command.
+- To define the variables i created new file and then changed main tf file. After applying these changes terraform created new container with default variable value (ExampleNginxContainer).
+- To define outputs i created outputs.md file with 2 outputs. One of them stores container id and second stores image id. After applying changes in cli i saw 2 outputs i had defined before.
+- Observations: looks like this is a tool which allows you to make fast changes to your configuration. For instance if i had more container it would be easier to manage them trough the central place rather than changing each container manually
 
-1. Read about Terraform.
 
-2. Install Terraform:
-   - Follow the appropriate instructions to install Terraform on your system.
-
-3. Go through the tutorial steps:
-   - Build infrastructure.
-   - Change infrastructure.
-   - Destroy infrastructure.
-   - Define variables.
-   - Query Data with Outputs.
-
-4. Publish your configuration files, put them in the lab5 folder.
-5. Document your installation and deployment process in a Markdown file named "TerraformAndNginx.md" in the lab5 folder and include the following details:
-   - Include the version number of Terraform in your report.
-   - The steps you followed to install Terraform.
-   - The commands you executed to initialize and apply the Terraform configuration.
-   - Any observations or challenges you encountered during the installation and deployment process.
-
-### Guidelines
-
-- Use proper Markdown formatting and structure for the documentation files.
-- Organize the files within the lab folder using appropriate naming conventions.
-- Create a Pull Request to the main branch of the repository with your completed lab assignment.
-
-> Note: Actively explore SRE metrics and SLAs to understand their importance in measuring system reliability. Additionally, gain hands-on experience with Terraform by provisioning infrastructure and deploying an Nginx container.
