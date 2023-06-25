@@ -10,6 +10,4 @@
 - To destroy it I used "terraform destroy" and then approved the command.
 - To define the variables I created new file and then changed main tf file. After applying these changes terraform created new container with default variable value (ExampleNginxContainer).
 - To define outputs I created outputs.md file with 2 outputs. One of them stores container id and second stores image id. After applying changes in cli I saw 2 outputs I had defined before.
-- Observations: looks like this is a tool which allows you to make fast changes to your configuration. For instance if I had more container it would be easier to manage them trough the central place rather than changing each container manually
-
-
+- Observations: looks like this is a tool which allows you to make fast changes to your configuration. For instance if I had more container it would be easier to manage them trough the central place rather than changing each container manually.
