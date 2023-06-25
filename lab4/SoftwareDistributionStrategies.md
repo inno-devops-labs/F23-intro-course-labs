@@ -2,7 +2,6 @@
 
 ## Task 1: Research Software Distribution Strategies
 
-**To achieve a grade of 6/10**, follow these steps:
 
 1. Software distribution is the process of delivering software applications or updates to end-users. It is a crucial to each company to deliver the software to it's users, since this is their main source of revenue.
 There are a lot of types of distribution:
