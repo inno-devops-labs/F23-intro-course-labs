@@ -5,23 +5,23 @@ This document outlines the steps followed to install Docker and Docker Compose u
 ## Docker Installation
 
 To install Docker using pip, the following command was used:
-    pip install docker
+pip install docker
 
 After the installation, the version of Docker installed was checked using the following command:
-    docker --version
+docker --version
 
 This command outputs the version of Docker installed. For example, it might output something like:
-    Docker version 23.0.4, build f480fb1
+Docker version 23.0.4, build f480fb1
 
 In this case, the version of Docker installed is 20.10.7.
 
 ## Docker Compose Installation
 
 To install Docker Compose using pip, the following command was used:
-    pip install docker-compose
+pip install docker-compose
 
 This command outputs the version of Docker Compose installed. For example, it might output something like:
-    docker-compose version 1.29.2, build unknown
+docker-compose version 1.29.2, build unknown
 
 ## Observations and Challenges
 
