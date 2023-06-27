@@ -13,6 +13,8 @@ pip install docker
 ```
 
 docker version on my system:
+
+
 ![alt docker version](./images/docker-version.png)
 
 ## Install Docker Compose
@@ -21,6 +23,8 @@ pip install docker-compose
 ```
 
 docker version on my system:
+
+
 ![alt docker compose version](./images/docker-compose-version.png)
 
 ## Observations
