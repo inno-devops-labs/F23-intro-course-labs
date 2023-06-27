@@ -30,7 +30,7 @@ To Install Docker using pip, the prerequisite was to have python installed on th
 3. Verifying the installation, to check docker was well installed I used the following command
 
 ```sh
-    docker /--version
+    docker --version
 ```
 
 > "docker --version" command revealed my docker version is 20.10.24, build 297e12
