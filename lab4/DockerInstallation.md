@@ -8,8 +8,8 @@ DevOps Toolchain Category: Container Management
 
 ### My computer specifications:
 
-computer type: PC
-Operating system: Windows 11
+- Computer type: PC
+- Operating system: Microosft Windows 11
 
 ### CASE: Using PIP :
 
