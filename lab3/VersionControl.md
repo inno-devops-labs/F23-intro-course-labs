@@ -1,4 +1,4 @@
-# Introduction to DevOps Lab2
+# Introduction to DevOps Lab3
 **Leonid Zelenskiy** <br>
 **B21-CS-01** <br>
 *l.zelenskiy@innopolis.university*
