@@ -24,10 +24,13 @@ There are primarily two types of version control systems:
 
 ## Comparison of Popular Version Control Systems
 **Git**
+
 Git is a widely used distributed version control system known for its speed and powerful branching and merging capabilities. It has become standard in open source projects and has a vast community and ecosystem supporting it. Git offers a rich set of features, such as local branching, staging changes before commit and integration with popular hosting platforms like GitHub and GitLab.
 
 **Subversion (SVN)**
+
 Subversion, also known as SVN, is a centralized version control system designed to be a successor to CVS (Concurrent Versions System). It follows a client-server architecture, where central repository stores project's history. SVN focuses on stability, ease of use and smooth migration from CVS. However, it lacks some advanced features present in distributed version control systems.
 
 **Mercurial**
+
 Mercurial is another distributed version control system that emphasizes ease of use and performance. It offers a simple and intuitive command-line interface and is known for its efficiency in handling large projects. Mercurial provides robust support for branching and merging, making it popular among developers who prioritize simplicity and straightforwardness.
