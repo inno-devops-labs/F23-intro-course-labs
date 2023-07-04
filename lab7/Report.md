@@ -23,3 +23,4 @@ Steps:
     ![Settings](https://i.postimg.cc/cHDdkKvt/image.png)
 
 Now, Ubuntu is installed and running on VirtualBox.
+![Ubuntu](https://i.postimg.cc/5y0tqhmJ/image.png)
