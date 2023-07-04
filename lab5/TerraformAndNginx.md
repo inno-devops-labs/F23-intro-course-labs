@@ -2,9 +2,8 @@
 
 ## Terraform Version Number
 
-```pencil@pencil:~/Desktop/Work/DevOps/labss$ terraform -v
- Terraform v1.4.6 on linux_amd64 | Your version of Terraform is out of date! The latest version
-is 1.5.2. You can update by downloading from https://www.terraform.io/downloads.html```  
+1. pencil@pencil:~/Desktop/Work/DevOps/labss$ terraform -v
+2. Terraform v1.4.6 on linux_amd64 | Your version of Terraform is out of date! The latest version is 1.5.2. You can update by downloading from https://www.terraform.io/downloads.html
 
 ## Terraform Installation
 
