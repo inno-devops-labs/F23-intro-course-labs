@@ -1,5 +1,11 @@
 ## Task 2: Terraform Installation and Nginx Deployment
 
+## Terraform Version Number
+
+``` pencil@pencil:~/Desktop/Work/DevOps/labss$ terraform -v
+ Terraform v1.4.6 on linux_amd64 | Your version of Terraform is out of date! The latest version
+is 1.5.2. You can update by downloading from https://www.terraform.io/downloads.html ```  
+
 ### Terraform Installation
 
 To install Terraform, follow these steps:
@@ -22,7 +28,7 @@ To deploy an Nginx container using Terraform, follow these steps:
 
 2. Inside the directory, create a new file named main.tf and add the following code:
 
-provider "docker" {
+``` provider "docker" {
   host = "unix:///var/run/docker.sock"
 }
 
@@ -34,6 +40,7 @@ resource "docker_container" "nginx" {
     external = 8080
   }
 }
+```
 
 3. Open a terminal or command prompt, navigate to the directory containing the main.tf file, and run the command terraform init to initialize the Terraform configuration.
 
