@@ -1,4 +1,4 @@
-The key metrics used in SRE:
+**The key metrics used in SRE**
 - Service level agreement (SLA) metrics: define the agreed-upon levels of service availability, reliability, and performance, inlc metrics like uptime percentage, response time, error rates, and MTTR.
 - Service level objective (SLO): measurable target or goal for a specific service metric, typically derived from the SLA, to ensure the desired level of reliability, availability, or performance.
 - Service level indicator (SLI): a quantifiable metric about the system's behavior that is used for assessing the performance of the service.
@@ -12,7 +12,7 @@ The key metrics used in SRE:
   - Throughput: The number of requests that a system can handle per unit of time.
   - Error rate: The percentage of requests that fail.
 
-SLA of large robust organisations:
+**SLA of large robust organisations:**
 1. Google Cloud Platform (GCP)
 
 GCP offers Service Level Agreements (SLAs) for different services, ensuring specific levels of availability and performance.
