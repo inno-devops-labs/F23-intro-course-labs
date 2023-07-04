@@ -2,11 +2,11 @@
 
 ## Terraform Version Number
 
-``` pencil@pencil:~/Desktop/Work/DevOps/labss$ terraform -v
+```pencil@pencil:~/Desktop/Work/DevOps/labss$ terraform -v
  Terraform v1.4.6 on linux_amd64 | Your version of Terraform is out of date! The latest version
-is 1.5.2. You can update by downloading from https://www.terraform.io/downloads.html ```  
+is 1.5.2. You can update by downloading from https://www.terraform.io/downloads.html```  
 
-### Terraform Installation
+## Terraform Installation
 
 To install Terraform, follow these steps:
 
@@ -20,7 +20,7 @@ To install Terraform, follow these steps:
 
 5. Verify the installation by opening a terminal or command prompt and running the command terraform version. This will display the installed version of Terraform.
 
-### Nginx Deployment with Terraform
+## Nginx Deployment with Terraform
 
 To deploy an Nginx container using Terraform, follow these steps:
 
