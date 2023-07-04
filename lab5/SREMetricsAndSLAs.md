@@ -14,6 +14,7 @@ The key metrics used in SRE:
 
 SLA of large robust organisations:
 1. Google Cloud Platform (GCP)
+
 GCP offers Service Level Agreements (SLAs) for different services, ensuring specific levels of availability and performance.
 For instance, according to their SLA (https://cloud.google.com/compute/sla), GCP Compute Engine provides:
 - monthly uptime percentage of >= 99.99% for Instances in Multiple Zones
@@ -22,6 +23,7 @@ For instance, according to their SLA (https://cloud.google.com/compute/sla), GCP
 Also, as a mitigation strategy, if the actual value of monthly uptime for a certain type of service is less than stated, then depending on how much it deviates from the promised, a percentage of the monthly bill that did not meet the SLO will be credited to customer's future bills.
 
 2. Amazon Web Services (AWS)
+
 AWS publishes its Service Level Agreements (SLAs) for various services, guaranteeing specific levels of availability. 
 For example, AWS S3 (Simple Storage Service) offers a minimum of 99.9% availability in a given month (https://aws.amazon.com/s3/sla/). If this value is not satisfied, the customers also receive Service Credits (analogous to Google's system).
 
