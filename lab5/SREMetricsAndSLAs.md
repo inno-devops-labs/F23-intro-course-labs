@@ -1,4 +1,4 @@
-
+## Task 1: Key Metrics for SRE and SLAs
 **Key metrics used in Site Reliability Engineering (SRE):**
 a) Service-Level Objectives. SLOs define the target level of service that the system aims to achieve. They are usually expressed as a percentage of availability or a response time threshold.
 b) Service-Level Indicators. SLIs are quantitative measurements that reflect the behavior or performance of a system. They are typically derived from metrics such as response time, error rate, throughput, latency, and availability.
