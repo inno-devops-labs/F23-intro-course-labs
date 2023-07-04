@@ -42,3 +42,4 @@ SLAs are often used as a means of establishing accountability and ensuring that 
 ### 3. Discuss the importance of these metrics and how they contribute to the overall reliability and performance of software systems. 
 The provided SLAs and reliability metrics for Tinkoff and Yandex.Cloud showcase the specific indicators, objectives, and agreements related to their services. 
 Companies like Tinkoff and Yndex use them to ensure quality and transparency of provided service for their customers. From business perspective such claim will bring point of trust credit for compamies.  
+ 
