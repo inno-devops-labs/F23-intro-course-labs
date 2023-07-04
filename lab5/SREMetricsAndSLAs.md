@@ -27,7 +27,7 @@ Also, as a mitigation strategy, if the actual value of monthly uptime for a cert
 AWS publishes its Service Level Agreements (SLAs) for various services, guaranteeing specific levels of availability. 
 For example, AWS S3 (Simple Storage Service) offers a minimum of 99.9% availability in a given month (https://aws.amazon.com/s3/sla/). If this value is not satisfied, the customers also receive Service Credits (analogous to Google's system).
 
-Both Google and Amazon are very transparent about their availavility metrics. This transparency helps to build trust with their customers and partners. 
+Both Google and Amazon are very transparent about their availability metrics. This transparency helps to build trust with their customers and partners. 
 Also, both companies have a strong focus on automation and invest in new technologies. This automation helps to reduce the risk of human errors, improve the speed of problem resolution and ensure such high values of availability in SLA.
 These metrics are important because they provide a way to measure the reliability, availability, and performance of software systems.
 They can be used to identify areas for improvements, and to ensure meeting the customers' needs, reduce the risk of outages, and improve the overall business value of the software system.
