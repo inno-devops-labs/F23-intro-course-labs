@@ -11,4 +11,4 @@ I used `terraform destroy` to destroy the container. Also, I tried to modify the
 Also, I used `terraform show` command to inspect the current state and `terraform show list` to show the list of resources in current state. 
 Also, I used command `terraform apply -var "container_name=YetAnotherName"` to override default variable value (of container name). And `terraform output` to display the outputs according to configuration for them.
 
-4. Observations: Terraform is not available for Russian Federation (unless you use VPN). I really liked how Terraform writes the plan on changes (what is destroyed, what is added) after changes to configurations, it is really convenient to prevent accidental mistakes.
+4. Observations: Terraform is not available for Russian Federation (unless you use VPN). I really liked how Terraform writes the plan on changes (what is destroyed, what is added) after changes to configurations, it is really convenient to prevent accidental mistakes. Terraform generates state files, which is also useful for observing the changes (and their backup).
