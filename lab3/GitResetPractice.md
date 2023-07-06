@@ -1,3 +1,6 @@
+`Sorry for files from the first lab being in that branch. I messed up with the first lab
+and now it is in all other branches.`
+
 ## Steps:
 1. I created new file ResetTesting.txt in new branch git-reset-practice
 and added it into index.
