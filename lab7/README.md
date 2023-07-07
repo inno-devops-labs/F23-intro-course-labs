@@ -1,6 +1,6 @@
-# Operating Systems & Networking Lab
+# Virtualization Lab
 
-In this lab, you will explore operating systems and networking fundamentals in a DevOps context. You will gain practical experience in working with operating systems and perform network-related tasks. Follow the tasks below to complete the lab assignment.
+In this lab, you will learn how to deploy a Virtual Machine (VM) using VirtualBox and customize its settings. Follow the steps below to complete the assignment.
 
 ## Task 1: VM Deployment
 
