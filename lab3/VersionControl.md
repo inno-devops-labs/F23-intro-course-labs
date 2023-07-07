@@ -1,3 +1,8 @@
+## Demid Efremov
+## d.efremov@innopolis.university
+## telegram: @Not_A_Snek
+&nbsp;
+
 ## Definition of version control systems and their purpose
 Version Control System (VCS) is a special software that is capable of tracking changes to digital artifacts and storing intermediate versions of it. VCS allows programmers to save and track important changes, and helps them to revert back to the stable version after making unwanted changes.
 
