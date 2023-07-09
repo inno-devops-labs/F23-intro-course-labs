@@ -1,3 +1,4 @@
+Sorry for files from the first lab being in that branch. I messed up with the first lab and now it is in all other branches.
 ## Software Distribution
 
 It is the procedure of distributing software updates and applications to end consumers.
