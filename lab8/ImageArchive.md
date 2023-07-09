@@ -13,7 +13,7 @@
 
    4. To create new image i used "docker commit 7be5c723bb28 my_website"
 
-   5. To remove my container i used "docker stop my_website" then "docker rm nginx_container"
+   5. To remove my container i used "docker stop nginx_container" then "docker rm nginx_container"
 
    6. To run conatiner from new saved image "docker container run --name my_website -p 80:80 -d my_website"
 
