@@ -79,27 +79,21 @@ The top command in the terminal provides a dynamic view of the system's resource
 
 #### Output:
 
-top - 01:32:56 up 9:30, 0 users, load average: 0.00, 0.00, 0.00
-Tasks: 11 total, 1 running, 10 sleeping, 0 stopped, 0 zombie
-%Cpu(s): 0.1 us, 0.1 sy, 0.0 ni, 99.8 id, 0.0 wa, 0.0 hi, 0.0 si, 0.0 st
-MiB Mem : 3791.9 total, 254.4 free, 1448.5 used, 2089.0 buff/cache
-MiB Swap: 1024.0 total, 1002.1 free, 21.9 used. 2147.7 avail Mem
+> top - 01:32:56 up 9:30, 0 users, load average: 0.00, 0.00, 0.00
+> Tasks: 11 total, 1 running, 10 sleeping, 0 stopped, 0 zombie
+> %Cpu(s): 0.1 us, 0.1 sy, 0.0 ni, 99.8 id, 0.0 wa, 0.0 hi, 0.0 si, 0.0 st
+> MiB Mem : 3791.9 total, 254.4 free, 1448.5 used, 2089.0 buff/cache
+> MiB Swap: 1024.0 total, 1002.1 free, 21.9 used. 2147.7 avail Mem
 
-PID USER PR NI VIRT RES SHR S %CPU %MEM TIME+ COMMAND
-1 root 20 0 2324 1708 1600 S 0.0 0.0 0:00.07 init(Ubuntu)
-4 root 20 0 2340 68 68 S 0.0 0.0 0:00.02 init
-128 root 20 0 2328 108 0 S 0.0 0.0 0:00.00 SessionLeader
-129 root 20 0 2344 112 0 S 0.0 0.0 0:00.00 Relay(130)
-130 root 20 0 731344 23696 11484 S 0.0 0.6 0:04.93 docker-desktop-
-146 root 20 0 2344 112 0 S 0.0 0.0 0:00.00 Relay(147)
-147 borel 20 0 769336 28920 12340 S 0.0 0.7 0:04.59 docker
-159 root 20 0 2328 108 0 S 0.0 0.0 0:00.00 SessionLeader
-160 root 20 0 2344 112 0 S 0.0 0.0 0:00.01 Relay(161)
-161 borel 20 0 6212 5116 3388 S 0.0 0.1 0:00.28 bash
-209 borel 20 0 7800 3648 3056 R 0.0 0.1 0:00.04 top
-
-## Networking Analysis
-
-### Traceroute:
-
-### Dig:
+> PID USER PR NI VIRT RES SHR S %CPU %MEM TIME+ COMMAND
+> 1 root 20 0 2324 1708 1600 S 0.0 0.0 0:00.07 init(Ubuntu)
+> 4 root 20 0 2340 68 68 S 0.0 0.0 0:00.02 init
+> 128 root 20 0 2328 108 0 S 0.0 0.0 0:00.00 SessionLeader
+> 129 root 20 0 2344 112 0 S 0.0 0.0 0:00.00 Relay(130)
+> 130 root 20 0 731344 23696 11484 S 0.0 0.6 0:04.93 docker-desktop-
+> 146 root 20 0 2344 112 0 S 0.0 0.0 0:00.00 Relay(147)
+> 147 borel 20 0 769336 28920 12340 S 0.0 0.7 0:04.59 docker
+> 159 root 20 0 2328 108 0 S 0.0 0.0 0:00.00 SessionLeader
+> 160 root 20 0 2344 112 0 S 0.0 0.0 0:00.01 Relay(161)
+> 161 borel 20 0 6212 5116 3388 S 0.0 0.1 0:00.28 bash
+> 209 borel 20 0 7800 3648 3056 R 0.0 0.1 0:00.04 top
