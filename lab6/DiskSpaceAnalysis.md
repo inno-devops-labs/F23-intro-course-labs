@@ -12,14 +12,6 @@ Open a terminal and run the following command: df -h
 cd lab6
 df -h > DiskSpaceAnalysis.md
 
-Filesystem      Size  Used Avail Use% Mounted on
-tmpfs           1.2G  2.0M  1.2G   1% /run
-/dev/sda2       234G  112G  110G  51% /
-tmpfs           5.8G  206M  5.6G   4% /dev/shm
-tmpfs           5.0M  4.0K  5.0M   1% /run/lock
-tmpfs           5.8G     0  5.8G   0% /run/qemu
-/dev/sda1       511M  6.1M  505M   2% /boot/efi
-tmpfs           1.2G   96K  1.2G   1% /run/user/1000
 
 | Filesystem  | Size| Used| Avail | Use% | Mounted on |
 | -------- | -------- | -------- | -------- | -------- | -------- |
@@ -54,6 +46,15 @@ tmpfs           1515041       1  1515040    1% /run/qemu
 /dev/sda1             0       0        0     - /boot/efi
 tmpfs            303008     132   302876    1% /run/user/1000
 
+| Filesystem  | Inodes | IUsed|  IFree| IUse% | Mounted on |
+| -------- | -------- | -------- | -------- | -------- | -------- |
+| tmpfs | 1515041  | 1348 |  1513693 | 1% | /run |
+| /dev/sda2  | 15597568 | 2016133 | 13581435 | 13% | / |
+| tmpfs | 1515041 |  869 | 1515034 | 1%  | /dev/shm |
+| tmpfs  | 1515041  | 1 | 1515040 | 1% | /run/lock |
+| tmpfs  | 5.8G |0  | 5.8G | 1% | /run/qemu |
+| /dev/sda1 | 0 |  0 | 0 | - | /boot/efi|
+
 
 ## To identify the process consuming the most RAM and CPU on your operating system, you can use the top command.
 
@@ -78,13 +79,12 @@ Tasks: 324 total,   2 running, 320 sleeping,   0 stopped,   2 zombie
 MiB Mem :  11836.3 total,    841.0 free,   6987.0 used,   4008.3 buff/cache
 MiB Swap:   2048.0 total,    107.2 free,   1940.8 used.   2981.8 avail Mem 
 
-
-   PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND                                                             
-   2532 pencil    20   0   12.8g 517148 103588 R  11.8   4.3   1282:35 firefox                                                             
- 169378 pencil    20   0 2891484 374240  71824 S   0.0   3.1   8:18.88 Isolated Web Co                                                     
-   5377 pencil    20   0   32.7g 364648 159780 S   0.0   3.0 223:11.28 chrome                                                              
-3713911 pencil    20   0 3157588 358460  60172 S  17.6   3.0   3:48.84 Isolated Web Co                                                     
-2457750 pencil    20   0 1139.0g 352036 110624 S   0.0   2.9  18:48.30 chrome                                                              
- 151515 pencil    20   0 3281012 347548  63488 S   0.0   2.9   7:44.46 Isolated Web Co                                                     
- 850064 pencil    20   0 3821800 339564  45488 S   0.0   2.8 784:08.71 Isolated Web Co                                                     
-  96184 pencil    20   0 3267452 326928  44244 S   0.0   2.7  28:43.69 Isolated Web Co       
+|  PID | USER  | PR  | NI | VIRT| RES | SHR |  S | %CPU | %MEM | TIME+ | COMMAND |
+| -------- | -------- | -------- | -------- | -------- | -------- | -------- | -------- | -------- | --------- | --------- | --------- |
+| 2532 | pencil | 20 | 0 | 12.8g | 499516 | 105816 | S | 0.0| 4.1 | 1284:14| firefox |
+| 169378 | pencil | 20 | 0 |  2891484 | 389920 | 72704 | S | 0.0| 3.2 | 8:23.76| Isolated Web Co|
+| 5377 | pencil | 20 | 0 |   32.8g | 367956| 163704 | S | 0.0| 3.0 | 223:52.78| chrome |
+| 151515 | pencil | 20 | 0 |   3283700 | 366416| 66208 | S | 0.0| 3.0 | 9:53.87|Isolated Web Co  |
+| 3713911 | pencil | 20 | 0 |   3157588 | 361532| 66204 | S | 0.0| 3.0 |  3:51.55|Isolated Web Co  |
+| 850064 | pencil | 20 | 0 |   1137.0g | 332680| 113576 | S | 0.0| 2.7 |  19:09.66|chrome   |
+| 96184 | pencil | 20 | 0 |  3267452 |330144| 44244 | S | 0.0| 2.7 |  28:49.96|Isolated Web Co  |
