@@ -21,6 +21,18 @@ tmpfs           5.8G     0  5.8G   0% /run/qemu
 /dev/sda1       511M  6.1M  505M   2% /boot/efi
 tmpfs           1.2G   96K  1.2G   1% /run/user/1000
 
+| Filesystem  | Size| Used| Avail | Use% | Mounted on |
+| -------- | -------- | -------- | -------- | -------- | -------- |
+| tmpfs | 1.2G | 2.0M |  1.2G | 1% | /run |
+| /dev/sda2  | 234G | 112G | 110G | 51% | / |
+| tmpfs | 5.8G |  206M | 5.6G | 4%  | /dev/shm |
+| tmpfs  | 5.0M | 4.0K | 5.0M | 1% | /run/lock |
+| tmpfs  | 5.8G |0  | 5.8G | 0% | /run/qemu |
+| /dev/sda1 | 511M |  6.1M | 505M | 2% | /boot/efi|
+
+
+
+
 ## To check the number of inodes on your operating system, you can use the df -i command.
 
 ## To document the command used and provide the output in the same "DiskSpaceAnalysis.md" file, you can follow these steps:
