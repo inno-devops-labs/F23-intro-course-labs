@@ -60,7 +60,7 @@ PID    COMMAND      %CPU  TIME     #TH   #WQ  #PORT MEM    PURG   CMPRS  PGRP  P
 1754   Google Chrom 0.2   57:45.50 45    1    1771  377M   80K    105M   1754  1     sleeping *0[10655+]        0.00000 0.00663    501  14191725+ 73821  37206267+  15392536+  41911837+  95262420+  28611856+
 ```
 
-Command (sort by RAM usage): `top -o cpu`
+Command (sort by RAM usage): `top -o mem`
 
 Output (processes with the highest memory usage):
 
