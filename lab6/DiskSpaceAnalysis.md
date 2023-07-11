@@ -82,6 +82,6 @@ PID    COMMAND      %CPU  TIME     #TH   #WQ  #PORT MEM    PURG   CMPRS  PGRP  P
 
 
 ```
-Observations: CleanMyMac application is the most CPU-intensive at the moment on my laptop, while Google Chrome has a high memory usage.
+Observations: CleanMyMac application is the most CPU-intensive at the moment on my laptop, while Google Chrome has a high memory usage. Alternatively, `htop --sort-key=PERCENT_MEM` or `htop --sort-key=PERCENT_CPU` command can be used, it is a bit more user-friendly.
 
 
