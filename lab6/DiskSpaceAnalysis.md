@@ -13,18 +13,26 @@ Windows does not have the concept of inodes like Linux and macOS. Instead, it us
 
 ## Resource Consumption Analysis
 
+### RAM
 ```shell
 Get-Process | Sort-Object -Property WorkingSet -Descending | Select-Object -First 1
 ```
 
+```shell
 Handles  NPM(K)    PM(K)      WS(K)     CPU(s)     Id  SI ProcessName
 -------  ------    -----      -----     ------     --  -- -----------
    1092      57   630904     484852         48  12996   1 Telegram
 
+```
+
+### CPU
 ```shell
 Get-Process | Sort-Object -Property CPU -Descending | Select-Object -First 1
 ```
 
+```shell
 Handles  NPM(K)    PM(K)      WS(K)     CPU(s)     Id  SI ProcessName
 -------  ------    -----      -----     ------     --  -- -----------
     972      27   165916     228540        684   1688   1 browser
+
+```
