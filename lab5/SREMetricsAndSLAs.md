@@ -24,4 +24,6 @@ level of service for a given service. SLAs typically include SLOs as well as oth
     2. The AWS SLA guarantees a monthly uptime percentage of 99.99% for EC2, an Elastic Block Store (EBS) volume, Elastic Load Balancing, and Amazon RDS, among others.
     3. Amazon also provides operational dashboards, including the AWS Service Health Dashboard, which provides real-time information regarding AWS performance and availability. Additionally, Amazon publishes Amazon CloudWatch Metrics for all of its services, providing visibility into the performance of AWS services regarding latency, processing time, and other metrics.
 
+
+Google and Amazon are very transparent about their availability metrics, which helps build trust from their customers and partners. Companies also pay great attention to automation, which helps to reduce the risk of human errors, increase the speed of problem solving and ensure such high availability rates in SLA. Indicators play an important role because they allow you to measure the reliability, availability and performance of software systems. They can help identify areas that require improvements and to ensure customer satisfaction, reduce the risk of operational failures and increase the overall business value of the software system.
    
