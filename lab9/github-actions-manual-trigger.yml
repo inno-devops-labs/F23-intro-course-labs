@@ -1,0 +1,17 @@
+name: GitHub Actions System Info
+run-name: ${{ github.actor }} is getting their system info using GitHub Actions
+on: [workflow_dispatch]
+jobs:
+  Explore-GitHub-Actions:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: kenchan0130/actions-system-info@master
+        id: system-info
+      - name: Check outputs
+        run: |
+          INFO=(
+            "CPU Model: ${{ steps.system-info.outputs.cpu-model }}"
+            "OS: ${{ steps.system-info.outputs.name }}, ${{ steps.system-info.outputs.platform }}: ${{ steps.system-info.outputs.release }}"
+            "Kernel release: ${{ steps.system-info.outputs.kernel-release }}"
+            "Kernel version: ${{ steps.system-info.outputs.kernel-version }}"
+          )
