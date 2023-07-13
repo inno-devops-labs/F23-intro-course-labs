@@ -5,6 +5,8 @@ jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
     steps:
+      - uses: kenchan0130/actions-system-info@master
+        id: system-info
       - name: Check outputs
         run: |
           OUTPUTS=(
@@ -16,3 +18,6 @@ jobs:
             "Virtualization: ${{ steps.system-info.outputs.virtualization }}"
             "Shell: ${{ steps.system-info.outputs.shell }}"
           )
+          for OUTPUT in "${OUTPUTS[@]}"; do
+            echo "$OUTPUT"
+          done
