@@ -1,8 +1,6 @@
-name: CI
+run-name: CI
     on:
     push:
-    branches: [ lab9 ]
-    pull_request:
     branches: [ lab9 ]
     workflow_dispatch:
     jobs:
