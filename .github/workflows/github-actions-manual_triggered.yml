@@ -1,0 +1,27 @@
+name: CI
+    on:
+    push:
+    branches: [ lab9 ]
+    pull_request:
+    branches: [ lab9 ]
+    workflow_dispatch:
+    jobs:
+    build:
+    runs-on: ubuntu-latest
+    steps:
+
+- uses: actions/checkout@v2
+- name: Get system info
+  run: |
+  echo "OS: ${{ runner.os }}"
+  echo "CPU: ${{ runner.cpu }}"
+  echo "Memory: ${{ runner.memory }}"
+  echo "Virtual Environment: ${{ runner.virtual-environment }}"
+  echo "Architecture: ${{ runner.architecture }}"
+  echo "Operating System: ${{ runner.os }}"
+  echo "Total Memory: ${{ runner.total-memory }}"
+  echo "Free Memory: ${{ runner.free-memory }}"
+  echo "GitHub Workspace: ${{ github.workspace }}"
+  echo "GitHub Repository: ${{ github.repository }}"
+  echo "GitHub Event Name: ${{ github.event_name }}"
+  echo "GitHub Event Path: ${{ github.event_path }}"
