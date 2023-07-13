@@ -5,12 +5,14 @@ jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
     steps:
-      - uses: kenchan0130/actions-system-info@master
-        id: system-info
       - name: Check outputs
         run: |
           OUTPUTS=(
             "OS: ${{ steps.system-info.outputs.os }}"
             "CPU: ${{ steps.system-info.outputs.cpu }}"
-            "Memory: ${{ steps.system-info.outputs.memory }}" 
+            "Memory: ${{ steps.system-info.outputs.memory }}"
+            "Disk: ${{ steps.system-info.outputs.disk }}"
+            "Uptime: ${{ steps.system-info.outputs.uptime }}"
+            "Virtualization: ${{ steps.system-info.outputs.virtualization }}"
+            "Shell: ${{ steps.system-info.outputs.shell }}"
           )
