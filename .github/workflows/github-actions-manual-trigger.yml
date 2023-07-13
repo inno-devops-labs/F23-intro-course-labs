@@ -1,6 +1,6 @@
 name: GitHub Actions System Info
 run-name: ${{ github.actor }} is getting their system info using GitHub Actions
-on: [workflow_dispatch]
+on: [push]
 jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
