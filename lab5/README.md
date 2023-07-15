@@ -7,13 +7,16 @@ In this lab, you will explore the principles of GitOps and Site Reliability Engi
 **To achieve a grade of 6/10**, follow these steps:
 
 1. Research and identify key metrics used in Site Reliability Engineering (SRE) to measure system reliability, availability, and performance.
-2. Choose two large companies or organizations known for their robust systems and search for their Service Level Agreements (SLAs) or publicly available reliability metrics.
-3. Create a Markdown file named "SREMetricsAndSLAs.md" in the lab5 folder and provide the following information:
+
+1. Choose two large companies or organizations known for their robust systems and search for their Service Level Agreements (SLAs) or publicly available reliability metrics.
+
+1. Create a Markdown file named "SREMetricsAndSLAs.md" in the lab5 folder and provide the following information:
+
    - List and explain the key metrics used in SRE.
    - Share the SLAs or reliability metrics you found for the two companies, along with any notable observations or insights.
    - Discuss the importance of these metrics and how they contribute to the overall reliability and performance of software systems.
 
-4. Use your own words to describe the concepts and provide examples to support your explanations.
+1. Use your own words to describe the concepts and provide examples to support your explanations.
 
 ## Task 2: Terraform Installation and Nginx Deployment
 
@@ -21,18 +24,22 @@ To earn an additional 4 points, [follow these steps](https://developer.hashicorp
 
 1. Read about Terraform.
 
-2. Install Terraform:
+1. Install Terraform:
+
    - Follow the appropriate instructions to install Terraform on your system.
 
-3. Go through the tutorial steps:
+1. Go through the tutorial steps:
+
    - Build infrastructure.
    - Change infrastructure.
    - Destroy infrastructure.
    - Define variables.
    - Query Data with Outputs.
 
-4. Publish your configuration files, put them in the lab5 folder.
-5. Document your installation and deployment process in a Markdown file named "TerraformAndNginx.md" in the lab5 folder and include the following details:
+1. Publish your configuration files, put them in the lab5 folder.
+
+1. Document your installation and deployment process in a Markdown file named "TerraformAndNginx.md" in the lab5 folder and include the following details:
+
    - Include the version number of Terraform in your report.
    - The steps you followed to install Terraform.
    - The commands you executed to initialize and apply the Terraform configuration.
