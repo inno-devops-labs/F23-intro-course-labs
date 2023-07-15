@@ -1,6 +1,8 @@
 name: GitHub Actions Demo
-run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
-on: [push]
+on:
+  push:
+  workflow_dispatch:
+
 jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
@@ -16,3 +18,15 @@ jobs:
         run: |
           ls ${{ github.workspace }}
       - run: echo "🍏 This job's status is ${{ job.status }}."
+
+      # New step: Gather system information
+      - name: Gather System Information
+        uses: actions/setup-node@v2
+        with:
+          node-version: '14'
+      - run: |
+          echo "🖥️ Runner Labels: ${{ runner.labels }}"
+          echo "🔩 CPU Cores: $(nproc)"
+          echo "🧠 Memory: $(free -h | awk '/^Mem/ {print $2}')"
+          echo "🐧 Operating System: $(lsb_release -a 2>/dev/null | grep 'Description' | cut -f2-)"
+        shell: bash
