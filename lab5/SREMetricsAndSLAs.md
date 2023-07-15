@@ -3,8 +3,8 @@
 ## Key Metrics
 
 1. **Availability** - The proportion of time a system or service is operational and available to users is measured by this statistic.
-1. **Error Rate** - The error rate counts the proportion of requests or actions that go wrong or fail.
-1. **Latency** - The amount of time it takes for a request or operation to be performed is known as latency.
+2. **Error Rate** - The error rate counts the proportion of requests or actions that go wrong or fail.
+3. **Latency** - The amount of time it takes for a request or operation to be performed is known as latency.
 
 ## Companies
 
