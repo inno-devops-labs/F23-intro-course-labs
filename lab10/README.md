@@ -1,24 +1,30 @@
 # Cloud Computing Lab - Artifact Registries and Serverless Computing Platforms
 
-In this lab assignment, you will research and compare artifact registries and serverless computing platforms in AWS, GCP, and Azure. You will document your findings in a single Markdown file, providing information on popular artifact registries and the best serverless computing platforms in each cloud platform. Follow the tasks below to complete the lab assignment.
+In this lab assignment, you will research and compare artifact registries and serverless computing platforms in AWS,
+GCP, and Azure. You will document your findings in a single Markdown file, providing information on popular artifact
+registries and the best serverless computing platforms in each cloud platform. Follow the tasks below to complete the
+lab assignment.
 
 ## Task 1: Artifact Registries Research
 
 **To achieve a grade of 6/10**, follow these steps:
 
 1. Research Artifact Registries:
-   - Explore AWS, GCP, and Azure services and documentation to identify the most popular artifact registries available.
-   - Document the names of the artifact registries and their key features in a Markdown file named "Cloud_Services.md" in the lab folder.
-   - Use appropriate headings and bullet points to present your findings.
+    - Explore AWS, GCP, and Azure services and documentation to identify the most popular artifact registries available.
+    - Document the names of the artifact registries and their key features in a Markdown file named "Cloud_Services.md"
+      in the lab folder.
+    - Use appropriate headings and bullet points to present your findings.
 
 ## Task 2: Serverless Computing Platform Research
 
 To earn an additional 4 points, follow these steps for researching serverless computing platforms:
 
 1. Research Best Serverless Computing Platforms:
-   - Investigate AWS, GCP, and Azure services and resources to identify the best serverless computing platforms available on each cloud platform.
-   - Document the names of the serverless computing platforms and their key features in the same "Cloud_Services.md" file.
-   - Use appropriate headings and bullet points to present your findings.
+    - Investigate AWS, GCP, and Azure services and resources to identify the best serverless computing platforms
+      available on each cloud platform.
+    - Document the names of the serverless computing platforms and their key features in the same "Cloud_Services.md"
+      file.
+    - Use appropriate headings and bullet points to present your findings.
 
 ### Guidelines
 
