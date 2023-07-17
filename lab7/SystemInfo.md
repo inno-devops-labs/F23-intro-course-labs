@@ -2,16 +2,24 @@
 
 ## 1. Processor, RAM, and Network Information:
 
-### System: macOs
+- ### I installed atop: `sudo apt install atop`
 
-### 1. To get processor information:
+### To get:
 
-`system_profiler SPHardwareDataType | grep Processor`
+- processor information,
+- view RAM (memory) information,
+- and Network information,
 
-### 2. To view RAM (memory) information:
+just use the `atop` commmand and all the above information will display.
 
-`system_profiler SPHardwareDataType | grep Memory`
+#
 
-### 3. Network information
+![Alt text](atop.png)
 
-`system_profiler SPNetworkDataType`
+#
+
+## 2. Operating System Specifications:
+
+`lsb_release -a`
+
+![Alt text](lsb.png)
