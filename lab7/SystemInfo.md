@@ -11,7 +11,7 @@
 <img width="376" alt="image" src="https://github.com/dariamikl/labs/assets/32385940/7900cb1e-b714-4122-831f-220ad0254417">
 
 - the size (3GiB) is the same that I've set up for the VM, so it is correct
-- also built-in tool provides info about memory usage with command `free -m`:
+- also a built-in tool provides info about memory usage with command `free -m`:
 <img width="370" alt="image" src="https://github.com/dariamikl/labs/assets/32385940/62422fd9-d1d6-4a26-adc8-ae622716c4cc">
 
 ### Network info:
