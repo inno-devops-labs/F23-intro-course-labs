@@ -20,4 +20,4 @@ Copyright © 2023 Oracle and/or its affiliates.
 9. Under settings navigate to storage and click on disk icon under attributes and choose the location where ubuntu-desktop iso file has been saved
 10. Start Ubuntu VM
 
-![Alt text](img/13213.jpg)
+![Alt text](img/1.jpg)
