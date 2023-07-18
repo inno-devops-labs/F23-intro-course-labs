@@ -1,4 +1,4 @@
-### Task 1: VM Deployment
+# Task 1: VM Deployment
 
 ## 1. Install VirtualBox
 
@@ -11,7 +11,7 @@ The version of the installed VirtualBox on my system:
 
 ## 2. Deploy a virtual machine
 
-# Steps
+### Steps
 1. Run the VirtualBox.
 2. Click on the **New** button.
 3. In the opened window set the **Name**, **Folder**.
@@ -26,7 +26,7 @@ For **Type** select **Linux** and select the **Version** which in my case is **O
 10. After finishing the installing process, go to virtual machine settings **Storage** tab and eject the ISO Image.
 11. Run your virtual machine and enjoy:))
 
-# Images
+### Images
 
 ![alt VirtualBox information](./Images/vm-info.png)
 ![alt VirtualBox running](./Images/vm-run.png)
