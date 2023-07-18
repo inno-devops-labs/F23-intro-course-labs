@@ -1,10 +1,10 @@
-### Task 2: System Information Tools
+# Task 2: System Information Tools
 
 > Important: Those information which is not fitting in one screenshot are copy-pasted from teminal to the Markdown file in the text format.
 
 ## 1. Processor
 
-# To check the processor model and basic information:
+### To check the processor model and basic information:
 > lscpu
 
 ```sh 
@@ -58,7 +58,7 @@ Vulnerabilities:
   Tsx async abort:       Not affected
 ```
 
-# To get detailed information about the processor architecture:
+### To get detailed information about the processor architecture:
 > cat /proc/cpuinfo
 
 ```sh
@@ -143,12 +143,12 @@ power management:
 
 ## 2. RAM (Memory) Information:
 
-# To check the total available memory and usage statistics:
+### To check the total available memory and usage statistics:
 > free -h
 
 ![alt RAM Info](./Images/ram.png)
 
-# To view more detailed memory information:
+### To view more detailed memory information:
 > cat /proc/meminfo
 
 ```sh
@@ -208,12 +208,12 @@ DirectMap2M:     1925120 kB
 
 ## 3. Network Information:
 
-# To check network interfaces and their status:
+### To check network interfaces and their status:
 > ip addr show
 
 ![alt IP Addr](./Images/ipaddr.png)
 
-# To get network statistics and routing information:
+### To get network statistics and routing information:
 
 > Important: For this part we need to install netstat:
 > sudo apt install net-tools
@@ -222,7 +222,7 @@ DirectMap2M:     1925120 kB
 
 ![alt netstat i](./Images/neti.png)
 
-# To check active network connections:
+### To check active network connections:
 
 > netstat -tuln
 
