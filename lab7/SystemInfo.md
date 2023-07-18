@@ -20,8 +20,8 @@
 <img width="341" alt="image" src="https://github.com/dariamikl/labs/assets/32385940/56b6de13-9062-4c78-acee-a696ae6e7eb3">
 
 - netstat command also shows network-related information, such as:
-  - `netstat -i` for displating interfaces table
   - `netstat -r` for displaying routing table
+  - `netstat -i` for displating interfaces table
   - `netstat -l` for displaying listening server sockets
   - screenshot:
 <img width="493" alt="image" src="https://github.com/dariamikl/labs/assets/32385940/1c9a52f6-1468-4b1f-9b15-c7831b6e061b">
