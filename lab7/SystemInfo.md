@@ -9,6 +9,7 @@ RAM info:
 - command used: `sudo lshw -c memory`
 - output:
 <img width="376" alt="image" src="https://github.com/dariamikl/labs/assets/32385940/7900cb1e-b714-4122-831f-220ad0254417">
+
 - the size (3GiB) is the same that I've set up for the VM, so it is correct
 - also built-in tool provides info about memory usage with command `free -m`:
 <img width="370" alt="image" src="https://github.com/dariamikl/labs/assets/32385940/62422fd9-d1d6-4a26-adc8-ae622716c4cc">
@@ -17,6 +18,7 @@ Network info:
 - installed network-related tools with: `sudo apt install net-tools`
 - network interfaces config with command `ifconfig`:
 <img width="341" alt="image" src="https://github.com/dariamikl/labs/assets/32385940/56b6de13-9062-4c78-acee-a696ae6e7eb3">
+
 - netstat command also shows network-related information, such as:
   - `netstat -i` for displating interfaces table
   - `netstat -r` for displaying routing table
