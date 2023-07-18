@@ -1,10 +1,10 @@
-Processor info:
+### Processor info:
 - tool/command used: `lscpu`
 - no additional installation needed, built-in
 - output:
 <img width="572" alt="image" src="https://github.com/dariamikl/labs/assets/32385940/705fc7c0-a503-4b58-9a68-b93385ae00be">
 
-RAM info:
+### RAM info:
 - tool: lshw
 - command used: `sudo lshw -c memory`
 - output:
@@ -14,7 +14,7 @@ RAM info:
 - also built-in tool provides info about memory usage with command `free -m`:
 <img width="370" alt="image" src="https://github.com/dariamikl/labs/assets/32385940/62422fd9-d1d6-4a26-adc8-ae622716c4cc">
 
-Network info:
+### Network info:
 - installed network-related tools with: `sudo apt install net-tools`
 - network interfaces config with command `ifconfig`:
 <img width="341" alt="image" src="https://github.com/dariamikl/labs/assets/32385940/56b6de13-9062-4c78-acee-a696ae6e7eb3">
@@ -26,7 +26,7 @@ Network info:
   - screenshot:
 <img width="493" alt="image" src="https://github.com/dariamikl/labs/assets/32385940/1c9a52f6-1468-4b1f-9b15-c7831b6e061b">
 
-Operating System specs:
+### Operating System specs:
 - `lsb_release -a` provides information about the distribution
 - `uname -a` provides info about the Linux kernel
 - screenshot:
