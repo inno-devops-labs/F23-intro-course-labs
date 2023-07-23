@@ -1,0 +1,26 @@
+name: Manual Trigger and System Information Gathering
+on:
+  workflow_dispatch: {}
+
+jobs:
+  gather_system_info:
+    name: Gather System Information
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Gather System Information
+        run: |
+          echo "Operating System:"
+          uname -a
+
+          echo "CPU Info:"
+          lscpu
+
+          echo "Memory Info:"
+          free -h
+
+          echo "Disk Space:"
+          df -h
