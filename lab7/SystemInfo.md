@@ -10,9 +10,10 @@ Using command: `sudo apt install atop`
 It is usefull to get system information such as CPU, RAM, Network with only one command `atop`
 
 However, it did not work from the first try. I got error `Unable to locate package atop`. Then started to search for solution.
+
 I have ubuntu code name `jammy` and release `22.04`.
 
-`atop` is available only for `universe` repository
+I found that `atop` is available only for `universe` repository
 
 Hence I had to run `sudo add-apt-repository universe multiverse`
 
