@@ -5,10 +5,7 @@ To list the Docker containers present in your environment, I use the following c
 ```
 docker ps -a
 ```
-
-| CONTAINER ID | IMAGE| COMMAND| CREATED | STATUS | PORTS || NAMES |
-| -------- | -------- | -------- | -------- | -------- | -------- | -------- |
-|2f7939a25039 | postgres:latest  |  "docker-ent..."  |  3 days ago | Up 3 hours | 5432/tcp |  db_server |
+![Alt text](image.png)
 
 ## Pulling Latest Ubuntu Image
 To pull the latest Ubuntu image from the Docker registry, use the following command:
