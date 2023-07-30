@@ -19,6 +19,6 @@ jobs:
   Collect-Info:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "Runner Type: ${{ runner.os }}"
-      - run: echo "Hardware Information:" && lshw -short
-      - run: echo "Operating System Details:" && uname -a
+      - run: echo "Runner Type - ${{ runner.os }}"
+      - run: echo "Hardware Information - " && lshw -short
+      - run: echo "Operating System Details - " && uname -a
