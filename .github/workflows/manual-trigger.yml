@@ -1,0 +1,21 @@
+name: Gathering System Information and Manual Triggering
+on: [workflow_dispatch]
+jobs:
+  gather_system_info:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+      - uses: kenchan0130/actions-system-info@master
+        id: system-info
+      - name: Show system info
+        run: |
+          OUTPUTS=(
+            "CPU: ${{ steps.system-info.outputs.cpu-core }}, ${{ steps.system-info.outputs.cpu-model }}"
+            "Hostname: ${{ steps.system-info.outputs.hostname }}"
+            "Kernel release: ${{ steps.system-info.outputs.kernel-release }}"
+            "Kernel version: ${{ steps.system-info.outputs.kernel-version }}"
+            "Platform: ${{ steps.system-info.outputs.platform }}"
+            "Release: ${{ steps.system-info.outputs.release }}"
+            "Total memory: ${{ steps.system-info.outputs.totalmem }}"
+          )
