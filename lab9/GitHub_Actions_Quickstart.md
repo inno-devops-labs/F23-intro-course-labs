@@ -80,3 +80,29 @@ http.https://github.com/.extraheader
 Cleaning up orphan processes
 ```
 I faced no errors, the process is pretty simple.
+
+
+## Task 2: Gathering System Information and Manual Triggering
+
+1. I configured workflow with manual trigger in a new workflow .github/workflows/github-actions-manual-trigger.yml
+2. I pushed new workflow and runned it manually in github.
+3. I also added action to gather system info using kenchan0130/actions-system-info action.
+
+Here are the results:
+
+```
+0s
+Run kenchan0130/actions-system-info@master
+0s
+Run OUTPUTS=(
+  OUTPUTS=(
+    "CPU: 2, Intel(R) Xeon(R) Platinum 8171M CPU @ 2.60GHz"
+    "Hostname: fv-az262-189"
+    "Kernel release: 5.15.0-1041-azure"
+    "Kernel version: #48-Ubuntu SMP Tue Jun 20 20:34:08 UTC 2023"
+    "Platform: linux"
+    "Release: 22.04"
+    "Total memory: 7268675584"
+  )
+  shell: /usr/bin/bash -e {0}
+```
