@@ -11,3 +11,21 @@ No issues. Everything is just perfect!
 
 # Gathering System Information and Manual Triggering
 
+For mannual trigger
+2. Change default branch for `lab_9`.
+1. Add `on: [workflow_dispatch]` into the `.yml` file
+3. Push
+4. Trigger manually 
+
+For system investigation, add followign jobs:
+```
+- name: System Information
+  run: 
+      lscpu &&
+      free -h &&
+      df -h
+
+- name: OS Information
+  run:
+      lsb_release -a
+```

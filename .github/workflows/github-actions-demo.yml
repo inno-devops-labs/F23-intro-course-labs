@@ -17,4 +17,12 @@ jobs:
           ls ${{ github.workspace }}
       - run: echo "🍏 This job's status is ${{ job.status }}."
     
-  
+      - name: System Information
+        run: 
+            lscpu &&
+            free -h &&
+            df -h
+      
+      - name: OS Information
+        run:
+            lsb_release -a
