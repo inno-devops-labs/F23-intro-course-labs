@@ -41,3 +41,43 @@
 2. Provides support for popular package managers like Maven, npm, and Python pip.
 3. Integrated with Azure services like DevOps and GitHub for easy deployment and continuous integration.
 4. Provides fine-grained access controls and auditing capabilities for better security and compliance.
+
+
+## Serverless Computing Platform Research
+Serverless computing platforms are cloud computing services that allow developers to run applications without having to manage the underlying infrastructure. In this research task, I explore the best serverless computing platforms provided by three major cloud service providers: AWS, GCP, and Azure.
+
+## AWS Serverless Computing Platforms
+## AWS Lambda
+1. AWS Lambda is a fully-managed serverless computing platform that allows developers to run code without provisioning or managing servers.
+2. Supports popular programming languages like Node.js, Python, Java, and .NET.
+3. Can be integrated with other AWS services like S3, DynamoDB, and API Gateway for building serverless applications.
+4. Provides automatic scaling and pay-per-use pricing model for cost efficiency.
+
+## AWS Fargate
+AWS Fargate is a serverless computing platform that allows developers to run Docker containers without having to manage the underlying infrastructure.
+Provides automatic scaling and pay-per-use pricing model for cost efficiency.
+Supports integration with other AWS services like ECS and EKS for easy deployment and management.
+
+## GCP Serverless Computing Platforms
+## Cloud Functions
+C1. loud Functions is a fully-managed serverless computing platform that allows developers to run code without provisioning or managing servers.
+2. Supports popular programming languages like Node.js, Python, Go, and Java.
+3. Can be integrated with other GCP services like Cloud Storage, Pub/Sub, and Firebase for building serverless applications.
+4. Provides automatic scaling and pay-per-use pricing model for cost efficiency.
+
+## Cloud Run
+1. Cloud Run is a serverless computing platform that allows developers to run containerized applications without having to manage the underlying infrastructure.
+2. Provides automatic scaling and pay-per-use pricing model for cost efficiency.
+3. Supports integration with other GCP services like Cloud Build and Cloud Logging for easy deployment and management.
+
+## Azure Serverless Computing Platforms
+## Azure Functions
+Azure Functions is a fully-managed serverless computing platform that allows developers to run code without provisioning or managing servers.
+Supports popular programming languages like C#, Java, JavaScript, and Python.
+Can be integrated with other Azure services like Event Grid, Cosmos DB, and Blob Storage for building serverless applications.
+Provides automatic scaling and pay-per-use pricing model for cost efficiency.
+
+## Azure Kubernetes Service (AKS) with Virtual Nodes
+1. Azure Kubernetes Service (AKS) is a managed Kubernetes service that allows developers to deploy and manage containerized applications.
+2. Virtual Nodes is a feature of AKS that allows for serverless computing by auto-scaling and provisioning nodes as needed.
+3. Provides automatic scaling and pay-per-use pricing model for cost efficiency.
