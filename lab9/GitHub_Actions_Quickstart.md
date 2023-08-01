@@ -17,7 +17,7 @@ Observations:
 
 - Each time I push a commit on the branch having the workflow-actions, the actions specified in the YAML file runs.
 
-**Image proof**
+**Image view**
 ![Settings](assets/workflow-runs.png)
 
 ## Gathering System Information and Manual Triggering :
@@ -71,3 +71,6 @@ To gather system information, These are the steps I followed :
         echo "OS: $(cat /etc/os-release | grep ^NAME | cut -d'=' -f2)"
         echo "OS version: $(cat /etc/os-release | grep ^VERSION_ID | cut -d'=' -f2)"
 ```
+
+**Image view**
+![Settings](assets/systeem-info.png)
