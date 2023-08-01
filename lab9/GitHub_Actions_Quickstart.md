@@ -112,3 +112,13 @@ http.https://github.com/.extraheader
 ❯ Complete job
 Cleaning up orphan processes
 ```
+
+
+# Configure a Manual Trigger
+
+``
+on: [push, workflow_dispatch]
+``
+
+Can be triggered from browser only if "workflow_dispatch" is on main branch!
+
