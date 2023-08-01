@@ -41,10 +41,42 @@ Obersations : On the GitHub repository, in the workflow list, I could see a "Run
 **Image view**
 ![Settings](assets/manual-run.png)
 
-Observations:
+Observations: For the workflow dispatch, to be detected, I had to merge my branch to the main branch, as per github actions documentation.
 
 ### Gather System Information:
 
+#### System information gathering
+
+To gather system information I can make use of GitHub's context which has user system details. Using the `actions/github-script` action.
+The steps I follow are :
+
+- I modified my workflow to add an action name `gather system info`
+- I added an action-step the use the `actions/gihub-script@v5`, with which it is possible to run Javascript code.
+
 ```sh
- lscpu
+    jobs:
+        gather_info:
+            runs-on: Ubuntu-latest
+            steps:
+              - name : get github context
+                uses : actions/github-script@v5
+                id: context
+                with:
+                  script: |
+                    console.log(JSON.stringigy(github.context, null,2))
+```
+
+#### Hardware specifications gathering
+
+For Hardware info, I can use the `actions/setup-latest` action. This action sets up the runner with the latest version of the
+specified operating system.
+
+- I added another step
+
+```sh
+       - name : get hardware specs
+         uses : actions/setup-latest@v2
+         with :
+            os: ubuntu
+         id: hardware_os
 ```
