@@ -1,0 +1,32 @@
+name: CI/CD Pipeline
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:  # Manual trigger
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Build and Test
+        run: |
+          npm install
+          npm test
+
+      - name: Gather System Information
+        uses: actions/setup-node@v2
+        with:
+          node-version: '14.x'
+        run: |
+          echo "Operating System:"
+          uname -a
+          echo "Processor Info:"
+          lscpu
+          echo "Memory Info:"
+          free -h
+          echo "Disk Space:"
+          df -h
