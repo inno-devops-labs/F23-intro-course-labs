@@ -17,15 +17,31 @@ Observations:
 
 - Each time I push a commit on the branch having the workflow-actions, the actions specified in the YAML file runs.
 
+**Image proof**
 ![Settings](assets/workflow-runs.png)
 
 ## Gathering System Information and Manual Triggering :
 
 ### Configure a Manual Trigger:
 
-```sh
- lscpu
-```
+The steps I followed to add a manual trigger to my workflow
+
+- I edited my workflow file to add a new trigger ('workflow_dispactch' event ).
+
+**Image view**
+![Settings](assets/workflow-dispatch.png)
+
+- I added this event under the "On" key section
+- I saved the changes and committed them
+
+Obersations : On the GitHub repository, in the workflow list, I could see a "Run Workflow" button added to my edited workflow
+
+- To run it, I then clicked, on the "Run workflow" and leaving the inputs parameters empty.
+
+**Image view**
+![Settings](assets/manual-run.png)
+
+Observations:
 
 ### Gather System Information:
 
