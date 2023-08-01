@@ -22,8 +22,18 @@ jobs:
         with:
           script: |
             console.log(JSON.stringify(github.context, null, 2))
-      - name: Get Hardware Specifications and OS Details
-        uses: actions/setup-latest@v2
-        with:
-          os: ubuntu
-        id: hardware_os
+      # - name: Get Hardware Specifications and OS Details
+      #   uses: actions/setup-latest@v2
+      #   with:
+      #     os: ubuntu
+      #   id: hardware_os
+      - name: Get hardware specifications
+        run: |
+          echo "CPU: $(uname -m)"
+          echo "CPU cores: $(nproc)"
+          echo "Memory: $(free -m | awk '/^Mem:/ {print $2}')"
+          echo "Disk space: $(df -h | awk '/^Filesystem/ {print $2}')"
+      - name: Get OS details
+        run: |
+          echo "OS: $(cat /etc/os-release | grep ^NAME | cut -d'=' -f2)"
+          echo "OS version: $(cat /etc/os-release | grep ^VERSION_ID | cut -d'=' -f2)"
