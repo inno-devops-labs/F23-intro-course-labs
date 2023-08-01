@@ -73,4 +73,4 @@ To gather system information, These are the steps I followed :
 ```
 
 **Image view**
-![Settings](assets/systeem-info.png)
+![Settings](assets/system-info.png)
