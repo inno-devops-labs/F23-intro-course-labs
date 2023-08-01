@@ -116,9 +116,21 @@ Cleaning up orphan processes
 
 # Configure a Manual Trigger
 
-``
+```
 on: [push, workflow_dispatch]
-``
+```
 
-Can be triggered from browser only if "workflow_dispatch" is on main branch!
+Can be triggered from browser only if "workflow_dispatch" is on default branch!
 
+# Gather System Information
+
+```
+- name: System Info
+  run: |
+    echo "🖥️ OS Information:"
+    lsb_release -a
+    echo "🔬 Hardware Information:"
+    lscpu
+    echo "📀 Disk Usage Information:"
+    df -h
+```
