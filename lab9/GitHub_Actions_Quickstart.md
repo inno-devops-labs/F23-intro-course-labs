@@ -47,11 +47,11 @@ Observations: For the workflow dispatch, to be detected, I had to merge my branc
 
 #### System information gathering
 
-To gather system information I can make use of GitHub's context which has user system details. Using the `actions/github-script` action.
+To gather system information I can make use of GitHub's context which has user system details. Using the `actions/system-info` action.
 The steps I follow are :
 
 - I modified my workflow to add an action name `gather system info`
-- I added an action-step the use the `actions/gihub-script@v5`, with which it is possible to run Javascript code.
+- I added an action-step the use the `actions/system-info`, with which it is possible to run Javascript code.
 
 ```sh
     jobs:
@@ -59,24 +59,29 @@ The steps I follow are :
             runs-on: Ubuntu-latest
             steps:
               - name : get github context
-                uses : actions/github-script@v5
-                id: context
-                with:
-                  script: |
-                    console.log(JSON.stringigy(github.context, null,2))
+                uses : actions/system-info
 ```
 
 #### Hardware specifications gathering
 
-For Hardware info, I can use the `actions/setup-latest` action. This action sets up the runner with the latest version of the
-specified operating system.
+For Hardware info, I can run some system commands in the action runner.
 
-- I added another step
+- Hardware specifications
 
 ```sh
-       - name : get hardware specs
-         uses : actions/setup-latest@v2
-         with :
-            os: ubuntu
-         id: hardware_os
+- name: Get hardware specifications
+    run: |
+        echo "CPU: $(uname -m)"
+        echo "CPU cores: $(nproc)"
+        echo "Memory: $(free -m | awk '/^Mem:/ {print $2}')"
+        echo "Disk space: $(df -h | awk '/^Filesystem/ {print $2}')"
+```
+
+- Get OS details
+
+```sh
+- name: Get OS details
+    run: |
+        echo "OS: $(cat /etc/os-release | grep ^NAME | cut -d'=' -f2)"
+        echo "OS version: $(cat /etc/os-release | grep ^VERSION_ID | cut -d'=' -f2)"
 ```
