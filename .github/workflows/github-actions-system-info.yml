@@ -1,0 +1,27 @@
+name: Gather System Information
+
+on: [push]
+
+jobs:
+  gather-info:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Gather System Information
+        run: |
+          # Display OS and kernel information
+          uname -a
+
+          # Display memory information
+          free -h
+
+          # Display CPU information
+          lscpu
+
+          # Display disk usage information
+          df -h
+
+          # Add any other commands to gather more system information

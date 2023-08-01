@@ -1,0 +1,8 @@
+name: Manual Triggering
+run-name: ${{ github.actor }} is testing out GitHub Actions. Manual 🚀
+on: [workflow_dispatch]
+jobs:
+  Explore-GitHub-Actions:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "🎉 Workflow is triggered manually. 123123"
