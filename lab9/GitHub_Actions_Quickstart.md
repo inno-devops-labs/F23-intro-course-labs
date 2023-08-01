@@ -47,22 +47,12 @@ Observations: For the workflow dispatch, to be detected, I had to merge my branc
 
 #### System information gathering
 
-To gather system information I can make use of GitHub's context which has user system details. Using the `actions/system-info` action.
-The steps I follow are :
+To gather system information, These are the steps I followed :
 
-- I modified my workflow to add an action name `gather system info`
-- I added an action-step the use the `actions/system-info@v1`, with which it is possible to run Javascript code.
+- I modified my workflow to add 2 actions "Get hardware specifications" and "Get hardware specifications"
+- In both action I used system command to print out the required information
 
-```sh
-    - name : get github context
-      uses : actions/system-info@v1
-```
-
-#### Hardware specifications gathering
-
-For Hardware info, I can run some system commands in the action runner.
-
-- Hardware specifications
+#### Get Hardware specifications
 
 ```sh
 - name: Get hardware specifications
@@ -73,7 +63,7 @@ For Hardware info, I can run some system commands in the action runner.
         echo "Disk space: $(df -h | awk '/^Filesystem/ {print $2}')"
 ```
 
-- Get OS details
+#### Get OS details
 
 ```sh
 - name: Get OS details
