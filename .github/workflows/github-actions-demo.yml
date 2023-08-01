@@ -16,8 +16,8 @@ jobs:
         run: |
           ls ${{ github.workspace }}
       - run: echo "🍏 This job's status is ${{ job.status }}."
-      - name: Get GitHub context
-        uses: actions/system-info
+      - name: Get System information
+        uses: actions/system-info@v1
       - name: Get hardware specifications
         run: |
           echo "CPU: $(uname -m)"

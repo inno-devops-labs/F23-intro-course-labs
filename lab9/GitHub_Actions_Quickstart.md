@@ -51,15 +51,11 @@ To gather system information I can make use of GitHub's context which has user s
 The steps I follow are :
 
 - I modified my workflow to add an action name `gather system info`
-- I added an action-step the use the `actions/system-info`, with which it is possible to run Javascript code.
+- I added an action-step the use the `actions/system-info@v1`, with which it is possible to run Javascript code.
 
 ```sh
-    jobs:
-        gather_info:
-            runs-on: Ubuntu-latest
-            steps:
-              - name : get github context
-                uses : actions/system-info
+    - name : get github context
+      uses : actions/system-info@v1
 ```
 
 #### Hardware specifications gathering
