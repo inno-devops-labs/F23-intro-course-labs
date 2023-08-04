@@ -55,26 +55,41 @@ On test run I have not obtained any errors, howerver I have experienced obtainin
 ## Task 2: Gathering System Information and Manual Triggering
 
 1. Configure a Manual Trigger:
+
    I have configured freshly created workflow manual_pipelnine.yml with respect to following [source](https://dev.to/this-is-learning/manually-trigger-a-github-action-with-workflowdispatch-3mga).
 
    So my code was follwoing:
 
    ```
-   name: Manual trigger
+   name: GitHub Actions System Info
+   run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
    on:
    workflow_dispatch:
-    inputs:
-      name:
-        description: "Who to greet"
-        default: "World"
-
-    jobs:
-    hello:
+   jobs:
+   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
-
-            steps:
-            - name: Hello Step
-                run: echo "Hello ${{ github.event.inputs.name }}"
+    steps:
+      - uses: kenchan0130/actions-system-info@master
+        id: system-info
+      - name: Check outputs
+        run: |
+          OUTPUTS=(
+            "CPU Core: ${{ steps.system-info.outputs.cpu-core }}"
+            "CPU Model: ${{ steps.system-info.outputs.cpu-model }}"
+            "Hostname: ${{ steps.system-info.outputs.hostname }}"
+            "Kernel release: ${{ steps.system-info.outputs.kernel-release }}"
+            "Kernel version: ${{ steps.system-info.outputs.kernel-version }}"
+            "Name: ${{ steps.system-info.outputs.name }}"
+            "Platform: ${{ steps.system-info.outputs.platform }}"
+            "Release: ${{ steps.system-info.outputs.release }}"
+            "Total memory bytes: ${{ steps.system-info.outputs.totalmem }}"
+          )
    ```
 
-2. Gather System Information:
+### Challanges:
+
+I have not been able to run manual trigger workflow until i have merged my lab9 and main branches.
+
+In the end i have obtained following result:
+
+![Alt text](image-1.png)
