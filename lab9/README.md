@@ -7,6 +7,7 @@ In this lab, you will explore continuous integration and continuous deployment (
 **To achieve a grade of 6/10**, follow these steps:
 
 1. Read the Official Guide:
+
    - Follow the official GitHub Actions [quickstart guide](https://docs.github.com/en/actions/quickstart).
    - Document all your observations, key concepts, and steps you followed in a Markdown file named "GitHub_Actions_Quickstart.md" in the lab folder.
 
@@ -19,6 +20,7 @@ In this lab, you will explore continuous integration and continuous deployment (
 To earn an additional 4 points, follow these steps for system information gathering and manual triggering:
 
 1. Configure a Manual Trigger:
+
    - Extend your existing GitHub Actions workflow to include a [manual trigger](https://docs.github.com/en/actions/using-workflows/triggering-a-workflow#defining-inputs-for-manually-triggered-workflows).
    - We don't need inputs for manually triggered workflows you can skip them.
    - Document the changes made to the workflow file in the same "GitHub_Actions_Quickstart.md" file.
