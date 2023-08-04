@@ -57,3 +57,22 @@ jobs:
             lsb_release -a
     ```
     System info in workflow output:
+    ```
+        Run lscpu && free -h && df -h
+    Architecture:                    x86_64
+    CPU op-mode(s):                  32-bit, 64-bit
+    Address sizes:                   46 bits physical, 48 bits virtual
+    Byte Order:                      Little Endian
+    CPU(s):                          2
+    On-line CPU(s) list:             0,1
+    Vendor ID:                       GenuineIntel
+    ```    
+    OS Information:
+    ```
+    Run lsb_release -a
+    No LSB modules are available.
+    Distributor ID:	Ubuntu
+    Description:	Ubuntu 22.04.2 LTS
+    Release:	22.04
+    Codename:	jammy
+    ```
