@@ -43,7 +43,7 @@ jobs:
     - on: [push]
     + on: [workflow_dispatch]
     ```
-    Now I can trigger workflow manuaaly using button:
+    Now I can trigger workflow manualy using button:
 2. Gather System Information:
     Modify workflow to include an additional step for gathering system information. Add code to `.github/workflows/github-actions-demo.yml`:
     ```
