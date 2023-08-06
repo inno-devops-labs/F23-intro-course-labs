@@ -25,3 +25,6 @@ Copy the following YAML contents into the github-actions-demo.yml file:
             - run: |
                 ls ${{ github.workspace }}
             run: echo "🍏 This job's status is ${{ job.status }}."
+
+### Actions tab:
+![img.png](img.png)
