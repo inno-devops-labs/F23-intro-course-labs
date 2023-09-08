@@ -1,0 +1,7 @@
+## Core principles and practices of DevOps:
+
+- **Automation.** Automation involves defining and implementing a set of predefined steps or workflows that are consistently followed during various stages of the software development and deployment process. For example, instead of manual code inspections, the developer uses automated testing processes. 
+- **Collaboration.** DevOps practices involves combining the development and operations teams. It is important for them to efficiently communicate and share while working on a common goal. For example, developers collaborate on code changes using version control systems.
+- **Continious Integration.** There is an ongoing effort to improve products, services, or processes. The developers continiously update code and integrate changes, while maintaining the integrity of the previous version. For example, when a developer commits code changes to a version control system, CI systems automatically trigger a build process. 
+- **Infrastructure as code.** The principle of treating infrastructure as software allows it to be versioned, tested, and deployed consistently. For example, using IaC to provision virtual machines, storage, and networking resources on cloud platforms.
+- **Containerisation.** Containerization involves packaging applications and their dependencies into containers, allowing them to run consistently across different environments, making it easier to deploy, scale, and manage. For example, Docker containers are used to isolate applications and their dependencies from the underlying host system.
