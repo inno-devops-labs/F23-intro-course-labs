@@ -48,4 +48,6 @@ This principle is based on the belief that errors are an inevitable part of any 
 
 <b>Examples: </b></br>
 - Post-mortem analysis: After a major system failure or failure occurs, the DevOps team conducts an analysis and discussion to determine the causes of the failure and develop an action plan to prevent similar errors in the future. This allows the team to learn from mistakes and apply them to improve the quality and reliability of the system.
-- Bug Sharing: In DevOps teams, there is a practice of sharing information about failures, errors and problems between teams. This allows team members to learn from the mistakes of others and prevent them from happening again.
+- Bug Sharing: In DevOps teams, there is a practice of sharing information about failures, errors and problems between teams. This allows team members to learn from the mistakes of others and prevent them from happening again. </br>
+
+main source: https://blog.hubspot.com/website/devops-principles
