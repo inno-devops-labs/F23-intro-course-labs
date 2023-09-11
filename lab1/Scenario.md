@@ -1,4 +1,4 @@
-As a scenario, I would like to consider an example of the development of an AAA game that is planned to be released on several gaming platforms.
+> As a scenario, I would like to consider an example of the development of an AAA game that is planned to be released on several gaming platforms.
 
 <em><b>Problem №1: </b></em>
 
