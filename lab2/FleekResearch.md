@@ -15,8 +15,7 @@ To set up the project on Fleek, I followed these steps:
 ## Deployment Details
 
 - IPFS Link: The project is deployed on IPFS, and the IPFS link is: `https://fleek.ipfs.io/ipfs/QmTF72QrjpMNqgxNhNb6tQZnM8LntHFHMmCMnSMUhFEPKi/`.
-
-- The project is also accessible via: `https://old-sky-1761.on.fleek.co`, 
+-The project is also accessible via: `https://old-sky-1761.on.fleek.co`, 
 
 ## Observations and Insights
 
