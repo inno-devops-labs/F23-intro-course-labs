@@ -2,18 +2,6 @@
 
 DevOps is an acronym for development and operations. It was formed to bridge the gap between the development and operations teams. Along with development and operations it also aims at merging the quality assurance into a single set of processes using various principles and practices.
 
-<!-- ## Principles and Practices
-
-devops
-speeds up deployment by
-introducing
-1. Higher speeds and quality of product deployment
-- continuous delivery
-- encouraging faster feedback
-- allowing developers to fix bugs in early stages
-- focus on quality ofthe product
-- automate a number of processes -->
-
 ## Devops Principles
 
 The main principles of DevOps are introduced by Damon Edwards and John Willis in the year 2010, They presented a model known as **CAMS**, an accronym for **Culture, Automation, Measurement, and Sharing**.
