@@ -29,5 +29,5 @@ By utilizing the agile planning the team can easily change the course of the pro
 
 Secondly, the team needs automation tools which can help them
 ### Continuous Integration and Continuous delivery (CI/CD)
-
+By adopting Continuous Integratoin and Continuous delivery pipeline/tools, the developers can automate the building, testing, integration and deployment of the code very easily. This saves a lot of invaluable time and increases the speeds and quality of the product deployment. Also the developers will be able to test and fix any issues in the early stages
 
