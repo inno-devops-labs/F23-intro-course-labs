@@ -13,9 +13,5 @@ Docker is an open-source platform that allows you to automate the deployment, sc
 - Lightweight: Containers share the host kernel, making them lightweight and efficient.
 - Image and Container Management: Docker provides tools to manage Docker images, create containers from those images, and manage their lifecycle.
 
-## Use Cases and Examples
-- Continuous Integration and Deployment: Docker enables consistent and isolated environments for CI/CD pipelines.
-- DevOps Testing: Docker simplifies the setup of testing environments, allowing teams to test applications in a controlled and reproducible manner.
-- Hybrid Cloud Deployment: Docker containers can be deployed across different cloud providers or on-premises infrastructure, providing flexibility and portability. 
-- Development Environments: Docker can be used to create development environments. Developers can work in isolated containers with the same dependencies and configurations as the production environment, reducing the chances of environment-related issues.
-
+## Use Cases 
+Our robotic team works on different projects and these projects use mainly ROS and ROS2 and when installing multiple version of ROS or ROS2 we will have conflicts between these version, so to solve this problem we use docker to containerize our workspace with the needed version of ROS or ROS2 so it would work perfectly on any other device. one note that we can also run these images on windows system (which is not supported by ROS)
