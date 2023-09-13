@@ -2,7 +2,7 @@
 
 DevOps is an acronym for development and operations. It was formed to bridge the gap between the development and operations teams. Along with development and operations it also aims at merging the quality assurance into a single set of processes using various principles and practices.
 
-## Devops Principles
+## I. Devops Principles
 
 The main principles of DevOps are introduced by Damon Edwards and John Willis in the year 2010, They presented a model known as **CAMS**, an accronym for **Culture, Automation, Measurement, and Sharing**.
 
@@ -31,7 +31,7 @@ KPIs are the accronym for Key Performance Indicator. Inorder to get the optimal 
 This pillar cant give more stress on the power of collaboration inbetween the team mates. It is very important to share among each other with thier knowledge of best practices and sharing the feedback among. Therfore this keeps every team member on track and even when a person whos responsible for a task is on a sick leave or a vacation the other team mate with the knowledge can complete the work.
 
 
-## DevOps Practices
+## II. DevOps Practices
 DevOps model comprises of planning, development, testing, deployment, release and monitoring all together making a delivery cycle.
 
 Lets Look at the Core practices in DevOps:
