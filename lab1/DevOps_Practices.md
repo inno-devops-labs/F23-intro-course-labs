@@ -11,7 +11,6 @@ I have defined core principles and practices of DevOps in few lines
 ### Core practices are: 
 * Collaboration
 * Automation
-* Efficiency
 
 ## Core principles
 
@@ -26,5 +25,3 @@ I have defined core principles and practices of DevOps in few lines
 **` Collaboration `** between teams, helps in understanding of the software development process. In other words, teams work whith each other, discuss problems and work with higher efficiency by better understanding of project.
 
 By **` automation `** repetitive tasks, such as testing, deployment, and other, teams can free their working time and concentrate on other tasks
-
-**` Efficiency `** 
