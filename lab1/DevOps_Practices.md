@@ -18,7 +18,7 @@ Automation in DevOps removes repetitive tasks, making processes consistent and s
 
 ### Principle No 4: Measurement
 
-Measurement in DevOps is essential to verify if improvements are working. While there are many tools to gather data, it's important to focus on key metrics rather than trying to measure everything. Start with basics like the time from development to deployment, frequency of recurring bugs, system recovery time, and user counts. As you establish these metrics, you can then delve into more detailed data like feature usage, etc. Sharing this data with other departments, such as marketing, helps in aligning goals and making informed decisions, ensuring everyone understands the bigger picture and supports the chosen direction.
+Measurement in DevOps is essential to verify if improvements are working. While there are many tools to gather data, it's important to focus on key metrics rather than trying to measure everything. Start with basics like the time from development to deployment, frequency of recurring bugs, system recovery time, and user counts. As we establish these metrics, we can then delve into more detailed data like feature usage, etc. Sharing this data with other departments, such as marketing, helps in aligning goals and making informed decisions, ensuring everyone understands the bigger picture and supports the chosen direction.
 
 ### Principle No 5: Sharing
 
