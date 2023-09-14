@@ -34,3 +34,10 @@ Let's say we have a small software development company, that's creating a mobile
 -   **Application**: By preparing a system to gather and analyze feedback from beta testers, the team can prioritize fixes and feature additions based on actual user experience.
 -   **Desired Outcomes**: A game that meets user expectations, fewer negative reviews, and a clearer understanding of the user's needs.
 -   **Example**: If beta testers consistently report that they love a particular phase but wish it lasted longer, developers can add such feature, making the game more enjoyable.
+
+
+#### 4. Monitor the DevOps Pipeline and Applications:
+
+-   **Application**: Introduce tools to monitor the entire development pipeline, from code commits to deployment, ensuring any failure are immediately reported.
+-   **Desired Outcomes**: Minimize release times and ensure consistency throughout the development process.
+-   **Example**: If a certain code  change slows down the game's performance, monitoring tools can alert the developers, allowing them to address the issue before it reaches the end-users.
