@@ -10,20 +10,21 @@ collaborate with software team on different projects.
 
 1. **Track changes**
 
-VCS maintain detailed history of all changes made to files, allowing users to track who and when made changes.
+   VCS maintain detailed history of all changes made to files, allowing users to track who and when made changes.
 
 2. **Collaboration**
 
-VCS enables multiple developers to work on the same project simultaneously. 
+    VCS enables multiple developers to work on the same project simultaneously. 
 
 3. **Rollback**
 
-As VCS stores the history of changes, in the case of system failure, developers can return to previous working versions. 
+    As VCS stores the history of changes, in the case of system failure, developers can return to previous working
+    versions. 
 
-4. **Branching**
+5. **Branching**
 
-In case of working on new feature or bug fixes, VCS allows to create branches without affecting the main code.
-After testing the changes, branches can be merged into the main branch.
+    In case of working on new feature or bug fixes, VCS allows to create branches without affecting the main code.
+    After testing the changes, branches can be merged into the main branch.
 
 
 ### Types of VCS:
