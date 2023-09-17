@@ -27,7 +27,7 @@
 
       **`git reset --soft`**
 
-      I used `git reset --soft`` with relative references `HEAD~1`` to change only last commit. The resutl is the following:
+      I used `git reset --soft` with relative references `HEAD~1` to change only last commit. The resutl is the following:
 
       ```
       git reset --soft HEAD~1
@@ -70,7 +70,7 @@
               modified:   README.md
       ```
       `git reset --mixed HEAD~2` removed 2 last commits from the commit history and reseted the index but not the working tree 
-      (i.e., the changed files are preserved but not marked for commit)
+      (i.e., the changed files are preserved but not marked for commit).
 
 
       **`git reset --hard`**
