@@ -81,6 +81,7 @@
       git log --oneline
       00f6536 (HEAD -> git-reset-practice, origin/main, origin/HEAD, main) new
       ```
+      
       ```  
       git status
       On branch git-reset-practice
