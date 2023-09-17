@@ -1,4 +1,5 @@
-# Lab 01 - Task 1: Research and Define DevOps Principles and Practices: 
+# Lab 01
+  ## Task 1: Research and Define DevOps Principles and Practices: 
 
 Devops is an approach to minimize the time gap between the development process of the product, and the period where the depolyment or testing team is almost idle. For this purpose, the apporach focuses on icluding all the related teams in the process simultaneously.
 

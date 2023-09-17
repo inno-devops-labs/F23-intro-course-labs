@@ -1,4 +1,5 @@
-### AWS: Amazon Web Services
+### AWS: Amazon Web Services 
+----
 
 A subsidary of *Amazon* that provided cloud computing services and API for companies and individuals.
 

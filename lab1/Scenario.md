@@ -1,4 +1,5 @@
-# Lab 01 - Task 2: Apply DevOps Practices in a Scenario
+# Lab 01
+## Task 2: Apply DevOps Practices in a Scenario
 
 The following task decribes a scenario that requires some DevOps practices to be resolved:
 ### Scenario:

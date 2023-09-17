@@ -1,4 +1,5 @@
 ### Slack / SlackOps
+----
 
 A cloud-based instant messaging service that facilitates the coordination between sub-teams in the company. it has also been adopted as a community platform and mainly owend by ***Salesforce***
 
