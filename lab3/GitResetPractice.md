@@ -92,7 +92,7 @@
       ```
 
       `git reset --hard HEAD~1` removed the last commint from commit history as well as from index file and from working tree.
-      At the same time any changes to tracked files in the working tree since <commit> were discarded.
+      At the same time any changes to tracked files in the working tree since "commit" were discarded.
 
 
 **Reflection:**
