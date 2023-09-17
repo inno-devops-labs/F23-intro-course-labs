@@ -80,8 +80,8 @@
 
       git log --oneline
       00f6536 (HEAD -> git-reset-practice, origin/main, origin/HEAD, main) new
-
-
+      ```
+      ```  
       git status
       On branch git-reset-practice
       Your branch is behind 'origin/git-reset-practice' by 4 commits, and can be fast-forwarded.
