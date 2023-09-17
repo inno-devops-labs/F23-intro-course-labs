@@ -32,32 +32,33 @@ collaborate with software team on different projects.
 The main two popular VCS are:
 1. **Centralized version control systems (CVCS)**
 
-All the files are stored in the centar repository
-
-_Example_: Concurrent Versions System (CVS), Perforce, and Subversion (SVN).
+   All the files are stored in the centar repository
+   
+   _Example_: Concurrent Versions System (CVS), Perforce, and Subversion (SVN).
 
 2. **Distributed version control system (DVCS)**
 
-All the files are stored across multiple repositories
+   All the files are stored across multiple repositories
+   
+   _Example_: Git, Mercurial
 
-_Example_: Git, Mercurial
-
-In other sources I found also the following VCS:
+In other sources I found also the following types of VCS:
 
 **Lock-based version control system**
 
-Files are locked to manage concurrent access to files and resources. 
-File locking prevents two or more users from making conflicting changes to the same file or resource.
+   Files are locked to manage concurrent access to files and resources. 
+   File locking prevents two or more users from making conflicting changes to the same file or resource.
 
 **Optimistic version control system**
 
-Every user has their own private workspace. 
-When they want to share their changes with the rest of the team, they submit a request to the server. 
-The server then looks at all the changes and determines which ones can be safely merged together.
+   Every user has their own private workspace. 
+   When they want to share their changes with the rest of the team, they submit a request to the server. 
+   The server then looks at all the changes and determines which ones can be safely merged together.
 
 **Local Version Control System**
 
-A local version control system is a local database located on your local computer, in which every file change is stored as a patch.
+   A local version control system is a local database located on your local computer, in which every file change is 
+   stored as a patch.
 
 
 ### Comparison of different VCS:
