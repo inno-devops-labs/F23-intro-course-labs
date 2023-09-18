@@ -1,4 +1,4 @@
-## Lab 1 - DevOps practices
+## Lab 1 - Task 1 - DevOps practices
 
 I denote the following DevOps principles:
 ### 1. Continious integration
