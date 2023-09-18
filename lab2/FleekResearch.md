@@ -1,12 +1,12 @@
 ### <b>Steps to set up the project on Fleek: </b>
 1. Log in or create an account on fleek.co
-2. In the Hosting tab, click on the button <span style="background-color:black"><span style="color:black">a</span>Add New Site<span style="color:black">a</span>  </span>
+2. In the Hosting tab, click on the button <span style="background-color:black"><span style="color:black"></span>Add New Site<span style="color:black"></span>  </span>
 3. Connect it with your Github account
 4. Choose the fork of the Labs repository to link to your site on Fleek
 5. Select IPFS as the platform you want to host your site on
 6. In "Deploy settings" fields I used default options
 7. In "Basic build settings" "Framework" field I selected "Other"
-8. Finally, click on the button <span style="background-color:black"><span style="color:black">a</span>Deploy site<span style="color:black">a</span>  </span>
+8. Finally, click on the button <span style="background-color:black"><span style="color:black"></span>Deploy site<span style="color:black"></span>  </span>
 
 ### <b>Configuration settings used for custom domains: </b>
 None
