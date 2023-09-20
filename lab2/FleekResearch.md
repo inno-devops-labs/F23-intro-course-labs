@@ -25,7 +25,7 @@
 
 ## Configuration Settings
 
-No additional configurations were applied. The project was set up using Fleek's default settings.
+No additional configurations were applied. The project was set up using Fleek's default settings, also no custom domain was choosen, we used the defualt domain given by fleek.
 
 ## Observations & Insights
 
