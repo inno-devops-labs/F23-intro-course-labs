@@ -19,7 +19,7 @@
 
 6. **Deployment Settings**
    - Under the deployment settings:
-     - **Branch**: left as default (typically `main` or `master`).
+     - **Branch**: left as default (main).
      - **Basic build settings**: No changes made, we went with the default options.
    - Finally, we click "deploy" to initiate the deployment process.
 
