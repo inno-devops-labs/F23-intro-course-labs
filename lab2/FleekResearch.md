@@ -29,7 +29,7 @@ No additional configurations were applied. The project was set up using Fleek's 
 
 ## Observations & Insights
 
-Setting up the project was straightforward and user-friendly. By using default settings, the deployment process was seamless and efficient. In case more advanced setups is needed, there are various configuration options available on Fleek.
+Setting up the project was straightforward and user-friendly. By using default settings, the deployment process was easy and efficient. In case more advanced setups is needed, there are various configuration options available on Fleek.
 
 
 ## Link
