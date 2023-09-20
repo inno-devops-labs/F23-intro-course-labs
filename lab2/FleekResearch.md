@@ -15,7 +15,7 @@
    - We choose the repo name that was previously forked.
 
 5. **Hosting Service Selection**
-   - Opt for "IPFS" as our hosting service.
+   - Choose "IPFS" as our hosting service.
 
 6. **Deployment Settings**
    - Under the deployment settings:
