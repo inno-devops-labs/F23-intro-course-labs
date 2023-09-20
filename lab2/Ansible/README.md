@@ -8,7 +8,7 @@ Ansible is a powerful automation tool designed to manage configurations, deploy 
    
 1. **Configuration Management**: Keeps settings and setups consistent across many computers or servers.
 2. **Scalability & Efficiency**: Without needing extra software on each server, Ansible can handle tasks for a big number of machines without getting slowed down (lightweight).
-3. **Code Reusability**: Ansible uses 'playbooks', kind of like scripts that you can use repeatedly for different tasks or projects.
+3. **Code Reusability**: Ansible uses 'playbooks', kind of like scripts that can use repeatedly for different tasks or projects.
 
 ### Key Features and Functionalities
 
