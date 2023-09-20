@@ -34,6 +34,6 @@ Setting up the project was straightforward and user-friendly. By using default s
 
 ## Link
 
-[My Fleek site](https://long-pond-0684.on.fleek.co/)
+[My Fleek site](https://long-pond-0684.on.fleek.co/) \\
 
 [IPFS Link](https://fleek.ipfs.io/ipfs/QmdVvV12FdrT51zjvSg5NNcJmCj3gpPLmPbcbHHBZexd37/)
