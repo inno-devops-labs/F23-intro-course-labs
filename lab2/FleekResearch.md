@@ -15,7 +15,7 @@
 ## Deployment Details
 
 - **IPFS hash**: `QmcGd6GAASJaEHtuip4WwiWyaCoowkpVJx5jWfBSTV542g`
-- **IPFS Link**: `https://fleek.ipfs.io/ipfs/QmcGd6GAASJaEHtuip4WwiWyaCoowkpVJx5jWfBSTV542g/`
+- **IPFS Link**: [https://fleek.ipfs.io/ipfs/QmcGd6GAASJaEHtuip4WwiWyaCoowkpVJx5jWfBSTV542g/](https://fleek.ipfs.io/ipfs/QmcGd6GAASJaEHtuip4WwiWyaCoowkpVJx5jWfBSTV542g/)
 
 ## Observations
 Fleek is a very user-friendly platform and saves a lot of time. It provides automated build and deployment features which makes the process of introducing changes quite easy and simple.
