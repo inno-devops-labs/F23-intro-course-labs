@@ -11,7 +11,7 @@ In a DevOps context, Kubernetes helps manage and orchestrate Docker containers, 
 3. Volumes: A directory with some data, accessible to the containers in a pod.
 4. Namespaces: Multiple virtual clusters backed by the same physical cluster.
 5. ConfigMaps and Secrets: Allows you to decouple configuration artifacts from image content to keep containerized applications portable.
-6. Deployments: Provides declarative updates for Pods and ReplicaSets educative.io.
+6. Deployments: Provides declarative updates for Pods and ReplicaSets.
 
 ## Use Cases and Examples
 Kubernetes is used in a variety of real-world scenarios:
