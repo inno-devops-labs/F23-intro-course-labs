@@ -1,4 +1,4 @@
-## Git reset practice
+## Task 2: Git reset practice
 
 ### Procedure:
 1. Created a new branch called **git-reset-practice**
