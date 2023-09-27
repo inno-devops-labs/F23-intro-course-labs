@@ -3,4 +3,4 @@
 
  ## Cases: 
 
- - Testing ```git reset --hard```
+ - Testing ```git reset --hard```: here we will right some texts and push them, so later we can undo with ```--hard``` type
