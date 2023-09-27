@@ -1,6 +1,6 @@
 1. **Disk Space Analysis:** to display disk info we use: 
  `df -h`
-    ```bash
+    ```c++
 
     Filesystem      Size  Used Avail Use% Mounted on
     tmpfs           772M  2.7M  769M   1% /run
@@ -13,7 +13,7 @@
 
 2. **Inodes Analysis:** to display inodes info we use: 
 `df -i`
-    ```bash
+    ```c++
     Filesystem      Inodes   IUsed   IFree IUse% Mounted on
     tmpfs           987744    1833  985911    1% /run
     /dev/nvme0n1p5 8388608 1015682 7372926   13% /
@@ -25,7 +25,7 @@
 
 3. **Resource Consumption Analysis:** to display resources info we use: 
 `top`
-    ```bash
+    ```c++
     top - 18:20:25 up  5:15,  1 user,  load average: 0.28, 0.57, 0.48
     Tasks: 333 total,   1 running, 332 sleeping,   0 stopped,   0 zombie
     %Cpu(s):  1.1 us,  0.2 sy,  0.0 ni, 98.7 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st
