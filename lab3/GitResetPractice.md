@@ -23,3 +23,17 @@
 3. `git reset --hard <commit>`
    - This option moves the HEAD pointer to the specified commit, resetting both the staging area and the working directory to the state of the commit.
    - Example: `git reset --hard HEAD~2`
+
+## Output
+
+Outputs are look like:
+
+`olego@DESKTOP-9GO256I MINGW64 ~/Desktop/intro-course-labs (git-reset-practice)`
+
+`$ git reset --hard HEAD~2`
+
+`HEAD is now at 37e76b1 after reseting commit`
+
+## Reflection on Git Reset
+
+Git reset is a powerful command that allows us to manipulate the commit history in Git. It provides options to move the HEAD pointer and update the staging area and working directory accordingly.
