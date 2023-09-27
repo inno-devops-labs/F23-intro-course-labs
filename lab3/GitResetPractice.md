@@ -12,8 +12,11 @@
 
 
 ### Example: 
+- In the ```Dumpy.md``` file we made some changes and pushed to the remote repository, then we applied command ```git reset --hard HEAD~2 ID``` and the changes were removed from workspace
 
+- Later, we pulled from remote to have original file and then appleid ```git reset --soft HEAD~2 ID``` and the editing were removed from the HEAD 
 
+- Finally, we applied ```git reset --mixed HEAD~2 ID``` and the features were removed from the staged area
 ### Reflection:
 
 We can say the git reset tree is a powerful tool that is used to undo some changes commited to the repository or branch. Furthermore it must be used with caution as it moves HEAD and the branch pointer to desired commit, which will be more confusing
