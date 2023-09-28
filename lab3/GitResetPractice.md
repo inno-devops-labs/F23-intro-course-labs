@@ -43,4 +43,4 @@ Understanding the `git reset` command is crucial for managing and navigating the
 - **Mixed Reset**: Beneficial when we need to make more changes before re-committing.
 - **Hard Reset**: Important when we need to completely discard recent mistakes or unwanted commits.
 
-It's essential to use these commands, especially `--hard`, with caution to avoid data loss. 
+Also We can say that It's essential to use these commands, especially `--hard`, with caution to avoid data loss. 
