@@ -29,7 +29,7 @@ In this practice session, I explored the `git reset` command and its various opt
 
 ## Command Outputs
 
-(Note: Actual outputs were not included here. You can reference screenshots to check it as everything was reset to the initial state.)
+(Note: Actual outputs were not included here. Kindly refer to screenshots to check it as everything was reset to the initial state.)
 
 1. `git reset --soft HEAD~1`: This command undid the last commit and moved its changes to the staging area.
 2. `git reset HEAD~1`: This is the mixed reset by default. It undid the last commit and moved its changes to the working directory as unstaged changes.
