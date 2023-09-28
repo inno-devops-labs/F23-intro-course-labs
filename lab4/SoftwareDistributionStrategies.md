@@ -45,27 +45,32 @@ The **significance** of software distribution lies in its role as a bridge betwe
 6. **App Stores and Marketplaces:**
 
 *Description:* Software is distributed through app stores (e.g., Apple App Store, Google Play Store) or online marketplaces.
+
 *Example:* Mobile apps and desktop software available on Apple's App Store or Google Play.
 
 
 7. **Beta Testing and Early Access Programs:**
 
 *Description:* Companies release pre-release versions of their software to a select group of users for testing and feedback before the official launch.
+
 *Example:* Video game companies often offer beta versions of games to players for testing and feedback. Microsoft Windows also utilises this option.
 
 8. **Self-Service Download:**
 
 *Description:* Users can download the software directly from the company's website or a designated download portal.
+
 *Example:* Many open-source projects provide software for download from their websites. Internet Download Manager (IDM) is one example.
 
 9. **Physical Distribution:**
 
 *Description:* Physical copies of software are distributed on CDs, DVDs, or other physical media.
+
 *Example:* Microsoft used to distribute its software on physical installation disks. This is becoming somewhat obsolete now.
 
 10. **Peer-to-Peer (P2P) Sharing:**
 
 *Description:* Users share software files directly with each other over P2P networks, often used for sharing open-source software.
+
 *Example:* Torrenting platforms for sharing large software files.
 
 
