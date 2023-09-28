@@ -1,5 +1,6 @@
 
-# Task 2: Practice with Git Reset Command:
+# Task 2: 
+## Practice with Git Reset Command:
 
 1. Creted branch with `git-reset-practice` using `git checkout -b git-reset-practice` command.
 2. Doing `git reset --mixed` (default behavior) on the changes that are in staging area removes them from staging area.
