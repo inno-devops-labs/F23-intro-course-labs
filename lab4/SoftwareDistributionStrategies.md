@@ -33,3 +33,9 @@ For instance, a Steam store application allow to directly download their applica
    - Requires computational power from the developers to maintain the application.
    - Allows to eliminate any system inconsistemcies.
    For instance, ChatGPT deploys it's solution in the cloud and users may iteract with it online.
+
+### Best Practices for Software Distribution
+
+1. **Strict definition of the targeted system:** solution distribution should be extensively tested on declared target systems. Otherwise a strict restrictions on system requirements have to be issued in order to avoid unexpected malfunctions.  
+2. **Control of third party distribution:** althrough third parties allow to strongly widen the rechable market, it is required to make sure that customer service on their side is adequate and that all changes in the application get distributed to the end users.
+3. **Cosntant monitoring and feedback collection:** in order to swiftly identify the application shortcomings, it is essential to make sure that key application performance metrics on end-devices are measured and the feedback can be reached to the Developer.
