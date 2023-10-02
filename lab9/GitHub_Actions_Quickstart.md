@@ -4,11 +4,11 @@
 ## Task 1: Create GitHub Actions Pipeline
 
 
-1. Create a .github/workflows directory 
+1. Created a .github/workflows directory in my repo
 
-2. In the .github/workflows directory, create a file named github-actions-demo.yml.
+2. In the .github/workflows directory, I created a file named `github-actions-demo.yml`.
 
-3. Copy the following YAML contents into the github-actions-demo.yml file:
+3. Then I Copied the following YAML contents into the `github-actions-demo.yml` file:
      ```yaml
     name: GitHub Actions Demo
     run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
@@ -30,9 +30,9 @@
         - run: echo "🍏 This job's status is ${{ job.status }}."
     ```
 
-4. Stage the files  ` git add .` commit, then push  ` git commit -m "msg` , `git push --set-upstream origin lab9`
+4. Staged the files  ` git add .` commited, then pushed  ` git commit -m "msg` , `git push --set-upstream origin lab9`
 
-5. The action will be available in action tab in the repo
+5. Then action became available in action tab in the repo
 
 6. after pushing some changes the workflow run automatically without any errors:
 
@@ -75,12 +75,12 @@
                     - name: Print the input tag to STDOUT
                     run: echo  The tags are ${{ inputs.tags }} 
         ```
-    - Now from the action tab I can the manual work flow
+    - Now from the action tab I can run the manual work flow
     
         ![Alt text](imgs/2.png)
 
 2. Gather System Information:
-   - Modify the  workflow to include an additional step for gathering system information by adding the following to the jobs in `manual_action_test.yml` 
+   - Modified the  workflow to include an additional step for gathering system information by   adding the following to the jobs in `manual_action_test.yml` 
         ```yaml
         gather_info:
                 runs-on: ubuntu-latest
@@ -92,3 +92,5 @@
                             echo "Hardware: $(lscpu)"
                             echo "Memory: $(free -h)"
         ```
+        ![Alt text](imgs/3.png)
+        ![Alt text](imgs/4.png)
