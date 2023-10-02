@@ -30,3 +30,14 @@ jobs:
         steps:
             - name: Print the input tag to STDOUT
               run: echo  The tags are ${{ inputs.tags }} 
+
+    gather_info:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Gather system information
+              run: |
+                    echo "Runner info:"
+                    echo "OS: $(uname -a)"
+                    echo "Hardware: $(lscpu)"
+                    echo "Memory: $(free -h)"
+                                
