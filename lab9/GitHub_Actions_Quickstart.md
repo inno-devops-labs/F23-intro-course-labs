@@ -33,3 +33,21 @@
 4. Stage the files  ` git add .` commit, then push  ` git commit -m "msg` , `git push --set-upstream origin lab9`
 
 5. The action will be available in action tab in the repo
+
+6. after pushing some changes the workflow run automatically without any errors:
+
+     ![Alt text](imgs/1.png)
+
+
+ ## Task 2: Gathering System Information and Manual Triggering
+
+ 1. Configure a Manual Trigger:
+   - Extend your existing GitHub Actions workflow to include a [manual trigger](https://docs.github.com/en/actions/using-workflows/triggering-a-workflow#defining-inputs-for-manually-triggered-workflows).
+   - We don't need inputs for manually triggered workflows you can skip them.
+   - Document the changes made to the workflow file in the same "GitHub_Actions_Quickstart.md" file.
+   - Check the guide on how to manually run the workflow using the [official documentation](https://docs.github.com/en/actions/using-workflows/manually-running-a-workflow) if you face any issue.
+
+2. Gather System Information:
+   - Modify your workflow to include an additional step for gathering system information.
+   - Use the appropriate actions and steps to collect information about the runner, hardware specifications, and operating system details.
+   - Document the changes made to the workflow file and the gathered system information in the same "GitHub_Actions_Quickstart.md" file.
