@@ -23,5 +23,4 @@ jobs:
             df -h
       - name: OS Information
         run:
-            lsb_release -a
-            
+            lsb_release -a 
