@@ -73,12 +73,11 @@
       - `docker cp index.html nginx_container:/usr/share/nginx/html`
 
    4. Create Custom Image:
-      - Create a custom Docker image from the running container and name it "my_website".
-      and tag the container with the "latest" tag: `docker commit nginx_container my_website:latest`
+      - Create a custom Docker image from the running container and name it "my_website" and tag the container with the "latest" tag: `docker commit nginx_container my_website:latest`
 
 
    5. Remove Original Container:
-      - Remove the original container (nginx_container) `ocker rm -f nginx_container`
+      - Remove the original container (nginx_container) `docker rm -f nginx_container`
       - verify that it has been successfully removed: `docker ps` 
 
    6. Create New Container:
