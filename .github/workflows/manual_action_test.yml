@@ -1,5 +1,5 @@
 name:  manual  
-run-name: ${{ github.actor }} is manual Actions 🚀
+run-name: ${{ github.actor }} is testing manual Actions 🚀
 
 on:
     workflow_dispatch:

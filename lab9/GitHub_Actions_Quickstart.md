@@ -42,12 +42,43 @@
  ## Task 2: Gathering System Information and Manual Triggering
 
  1. Configure a Manual Trigger:
-   - Extend your existing GitHub Actions workflow to include a [manual trigger](https://docs.github.com/en/actions/using-workflows/triggering-a-workflow#defining-inputs-for-manually-triggered-workflows).
-   - We don't need inputs for manually triggered workflows you can skip them.
-   - Document the changes made to the workflow file in the same "GitHub_Actions_Quickstart.md" file.
-   - Check the guide on how to manually run the workflow using the [official documentation](https://docs.github.com/en/actions/using-workflows/manually-running-a-workflow) if you face any issue.
-
+    - I added another YAML file called `manual_action_test.yml`
+        that contains the following lines :
+        ```yaml
+        name:  manual  
+        run-name: ${{ github.actor }} is testing manual Actions 🚀
+        on:
+            workflow_dispatch:
+            inputs:
+                logLevel:
+                description: 'Log level'
+                required: true
+                default: 'warning'
+                type: choice
+                options:
+                    - info
+                    - warning
+                    - debug
+                print_tags:
+                description: 'True to print to STDOUT'
+                required: true
+                type: boolean
+                tags:
+                description: 'Test scenario tags'
+                required: true
+                type: string
+        jobs:
+            print-tag:
+                runs-on: ubuntu-latest
+                if:  ${{ inputs.print_tags }} 
+                steps:
+                    - name: Print the input tag to STDOUT
+                    run: echo  The tags are ${{ inputs.tags }} 
+        ```
+    - Now from the action tab I can the manual work flow
+    
 2. Gather System Information:
    - Modify your workflow to include an additional step for gathering system information.
+
    - Use the appropriate actions and steps to collect information about the runner, hardware specifications, and operating system details.
    - Document the changes made to the workflow file and the gathered system information in the same "GitHub_Actions_Quickstart.md" file.
