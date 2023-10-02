@@ -1,7 +1,5 @@
 ## Task 2: Image and Container Operations
 
-
-
 1. Create Image Archive:
    - Pull the latest Ubuntu image `sudo docker pull ubuntu:latest`
         - Output: 
@@ -15,8 +13,6 @@
    - Create an archive file from it: 
    - Compare the size of the archive file with the size of the original image. 
    
-
-
 2. Run Nginx Container:
    1. Document the output of all the commands in the tasks, along with your findings and observations.
    2. Use the appropriate command to run a container using the Nginx web server image:
