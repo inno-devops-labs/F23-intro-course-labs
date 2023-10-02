@@ -29,3 +29,7 @@
             ls ${{ github.workspace }}
         - run: echo "🍏 This job's status is ${{ job.status }}."
     ```
+
+4. Stage the files  ` git add .` commit, then push  ` git commit -m "msg` , `git push --set-upstream origin lab9`
+
+5. The action will be available in action tab in the repo
