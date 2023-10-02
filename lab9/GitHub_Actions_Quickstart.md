@@ -77,8 +77,18 @@
         ```
     - Now from the action tab I can the manual work flow
     
-2. Gather System Information:
-   - Modify your workflow to include an additional step for gathering system information.
+        ![Alt text](imgs/2.png)
 
-   - Use the appropriate actions and steps to collect information about the runner, hardware specifications, and operating system details.
-   - Document the changes made to the workflow file and the gathered system information in the same "GitHub_Actions_Quickstart.md" file.
+2. Gather System Information:
+   - Modify the  workflow to include an additional step for gathering system information by adding the following to the jobs in `manual_action_test.yml` 
+        ```yaml
+        gather_info:
+                runs-on: ubuntu-latest
+                steps:
+                    - name: Gather system information
+                    run: |
+                            echo "Runner info:"
+                            echo "OS: $(uname -a)"
+                            echo "Hardware: $(lscpu)"
+                            echo "Memory: $(free -h)"
+        ```

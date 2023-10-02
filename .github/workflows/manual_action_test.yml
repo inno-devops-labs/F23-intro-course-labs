@@ -40,4 +40,3 @@ jobs:
                     echo "OS: $(uname -a)"
                     echo "Hardware: $(lscpu)"
                     echo "Memory: $(free -h)"
-                                
