@@ -40,9 +40,10 @@
     }
     }
     ```
-6. `terraform apply`
-7. Go to [localhost:8000](localhost:8000) to verify the existence of the NGINX container.
-8. `docker ps` 
+6. `terraform init`
+7. `terraform apply`
+8. Go to [localhost:8000](localhost:8000) to verify the existence of the NGINX container.
+9. `docker ps` 
    
    ```bash
     CONTAINER ID   IMAGE          COMMAND                  CREATED         STATUS         PORTS                  NAMES
