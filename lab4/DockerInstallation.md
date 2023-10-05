@@ -9,7 +9,7 @@ Install Docker using pip:
 ```
 pip install docker
 ```
-Now as we have downloaded docker python package we can Verify the installation and get the version number of Docker by running as follow:
+Now as we have downloaded docker python package we can Verify the installation and get the version number of Docker by running the follwoing code:
    ```
 >>> python3
 >>> import docker
