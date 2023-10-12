@@ -192,13 +192,14 @@ We should be apply now to check that it is working via port 8080 rather than 80.
     sudo terraform apply
     sudo docker ps
 	Output (for both):
-		container_id = "9b035afe75f6648f9edd91cb45b8b016e15df48a5c96e9f91b22d08fd60e9a0" 
-		image_id = "sha256:78496b5c684db4b8b3b7ea914ea9a669e884dfdd9f769ff4c2b0f4671bafaa0nginx:latest"
+	Apply complete! Resources: 0 added, 0 changed, 0 destroyed.
 
-	CONTAINER ID     IMAGE        COMMAND                  CREATED               STATUS               PORTS                   	NAMES
-	9b035afe75f7     78496b5c684e "/docker-entrypoint.…"   About a minute ago    Up About a minute    	0.0.0.0:8080->80/tcp    NewNginxContainer
+	Outputs:
 
-
+	container_id = "ac67bda637767395a46f82666c3d53f3dd5de12af620d280601bf3c535a1846e"
+	image_id = "sha256:bc649bab30d150c10a84031a7f54c99a8c31069c7bc324a7899d7125d59cc973nginx"
+	CONTAINER ID   IMAGE          COMMAND                  CREATED         STATUS         PORTS                  NAMES
+	ac67bda63776   bc649bab30d1   "/docker-entrypoint.…"   4 minutes ago   Up 4 minutes   0.0.0.0:8080->80/tcp   ExampleNginxContainer
 ## Infrastructure Removal
 
 - To dismantle the deployed infrastructure, execute the command below:
