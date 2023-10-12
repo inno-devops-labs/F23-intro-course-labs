@@ -1,3 +1,4 @@
+
 # Terraform and Nginx Deployment Instructions
 
 ## Preliminary Steps
@@ -90,6 +91,21 @@
     ```bash
     terraform init (root required)
     terraform apply (root required)
+
+	Output:
+		docker_image.nginx: Creating...
+		docker_image.nginx: Still creating... [10s elapsed]
+		docker_image.nginx: Still creating... [20s elapsed]
+		docker_image.nginx: Creation complete after 26s 		
+		[id=sha256:bc649bab30d150c10a84031a7f54c99a8c31069c7bc324a7899d7125d59cc973nginx:latest]
+		docker_container.nginx: Creating...
+		docker_container.nginx: Creation complete after 10s 		
+		[id=77c327575c808656daf0eb0603399f1271d43ec48a628930493c556c4aa2081b]
+
+		Apply complete! Resources: 2 added, 0 changed, 0 destroyed.
+		container_id = "77c327575c808656daf0eb0603399f1271d43ec48a628930493c556c4aa2081b"
+		image_id = "sha256:bc649bab30d150c10a84031a7f54c99a8c31069c7bc324a7899d7125d59cc973nginx:latest"
+
     ```
 
 ### 4. Nginx Verification
