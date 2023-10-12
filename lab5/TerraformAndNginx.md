@@ -33,4 +33,18 @@ on linux_amd64
 
 ## Build infrastructure.
 
-In created directory i have created main.tf file and fill it with configuration
+In created directory i have created main.tf file and fill it with configuration. Using ``` terraform init ``` command, i have initialized my directory.
+Now i can validate configuration using command:
+
+```
+terraform validate
+```
+
+and then i got message:
+
+```
+Success! The configuration is valid.
+```
+
+After ``` terraform apply ``` 
+
