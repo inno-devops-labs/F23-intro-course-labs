@@ -93,19 +93,19 @@
     terraform apply (root required)
 
 	Output:
-		docker_image.nginx: Creating...
-		docker_image.nginx: Still creating... [10s elapsed]
-		docker_image.nginx: Still creating... [20s elapsed]
-		docker_image.nginx: Creation complete after 26s 		
-		[id=sha256:bc649bab30d150c10a84031a7f54c99a8c31069c7bc324a7899d7125d59cc973nginx:latest]
-		docker_container.nginx: Creating...
-		docker_container.nginx: Creation complete after 10s 		
+		docker_container.nginx: Destroying... 
 		[id=77c327575c808656daf0eb0603399f1271d43ec48a628930493c556c4aa2081b]
+		docker_container.nginx: Destruction complete after 2s
+		docker_container.nginx: Creating...
+		docker_container.nginx: Creation complete after 2s 	
+		[id=b065b4a74d4274521547da52cb7da2347e6fe776b35ab9191a4cf48281a369fc]
 
-		Apply complete! Resources: 2 added, 0 changed, 0 destroyed.
-		container_id = "77c327575c808656daf0eb0603399f1271d43ec48a628930493c556c4aa2081b"
-		image_id = "sha256:bc649bab30d150c10a84031a7f54c99a8c31069c7bc324a7899d7125d59cc973nginx:latest"
+		Apply complete! Resources: 1 added, 0 changed, 1 destroyed.
 
+		Outputs:
+
+	container_id = "b065b4a74d4274521547da52cb7da2347e6fe776b35ab9191a4cf48281a369fc"
+	image_id = "sha256:bc649bab30d150c10a84031a7f54c99a8c31069c7bc324a7899d7125d59cc973nginx:latest"
     ```
 
 ### 4. Nginx Verification
@@ -116,8 +116,9 @@
     ```bash
     sudo docker ps
     Output:
-    CONTAINER ID   IMAGE          COMMAND                  CREATED         STATUS         PORTS                  NAMES
-	77c327575c80   bc649bab30d1   "/docker-entrypoint.…"   5 minutes ago   Up 4 minutes   0.0.0.0:8080->80/tcp   ExampleNginxContainer
+    CONTAINER ID   IMAGE          COMMAND                  CREATED              STATUS              PORTS                  NAMES
+	b065b4a74d42   bc649bab30d1   "/docker-entrypoint.…"   About a minute ago   Up About a minute   0.0.0.0:8000->80/tcp   ExampleNginxContainer
+
 
     ```
 
@@ -127,6 +128,19 @@
 - We can easily Alter the external port to 8080 in `main.tf`, then re-apply the configuration:
     ```bash
     sudo terraform apply
+    Output:
+    docker_container.nginx: Destroying... 	
+    [id=b065b4a74d4274521547da52cb7da2347e6fe776b35ab9191a4cf48281a369fc]
+	docker_container.nginx: Destruction complete after 1s
+	docker_container.nginx: Creating...
+	docker_container.nginx: Creation complete after 3s 
+	[id=be48602d358d9613bc27d8e67e8f7c68ab1742afccc7afc4436f816a27f34423]
+	Apply complete! Resources: 1 added, 0 changed, 1 destroyed.
+
+	Outputs:
+
+	container_id = "be48602d358d9613bc27d8e67e8f7c68ab1742afccc7afc4436f816a27f34423"
+	image_id = "sha256:bc649bab30d150c10a84031a7f54c99a8c31069c7bc324a7899d7125d59cc973nginx:latest"
     ```
 
 ### 2. Variable Implementation
