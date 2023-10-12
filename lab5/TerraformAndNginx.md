@@ -111,19 +111,11 @@
     terraform apply (root required)
 
 	Output:
-		docker_container.nginx: Destroying... 
-		[id=77c327575c808656daf0eb0603399f1271d43ec48a628930493c556c4aa2081b]
-		docker_container.nginx: Destruction complete after 2s
 		docker_container.nginx: Creating...
-		docker_container.nginx: Creation complete after 2s 	
-		[id=b065b4a74d4274521547da52cb7da2347e6fe776b35ab9191a4cf48281a369fc]
+		docker_container.nginx: Creation complete after 3s 
+		[id=33f8e4232323a7d7c4e4d5add61c3eacd2d6821a540d84ec3aff8d37b4977c64]
 
-		Apply complete! Resources: 1 added, 0 changed, 1 destroyed.
-
-		Outputs:
-
-	container_id = "b065b4a74d4274521547da52cb7da2347e6fe776b35ab9191a4cf48281a369fc"
-	image_id = "sha256:bc649bab30d150c10a84031a7f54c99a8c31069c7bc324a7899d7125d59cc973nginx:latest"
+		Apply complete! Resources: 1 added, 0 changed, 0 destroyed.
     ```
 
 ### 4. Nginx Verification
@@ -134,10 +126,8 @@
     ```bash
     sudo docker ps
     Output:
-    CONTAINER ID   IMAGE          COMMAND                  CREATED              STATUS              PORTS                  NAMES
-	b065b4a74d42   bc649bab30d1   "/docker-entrypoint.…"   About a minute ago   Up About a minute   0.0.0.0:8000->80/tcp   ExampleNginxContainer
-
-
+	CONTAINER ID   IMAGE          COMMAND                  CREATED          STATUS          PORTS                  NAMES
+	33f8e4232323   bc649bab30d1   "/docker-entrypoint.…"   50 seconds ago   Up 47 seconds   0.0.0.0:8000->80/tcp   ExampleNginxContainer
     ```
 
 ## Advanced Terraform Features
