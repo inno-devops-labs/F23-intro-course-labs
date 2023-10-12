@@ -1,4 +1,5 @@
 
+
 # Terraform and Nginx Deployment Instructions
 
 ## Preliminary Steps
@@ -142,6 +143,8 @@
 	container_id = "be48602d358d9613bc27d8e67e8f7c68ab1742afccc7afc4436f816a27f34423"
 	image_id = "sha256:bc649bab30d150c10a84031a7f54c99a8c31069c7bc324a7899d7125d59cc973nginx:latest"
     ```
+
+We should be apply now to check that it is working via port 8080 rather than 80.
 
 ### 2. Variable Implementation
 - Generate a `variables.tf` file, and adjust `main.tf` to utilize a variable for the container name:
