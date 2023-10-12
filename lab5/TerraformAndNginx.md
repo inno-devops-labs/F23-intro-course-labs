@@ -12,7 +12,7 @@
     ```
 
 ### 3. GPG Key Configuration
-- We Download the GPG key for Terraform and add it to your system's keyring with the following commands:
+- We Download the GPG key for Terraform and add it to the system's keyring with the following commands:
     ```bash
     wget -O- https://apt.releases.hashicorp.com/gpg | \
     gpg --dearmor | \
@@ -79,7 +79,7 @@
     ```
 
 ### 4. Nginx Verification
-- We can then Visit `localhost:8000` in your web browser to confirm the Nginx server is operational.
+- We can then Visit `localhost:8000` in the web browser to confirm the Nginx server is operational.
 
 ### 5. Docker Container Inspection
 - we then Execute the command below to view the running Docker container:
