@@ -125,4 +125,4 @@ image_id = "sha256:bc649bab30d150c10a84031a7f54c99a8c31069c7bc324a7899d7125d59cc
 ## Conclusions and trobles
 
 I have finished terraform tutorial and now know more about IaC. I got stuck at some chapters due to didn't understand that i shoud have used VPN to get access to gcg key.
-L. eaded by tutorial a have created ``` variables.tf``` fileLea
+
