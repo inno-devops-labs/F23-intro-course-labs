@@ -115,6 +115,10 @@
 - we then Execute the command below to view the running Docker container:
     ```bash
     sudo docker ps
+    Output:
+    CONTAINER ID   IMAGE          COMMAND                  CREATED         STATUS         PORTS                  NAMES
+	77c327575c80   bc649bab30d1   "/docker-entrypoint.…"   5 minutes ago   Up 4 minutes   0.0.0.0:8080->80/tcp   ExampleNginxContainer
+
     ```
 
 ## Advanced Terraform Features
