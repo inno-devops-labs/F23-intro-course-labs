@@ -82,8 +82,8 @@
 ### 2. Configuration Verification
 - Validate the Terraform configuration:
     ```bash
-    terraform fmt
     terraform validate
+    Output: Success! The configuration is valid.
     ```
 
 ### 3. Initialization and Application
