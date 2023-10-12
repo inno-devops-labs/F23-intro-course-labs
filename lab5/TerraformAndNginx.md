@@ -44,7 +44,8 @@
     ```bash
     terraform -version
     ```
-    Output: ``` v1.6.0```
+    Output: ``` Terraform v1.6.1
+	on linux_amd64 ```
 
 ## Nginx Deployment Using Terraform
 
