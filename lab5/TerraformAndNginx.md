@@ -19,6 +19,19 @@
     sudo tee /usr/share/keyrings/hashicorp-archive-keyring.gpg > /dev/null
     ```
 
+  Veryifiy Downlaoding with:
+  ```
+	  gpg --no-default-keyring \
+	--keyring /usr/share/keyrings/hashicorp-archive-keyring.gpg \
+	--fingerprint
+	/usr/share/keyrings/hashicorp-archive-keyring.gpg
+	-------------------------------------------------
+	pub   rsa4096 2023-01-10 [SC] [expires: 2028-01-09]
+ 	     798A EC65 4E5C 1542 8C8E  42EE AA16 FCBC A621 E701
+	uid           [ unknown] HashiCorp Security (HashiCorp Package Signing) <security+packaging@hashicorp.com>
+	sub   rsa4096 2023-01-10 [S] [expires: 2028-01-09]
+  ```
+
 ### 4. Terraform Installation
 - We Updated the package list and install Terraform:
     ```bash
