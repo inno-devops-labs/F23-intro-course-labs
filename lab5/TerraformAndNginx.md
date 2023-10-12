@@ -137,18 +137,19 @@
     ```bash
     sudo terraform apply
     Output:
-    docker_container.nginx: Destroying... 	
-    [id=b065b4a74d4274521547da52cb7da2347e6fe776b35ab9191a4cf48281a369fc]
-	docker_container.nginx: Destruction complete after 1s
-	docker_container.nginx: Creating...
-	docker_container.nginx: Creation complete after 3s 
-	[id=be48602d358d9613bc27d8e67e8f7c68ab1742afccc7afc4436f816a27f34423]
-	Apply complete! Resources: 1 added, 0 changed, 1 destroyed.
+	    docker_container.nginx: Destroying... 
+	    [id=33f8e4232323a7d7c4e4d5add61c3eacd2d6821a540d84ec3aff8d37b4977c64]
+		docker_container.nginx: Destruction complete after 2s
+		docker_container.nginx: Creating...
+		docker_container.nginx: Creation complete after 3s 	
+		[id=ac67bda637767395a46f82666c3d53f3dd5de12af620d280601bf3c535a1846e]
 
-	Outputs:
+		Apply complete! Resources: 1 added, 0 changed, 1 destroyed.
 
-	container_id = "be48602d358d9613bc27d8e67e8f7c68ab1742afccc7afc4436f816a27f34423"
-	image_id = "sha256:bc649bab30d150c10a84031a7f54c99a8c31069c7bc324a7899d7125d59cc973nginx:latest"
+	docker ps
+	output:
+	CONTAINER ID   IMAGE          COMMAND                  CREATED          STATUS          PORTS                  NAMES
+	ac67bda63776   bc649bab30d1   "/docker-entrypoint.…"   58 seconds ago   Up 54 seconds   0.0.0.0:8080->80/tcp   ExampleNginxContainer
     ```
 
 We should be apply now to check that it is working via port 8080 rather than 80.
