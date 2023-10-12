@@ -44,8 +44,11 @@
 4. **Accessing Nginx**:
    The Nginx container should be accessible via the browser at `http://localhost:8080`.
 
-5. **Destroying the Infrastructure** (Optional):
-   If you wish to clean up, you can run:
+5. **Modifications**:
+   I made a change in the main.tf file to modify the external port mapping from 8080 to 8000. After making the changes, I ran terraform apply again to apply the modifications. Now, the Nginx container is accessible at `http://localhost:8000`.
+
+6. **Destroying the Infrastructure**:
+   To clean up, I run:
    ```bash
    terraform destroy
    ```
