@@ -49,7 +49,7 @@ traceroute to gmail.com (64.233.161.18), 30 hops max, 60 byte packets
 
 - I ran `dig` utility for dns lookup that comes with `dnsutils` package in ubuntu.
 
-- I did a lookup on the domain `github.com`
+- I did a lookup on the domain `github.com` using `dig github.com`.
 
 **Output:**
 
