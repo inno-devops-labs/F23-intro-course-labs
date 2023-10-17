@@ -4,7 +4,7 @@
 
 - I used `traceroute` command for analysing the network path from my machine to `gmail.com`.
 
-- The command i ran was: ```bash traceroute gmail.com```
+- The command i ran was: `traceroute gmail.com`
 
 **Output:**
 

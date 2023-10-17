@@ -3,7 +3,7 @@
 
 ## 1. Disk Space Analysis:
 
-- Command I used for disk space analyis is ```bash df -h```. `h` flag is used for giving more human readable form.
+- Command I used for disk space analyis is `df -h`. `-h` flag is used for giving more human readable form.
 
 - Output is the filesystems, total storage, used and available storage, used percentage and the mount point.
 
@@ -28,7 +28,7 @@ tmpfs           7.8G     0  7.8G   0% /sys/fs/cgroup
 
 ## 2. Inodes Analysis:
 
-- Command that I used for inodes analyis is ```bash df -i```. If we use `-ih` flag, the output is more human readable.
+- Command that I used for inodes analyis is `df -i`. If we use `-ih` flag, the output is more human readable.
 
 **Output:**
 ```
