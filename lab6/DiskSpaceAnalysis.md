@@ -22,6 +22,10 @@ tmpfs           7.8G     0  7.8G   0% /sys/fs/cgroup
 
 ```
 
+**Observations:**
+- It seems like i have only 1.9 GB of memory left on root and i need to optimize storage.
+
+
 ## 2. Inodes Analysis:
 
 - Command that I used for inodes analyis is ```bash df -i```. If we use `-ih` flag, the output is more human readable.
@@ -38,12 +42,17 @@ tmpfs            2.0M    19  2.0M    1% /sys/fs/cgroup
 /dev/loop0         29    29     0  100% /snap/bare/5
 ```
 
+**Observations:**
+- The root filesystem `/dev/nvme0n1p1` has used 9% of its available inodes, with 1.4M used out of 15M.
+
+- Most other filesystems, such as udev, tmpfs, and some system-specific mounts, are barely utilizing their inodes at only 1%.
+
 ## 3. Resource Consumption Analysis:
 
 - Linux (Ubuntu) has a pre-installed utility called `top` for assessing compute and memory requirements.
 - There is another wrapper `htop` that is more user friendly. However, the output of `top` is as follows:
 
-**Output:**:
+**Output:**
 ```
 top - 22:47:32 up 6 days,  8:22,  1 user,  load average: 1.38, 1.45, 1.38
 Tasks: 501 total,   1 running, 500 sleeping,   0 stopped,   0 zombie
