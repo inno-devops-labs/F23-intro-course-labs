@@ -9,7 +9,7 @@
 
 - The most important one is the `/dev/root` mountpoint that is actually mounted on `/`.
 
-**Output**
+**Output:**
 ```
 Filesystem      Size  Used Avail Use% Mounted on
 udev            7.8G     0  7.8G   0% /dev
@@ -26,7 +26,7 @@ tmpfs           7.8G     0  7.8G   0% /sys/fs/cgroup
 
 - Command that I used for inodes analyis is ```bash df -i```. If we use `-ih` flag, the output is more human readable.
 
-**Output**
+**Output:**
 ```
 Filesystem     Inodes IUsed IFree IUse% Mounted on
 udev             2.0M   703  2.0M    1% /dev
@@ -43,6 +43,7 @@ tmpfs            2.0M    19  2.0M    1% /sys/fs/cgroup
 - Linux (Ubuntu) has a pre-installed utility called `top` for assessing compute and memory requirements.
 - There is another wrapper `htop` that is more user friendly. However, the output of `top` is as follows:
 
+**Output:**:
 ```
 top - 22:47:32 up 6 days,  8:22,  1 user,  load average: 1.38, 1.45, 1.38
 Tasks: 501 total,   1 running, 500 sleeping,   0 stopped,   0 zombie
@@ -69,3 +70,15 @@ MiB Swap:  16384.0 total,  13721.6 free,   2662.4 used.   3863.8 avail Mem
  540624 usman     20   0 6947000 208764  50096 S   0.3   1.3   1:56.85 WebExtensions                                       
  662069 usman     20   0 2571800 186188 100620 S   0.3   1.1   0:49.59 Isolated Web Co    
  ```
+
+**Observations:**
+
+- A significant portion of the CPU is idle (90.9%).
+
+- RAM utilization is quite high with only 599.6 MiB free out of 15850.3 MiB. However, a good portion is used as buffer/cache which the system can release if needed.
+
+- Swap space is being used (2662 MB) but there's still a good amount of free swap left (13721 MB).
+
+- The process "Isolated Web Co" is consuming the highest CPU at 30.2% followed by firefox (21.9% CPU and 3.3% RAM. (PID: 540529))
+
+- The process "gnome-shell" is consuming the most RAM at 4.2%.
