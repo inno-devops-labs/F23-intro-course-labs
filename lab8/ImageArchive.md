@@ -1,6 +1,7 @@
 # Image and Container Operations
 
-To create an image archive, follow these steps:
+## Create Image Archive:
+To create an image archive
 
 1. Pull the latest Ubuntu image:
    ```
@@ -11,8 +12,6 @@ To create an image archive, follow these steps:
    ```
    docker save ubuntu:latest -o ubuntu_image.tar
    ```
-
-3. Document the commands used in a Markdown file named "ImageArchive.md" in the lab folder.
 
 To compare the size of the archive file with the original image, use the following command:
 ```
