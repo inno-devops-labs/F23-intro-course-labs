@@ -20,5 +20,6 @@
 - Then i imported ubuntu iso image and started my machine by clicking on `start` button.
 
 
+![Screenshot from 2023-10-26 02-01-10](https://github.com/uahmad235/intro-course-labs/assets/30628125/b93fe8b0-2906-465d-9ae4-90a39e56521b)
 
 
