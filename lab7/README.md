@@ -20,7 +20,7 @@ In this lab, you will learn how to deploy a Virtual Machine (VM) using VirtualBo
 
 To earn an additional 4 points, follow these steps to discover suitable tools for displaying system information:
 
-1. Processor, RAM, and Network Information:
+1. Processor, RAM, and Network Hardware Information:
    - Research and discover a suitable command-line tool for displaying processor, RAM, and network information separately.
    - Install the tool on your VM if needed.
    - Use the tool to display the processor, RAM, and network information of the VM but separately, can be the same command with different flags.
