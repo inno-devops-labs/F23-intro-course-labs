@@ -10,4 +10,6 @@ I created a new Virtual Machine (VM) using VirtualBox. For this setup, I chose t
 - Allocated `2 CPU cores`.
 - Network configuration was set to use my wired connection directly without any additional configuration.
 
+The image below demonstrates the running system and the configuration side by side.
+
 ![278174422-92cbea10-705b-4a2a-8cc6-eac379e10ab3](https://github.com/AhmadTaha96/intro-course-labs/assets/91129320/98e5bbc3-3ad4-4a22-a119-43b13051947f)
