@@ -54,7 +54,7 @@ This document provides a summary of the various command-line tools used to gathe
 ![installing net](https://github.com/AhmadTaha96/intro-course-labs/assets/91129320/76bdbf57-d9df-4edf-95b7-19b1d11c19cc)
 
 ### ifconfig
-- The `ifconfig` command, part of the net-tools package, displays network interface configuration and allows you to configure them.
+- The `ifconfig` command, part of the net-tools package, displays network interface configuration and allows us to configure them.
 - Command used: `ifconfig`
 
 ![ifc](https://github.com/AhmadTaha96/intro-course-labs/assets/91129320/857a1e5c-6a85-4fcf-a6fb-a716f12c6e35)
