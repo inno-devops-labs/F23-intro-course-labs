@@ -17,7 +17,7 @@
 
 #### Step 2: Customize VM Settings
 
-- Allocate memory: I allocated 4096 MB of RAM to the VM.
+- Allocate memory: I allocated 8 GB of RAM to the VM.
 - Number of CPU cores: I allocated 4 cores to the VM.
 - Allocate storage: I allocated 5 GB of Storage to the VM.
 
