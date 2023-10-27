@@ -3,13 +3,13 @@
 ### AWS
 1. **AWS Elastic Container Registry (ECR)**
    - Managed Docker container registry
-   - Easily store, manage, and deploy Docker container images
+   - Easily stores, manages, and deploys Docker container images
    - Integrated with Amazon ECS
 
 2. **AWS CodeArtifact**
    - Managed software artifact repository service
-   - Integrate with AWS CodeBuild, CodeDeploy, and other CI/CD tools
-   - Support for npm, Maven, and PyPI packages
+   - Integrated with AWS CodeBuild, CodeDeploy, and other CI/CD tools
+   - Supports for npm, Maven, and PyPI packages
 
 ### GCP (Google Cloud Platform)
 1. **Google Cloud Artifact Registry**
@@ -24,22 +24,20 @@
 
 ### Azure
 1. **Azure Container Registry**
-   - Store and manage container images across all types of Azure deployments
-   - Use Azure DevOps for streamlined CI/CD
+   - Stores and manages container images across all types of Azure deployments
+   - Uses Azure DevOps for streamlined CI/CD
    - Geo-replication enables global distribution
 
 2. **Azure Artifacts**
    - Integrated artifact management for Visual Studio, Azure DevOps
-   - Store and share Maven, npm, and NuGet package feeds
-   - Use in CI/CD pipelines
-
----
+   - Stores and shares Maven, npm, and NuGet package feeds
+   - Used in CI/CD pipelines
 
 # Rask 2 - Serverless Computing Platform Research
 
 ### AWS
 1. **AWS Lambda**
-   - Run code without provisioning or managing servers
+   - Runs code without provisioning or managing servers
    - Automatically scales application
    - Supports several coding languages: Python, Java, Ruby, etc.
 
@@ -56,16 +54,16 @@
 
 2. **Google Cloud Run**
    - Fully managed compute platform
-   - Deploy and manage containers
+   - Deploys and manages containers
    - Auto-scales and abstracts infrastructure management
 
 ### Azure
 1. **Azure Functions**
    - Event-driven serverless compute platform
-   - Develop using favorite IDE or command line
+   - Allows developing using favorite IDE or command line
    - Supports a variety of programming languages
 
 2. **Azure Logic Apps**
-   - Create workflows integrated with Azure services and other external systems
-   - Use a GUI for development
+   - Creates workflows integrated with Azure services and other external systems
+   - Uses a GUI for development
    - Event-driven, scalable executions.
