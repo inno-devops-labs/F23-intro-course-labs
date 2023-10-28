@@ -1,86 +1,186 @@
 # Image and Container Operations
 
-## Create Image Archive:
-To create an image archive
+## Create Image Archive
 
-1. Pull the latest Ubuntu image:
-   ```
-   docker pull ubuntu:latest
-   ```
-
-2. Create an archive file from the image:
-   ```
-   docker save ubuntu:latest -o ubuntu_image.tar
-   ```
-
-To compare the size of the archive file with the original image, use the following command:
+### Pull the latest Ubuntu image
+```bash
+docker pull ubuntu:latest
 ```
-ls -lh ubuntu_image.tar
-docker image inspect --format='{{.Size}}' ubuntu:latest
+
+output:
 ```
-Explain any differences, if present, in the "ImageArchive.md" file. Differences can occur due to compression and storage formats used in the archive file.
+latest: Pulling from library/ubuntu
+Digest: sha256:2b7412e6465c3c7fc5bb21d3e6f1917c167358449fecac8176c6e496e5c1f05f
+Status: Image is up to date for ubuntu:latest
+docker.io/library/ubuntu:latest
+```
 
-To run an Nginx container, execute these steps:
+### Save the image to an archive file
+```bash
+docker save ubuntu:latest > ubuntu_latest.tar
+```
 
-1. Run the container using the Nginx web server image:
-   ```
-   docker run -d -p 80:80 --name nginx_container nginx
-   ```
+### Size Comparison
+- Check the size of the Docker image:
+  ```bash
+  docker image ls ubuntu:latest
+  ```
+- Check the size of the archive file:
+  ```bash
+  ls -lh ubuntu_latest.tar
+  ```
+- Output:
 
-2. Verify that the web server is running and accessible from the local machine by opening a web browser and visiting httpNO LINKSlocalhost.
+```
+user@user-HP-ProBook-430-G7:~$ sudo docker image ls ubuntu:latest
+REPOSITORY   TAG       IMAGE ID       CREATED       SIZE
+ubuntu       latest    e4c58958181a   3 weeks ago   77.8MB
 
-To create an HTML file and copy it to the container:
+user@user-HP-ProBook-430-G7:~$ ls -lh ubuntu_latest.tar
+-rw-rw-r-- 1 user user 77M окт 28 15:27 ubuntu_latest.tar
+```
 
-1. Create an HTML file named "index.html" with the specified content.
+---
 
-2. Copy the HTML file to the container at the appropriate location:
-   ```
-   docker cp index.html nginx_container:/usr/share/nginx/html/
-   ```
+## Run Nginx Container
 
-To create a custom Docker image from the running container:
+### Run an Nginx container
+```bash
+docker run --name nginx_container -p 80:80 -d nginx
+```
 
-1. Commit the container to a new image and name it "my_website":
-   ```
-   docker commit nginx_container my_website
-   ```
+Output:
 
-2. Tag the container with the "latest" tag:
-   ```
-   docker tag my_website:latest my_website:latest
-   ```
+```
+latest: Pulling from library/nginx
+a378f10b3218: Pull complete 
+5b5e4b85559a: Pull complete 
+508092f60780: Pull complete 
+59c24706ed13: Pull complete 
+1a8747e4a8f8: Pull complete 
+ad85f053b4ed: Pull complete 
+3000e3c97745: Pull complete 
+Digest: sha256:add4792d930c25dd2abf2ef9ea79de578097a1c175a16ab25814332fe33622de
+Status: Downloaded newer image for nginx:latest
+c2f9595f87221a3c3ab95a2d21c71efdce0e26667f1fa16c3a7d5f8f59400d03
+```
 
-To remove the original container:
+### Verify the web server
+```bash
+curl localhost
+```
 
-1. Remove the original container "nginx_container":
-   ```
-   docker rm -f nginx_container
-   ```
+- Output:
 
-2. Verify that it has been successfully removed:
-   ```
-   docker ps -a
-   ```
+```
+<!DOCTYPE html>
+<html>
+<head>
+<title>Welcome to nginx!</title>
+<style>
+html { color-scheme: light dark; }
+body { width: 35em; margin: 0 auto;
+font-family: Tahoma, Verdana, Arial, sans-serif; }
+</style>
+</head>
+<body>
+<h1>Welcome to nginx!</h1>
+<p>If you see this page, the nginx web server is successfully installed and
+working. Further configuration is required.</p>
 
-To create a new container using the custom image:
+<p>For online documentation and support please refer to
+<a href="http://nginx.org/">nginx.org</a>.<br/>
+Commercial support is available at
+<a href="http://nginx.com/">nginx.com</a>.</p>
 
-1. Run the new container using the custom image "my_website":
-   ```
-   docker run -d -p 80:80 --name new_container my_website
-   ```
+<p><em>Thank you for using nginx.</em></p>
+</body>
+</html>
+```
 
-To test the web server:
+---
 
-1. Use the curl command to access the web server at 127.0.0.1:80:
-   ```
-   curl 127.0.0.1:80
-   ```
+## Create HTML File
 
-To analyze the changes made to the new image:
+### Create an HTML file
+```html
+echo "<html><head><title>The best</title></head><body><h1>website</h1></body></html>" > index.html
+```
 
-1. Use the docker diff command to analyze the changes:
-   ```
-   docker diff new_container
-   ```
+### Copy the HTML file to the container
+```bash
+docker cp index.html nginx_container:/usr/share/nginx/html/
+```
 
-2. The output of the docker diff command displays the file system changes within the container. It shows added, modified, or deleted files compared to the base image.
+---
+
+## Create Custom Image
+
+### Commit the container to an image
+```bash
+docker commit nginx_container my_website:latest
+```
+Output: 
+
+```
+Successfully copied 2.05kB to nginx_container:/usr/share/nginx/html/
+```
+
+---
+
+## Remove Original Container
+
+### Remove the Nginx container
+```bash
+docker rm -f nginx_container
+```
+
+### Verify the container is removed
+```bash
+docker ps -a | grep nginx_container
+```
+
+---
+
+## Create New Container
+
+### Run a new container from the custom image
+```bash
+docker run --name new_nginx_container -p 80:80 -d my_website:latest
+```
+
+---
+
+## Test Web Server
+
+### Use the curl command
+```bash
+curl localhost
+```
+Output:
+
+```
+user@user-HP-ProBook-430-G7:~$ curl localhost
+<html><head><title>The best</title></head><body><h1>website</h1></body></html>
+```
+---
+
+## Analyze Image Changes
+
+### Use the docker diff command
+```bash
+docker diff new_nginx_container
+```
+
+- Output:
+
+```
+C /etc
+C /etc/nginx
+C /etc/nginx/conf.d
+C /etc/nginx/conf.d/default.conf
+C /run
+C /run/nginx.pid
+```
+
+---
