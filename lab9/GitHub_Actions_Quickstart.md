@@ -37,7 +37,7 @@ This lab done on windows.
 
 6. after pushing some changes the workflow run automatically without any errors:
 
-     ![Alt text](imgs/1.png)
+     ![Alt text](images/1.png)
 
 
  ## Task 2: Gathering System Information and Manual Triggering
