@@ -36,7 +36,7 @@ jobs:
         steps:
             - name: Gather system information
               run: |
-                    echo "Runner info:"
+                    echo "OS info:"
                     echo "OS: $(uname -a)"
-                    echo "Hardware: $(lscpu)"
-                    echo "Memory: $(free -h)"
+                    echo "CPU Info: $(lscpu)"
+                    echo "RAM Info: $(free -m)"

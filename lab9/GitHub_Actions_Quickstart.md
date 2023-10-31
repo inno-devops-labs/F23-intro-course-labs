@@ -78,20 +78,21 @@ This lab done on windows.
         ```
     - Now from the action tab I can run the manual work flow
     
-        ![Alt text](imgs/2.png)
+        ![Alt text](images/2.png)
 
 2. Gather System Information:
    - Modified the  workflow to include an additional step for gathering system information by   adding the following to the jobs in `manual_action_test.yml` 
         ```yaml
         gather_info:
-                runs-on: ubuntu-latest
-                steps:
-                    - name: Gather system information
-                    run: |
-                            echo "Runner info:"
-                            echo "OS: $(uname -a)"
-                            echo "Hardware: $(lscpu)"
-                            echo "Memory: $(free -h)"
+            runs-on: ubuntu-latest
+            steps:
+                - name: Gather system information
+                run: |
+                        echo "OS info:"
+                        echo "OS: $(uname -a)"
+                        echo "CPU Info: $(lscpu)"
+                        echo "RAM Info: $(free -m)"
         ```
-        ![Alt text](imgs/3.png)
-        ![Alt text](imgs/4.png)
+        ![Alt text](images/3.png)
+        ![Alt text](images/4.png)
+        ![Alt text](images/5.png)
