@@ -3,13 +3,13 @@
 
 ## Task 1: Create GitHub Actions Pipeline
 
-This lab done on windows.
+Following the official GitHub Actions quickstart guide.
 
-1. Created a .github/workflows directory in my repo
+1. Created a .github/workflows directory in this used repo
 
-2. In the .github/workflows directory, I created a file named `github-actions-demo.yml`.
+2. In the .github/workflows directory, create a file named `github-actions-demo.yml`.
 
-3. Then I Copied the following YAML contents into the `github-actions-demo.yml` file:
+3. Then Copied the following YAML from the quickstart guide  into the `github-actions-demo.yml` file:
      ```yaml
     name: GitHub Actions Demo
     run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
@@ -31,11 +31,11 @@ This lab done on windows.
         - run: echo "🍏 This job's status is ${{ job.status }}."
     ```
 
-4. Staged the files  ` git add .` commited, then pushed  ` git commit -m "msg` , `git push --set-upstream origin lab9`
+4. Staged the files  ` git add .` commited, ` git commit -m "workflow" ` , then pushed `git push --set-upstream origin lab9`
 
-5. Then action became available in action tab in the repo
+5. Then action became available in action tab in the repo in the actions tab in the github.
 
-6. after pushing some changes the workflow run automatically without any errors:
+6. Finally did some changes and push them , the workflow run automatically without any errors:
 
      ![Alt text](images/1.png)
 
@@ -43,8 +43,8 @@ This lab done on windows.
  ## Task 2: Gathering System Information and Manual Triggering
 
  1. Configure a Manual Trigger:
-    - I added another YAML file called `manual_action_test.yml`
-        that contains the following lines :
+    - Added the following YAML file  `manual_action_demo.yml`
+        with the following content  to the workflow directory:
         ```yaml
         name:  manual  
         run-name: ${{ github.actor }} is testing manual Actions 🚀
@@ -76,12 +76,13 @@ This lab done on windows.
                     - name: Print the input tag to STDOUT
                     run: echo  The tags are ${{ inputs.tags }} 
         ```
-    - Now from the action tab I can run the manual work flow
+    - Now from the action tab it's possible to run the manual work flow
     
         ![Alt text](images/2.png)
 
 2. Gather System Information:
-   - Modified the  workflow to include an additional step for gathering system information by   adding the following to the jobs in `manual_action_test.yml` 
+    - Modify the workflow by  including an additional step for gathering system information. add the following lines to the jobs in the 
+    `manual_action_demo.yml` file:
         ```yaml
         gather_info:
             runs-on: ubuntu-latest
@@ -93,6 +94,7 @@ This lab done on windows.
                         echo "CPU Info: $(lscpu)"
                         echo "RAM Info: $(free -m)"
         ```
-        ![Alt text](images/3.png)
-        ![Alt text](images/4.png)
-        ![Alt text](images/5.png)
+    ![Alt text](images/3.png)
+    ![Alt text](images/4.png)
+    - And the results for system information are:
+    ![Alt text](images/5.png)
