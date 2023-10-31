@@ -3,6 +3,7 @@
 
 ## Task 1: Create GitHub Actions Pipeline
 
+This lab done on windows.
 
 1. Created a .github/workflows directory in my repo
 
