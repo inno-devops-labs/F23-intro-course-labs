@@ -47,7 +47,7 @@ This command creates a new container named `test` from the `ubuntu:latest` image
 ## Attempt Remove Image
 Attempt to remove the Ubuntu image with the following command:
 ```
-docker rmi ubuntu:latest
+docker rmi e4d5895818a
 ```
 This command attempts to remove the `ubuntu:latest` image from my environment. If there are any running or stopped containers based on this image, the removal will fail, as indicated in the following output:
 
@@ -57,7 +57,7 @@ This command attempts to remove the `ubuntu:latest` image from my environment. I
 
 As the previous step failed due to existing containers, we can forcibly remove the image with the following command:
 
-`docker rmi -f ubuntu:latest` 
+`docker rmi -f e4d5895818a
 
 Output:
 
