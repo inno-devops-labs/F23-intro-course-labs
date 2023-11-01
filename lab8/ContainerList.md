@@ -57,7 +57,9 @@ This command attempts to remove the `ubuntu:latest` image from my environment. I
 
 As the previous step failed due to existing containers, we can forcibly remove the image with the following command:
 
-```docker rmi -f e4d5895818a```
+```
+docker rmi -f e4d5895818a
+```
 
 Output:
 
