@@ -57,10 +57,10 @@ This command attempts to remove the `ubuntu:latest` image from my environment. I
 
 As the previous step failed due to existing containers, we can forcibly remove the image with the following command:
 
-`docker rmi -f e4d5895818a
+```docker rmi -f e4d5895818a```
 
 Output:
 
 ![force remove](https://github.com/AhmadTaha96/intro-course-labs/assets/91129320/a1938e8a-71ac-4808-9f91-6d081ce43e20)
 
-This command forcibly removes the `ubuntu:latest` image from our environment, regardless of whether there are containers based on this image.
+This command forcibly removes the `ubuntu:latest` image from our environment, regardless of whether there are containers based on this image, or we can remove first the associated containers then remove it.
