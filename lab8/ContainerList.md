@@ -1,13 +1,13 @@
 
 # Task 1: Container Management
 
-1. List Containers:
+## 1. List Containers:
     - I used `docker ps -a` to list containers in environment and here's the output i got:
    ```
    CONTAINER ID   IMAGE                               COMMAND                  CREATED       STATUS                    PORTS 
    ```
 
-2. Pull Latest Ubuntu Image:
+## 2. Pull Latest Ubuntu Image:
     - I used `docker ps -a` to list containers in environment and here's the output i got:
    
     ```
@@ -19,10 +19,10 @@
     ```
    - The size of container is `77.8 MB`
 
-3. Run Container:
+## 3. Run Container:
     - I used `docker run -it --name devops ubuntu:latest` to run container. Because there is no foreground process since the default command is `/bin/bash`, it requires interactive model (the `-it` flag) to run.
     
-4. Remove Image:
+## 4. Remove Image:
     - I used `docker rmi image-id` command to remove container but it does not work because we have a container associated with it so it gives following error:
     ```
     Error response from daemon: conflict: unable to delete e4c58958181a (must be forced) - image is being used by stopped container d0573e947e07

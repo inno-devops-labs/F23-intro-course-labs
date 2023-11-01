@@ -1,7 +1,7 @@
 
 # Task 2: Image and Container Operations
 
-1. Create Image Archive:
+## 1. Create Image Archive:
    - Pulled image using:
       ```
       docker pull ubuntu:latest
@@ -19,7 +19,7 @@
       ```
      However, the difference between both sizes was almost unnoticeable. My understanding is that `docker save` did not compress the container because it was already very small or didn't have compression flexibility.
 
-2. Run Nginx Container:
+## 2. Run Nginx Container:
 
    - Here's the command for running `ngnix` container:
       ```
