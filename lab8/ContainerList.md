@@ -26,7 +26,7 @@ Output:
 
 
 ## Verify Pull
-To ensure that the Ubuntu image has been pulled successfully, we can list the images in your environment using the following command:
+To ensure that the Ubuntu image has been pulled successfully, we can list the images in our environment using the following command:
 ```
 docker images
 ```
