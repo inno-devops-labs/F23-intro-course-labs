@@ -46,3 +46,17 @@ After updating action configuration and merging changes to `main` branch there i
 ![manual workflow](./imgs/manual.PNG)
 
 ## Gather system information
+Add new job to existing workflow to print system information and push changes to repository:
+
+    Gather-System-Info:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Runner info - ${{ runner.os }}"
+      - run: echo "Hardware specifications - " && lshw -short
+      - run: echo "Operating system details - " && hostnamectl
+
+Output:
+![runner info](./imgs/sys1.PNG)
+![hardware info](./imgs/sys2.PNG)
+![os info](./imgs/sys3.PNG)
+
