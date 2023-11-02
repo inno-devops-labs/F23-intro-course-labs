@@ -18,7 +18,7 @@ docker save ubuntu:latest -o /home/ahmad/Desktop/docker-images/ubuntu.tar
 
 -   Docker Image size: `77.8 MB` using `docker images | grep ubuntu`
 -   Archive size: `77 MB` using `ls -lh ubuntu.tar` (in the same directory)
-The tiny difference in size may be due to metadata or file system overhead.
+The tiny difference in size may be due to metadata or file system overhead, but it's not worthy like there is no compressing of the image file.
 
 # Run Nginx Container
 ### Running the Container
