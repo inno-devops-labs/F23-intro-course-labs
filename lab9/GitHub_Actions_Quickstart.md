@@ -36,3 +36,13 @@ Clicking on the workflow run we can see the details of the workflow jobs and exp
 
 
 # Gathering System Information and Manual Triggering
+
+## Configure a manual trigger:
+To add a manual trigger append the workflow_dispatch option to the configuration file:
+
+    on: [push, workflow_dispatch]
+
+After updating action configuration and merging changes to `main` branch there is a button to run workflow manually.
+![manual workflow](./imgs/manual.PNG)
+
+## Gather system information

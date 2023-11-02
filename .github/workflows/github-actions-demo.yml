@@ -16,3 +16,10 @@ jobs:
         run: |
           ls ${{ github.workspace }}
       - run: echo "🍏 This job's status is ${{ job.status }}."
+  
+  Gather-System-Info:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Runner info - ${{ runner.os }}"
+      - run: echo "Hardware specifications - " && lshw -short
+      - run: echo "Operating system details - " && hostnamectl
