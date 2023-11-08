@@ -24,7 +24,7 @@
 
     ```
 4. Committed the changes to the new branch `lab9`
-    ![Alt text](imgs/workflow.png)
+        ![Alt text](imgs/workflow.png)
 
 # Task2 - Gathering System Information and Manual Triggering:
 1. Configure a Manual Trigger:
@@ -62,4 +62,3 @@
         ```
     - This gives the possibility to run the manual work flow from the action tab.
 
-    
