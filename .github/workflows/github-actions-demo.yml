@@ -16,6 +16,6 @@ jobs:
         run: |
           ls ${{ github.workspace }}
       - run: echo "🍏 This job's status is ${{ job.status }}."
-      - run: echo "Operating System Info \ Runner :" ${{ runner.os }}"
+      - run: echo "Operating System Info \ Runner - ${{ runner.os }}"
       - run: echo "CPU Info:"lscpu
       - run: echo "Operating system details:" cat /etc/os-release
