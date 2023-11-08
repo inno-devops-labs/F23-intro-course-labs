@@ -1,42 +1,29 @@
 name:  manual  
 run-name: ${{ github.actor }} is testing manual Actions 🚀
-
 on:
     workflow_dispatch:
-      inputs:
+    inputs:
         logLevel:
-          description: 'Log level'
-          required: true
-          default: 'warning'
-          type: choice
-          options:
+        description: 'Log level'
+        required: true
+        default: 'warning'
+        type: choice
+        options:
             - info
             - warning
             - debug
         print_tags:
-          description: 'True to print to STDOUT'
-          required: true
-          type: boolean
+        description: 'True to print to STDOUT'
+        required: true
+        type: boolean
         tags:
-          description: 'Test scenario tags'
-          required: true
-          type: string
-
-  
+        description: 'Test scenario tags'
+        required: true
+        type: string
 jobs:
     print-tag:
         runs-on: ubuntu-latest
         if:  ${{ inputs.print_tags }} 
         steps:
             - name: Print the input tag to STDOUT
-              run: echo  The tags are ${{ inputs.tags }} 
-
-    gather_info:
-        runs-on: ubuntu-latest
-        steps:
-            - name: Gather system information
-              run: |
-                    echo "Runner info:"
-                    echo "OS: $(uname -a)"
-                    echo "Hardware: $(lscpu)"
-                    echo "Memory: $(free -h)"
+            run: echo  The tags are ${{ inputs.tags }} 
