@@ -78,3 +78,53 @@ The workflow ran successfully, indicating that the setup was correct and the run
 #### Observations:
 
 The workflow was triggered automatically on a push event. All steps completed successfully and logs were generated without any errors. The status checks on GitHub showed a green checkmark indicating success.
+
+## Task 2: Gathering System Information and Manual Triggering
+
+### Configure a Manual Trigger
+
+#### Workflow Changes:
+
+To enable both manual triggers and triggers on push, the on section of github-actions-demo.yml was modified from:
+
+```yaml
+on: [push]
+```
+
+to:
+
+```yaml
+on:
+  push:
+  workflow_dispatch:
+```
+
+This allows the workflow to be triggered on both push events to the repository and manually from the GitHub UI.
+
+### Gather System Information
+
+#### Additional Step Added:
+
+To collect system information, the following step was included in the workflow file:
+
+```yaml
+- name: Gather system information
+  run: |
+    echo "Operating System Info:"
+    uname -a
+
+    echo "CPU Info:"
+    lscpu
+
+    echo "Memory Info:"
+    free -h
+```
+
+#### System Information Output:
+
+The output from this step in the workflow provided detailed information about the runner's operating system, CPU, and memory.
+
+
+![Alt text](/images/lab9task2.png)
+
+As we can see, the new `Gather system information` step was added and executed successfuly
