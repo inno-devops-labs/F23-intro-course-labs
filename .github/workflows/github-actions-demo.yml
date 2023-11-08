@@ -11,3 +11,13 @@ jobs:
     - uses: actions/checkout@v2
     - name: Run a one-line script
       run: echo Hello, world!
+    - name: Get system information
+      run: |
+        echo "System Information:"
+        uname -a
+        echo "CPU Information:"
+        lscpu
+        echo "Memory Information:"
+        free -h
+        echo "Disk Information:"
+        df -h
