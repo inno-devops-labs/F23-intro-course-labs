@@ -179,3 +179,52 @@
 - The output of the echo command was visible in the logs.
 - No errors were encountered during this initial test.
 - The workflow completed successfully with green check marks.
+
+## Manual Trigger Configuration:
+
+## Manual Trigger Configuration
+
+Added `workflow_dispatch` to the workflow file to enable manual triggers. This allows the workflow to be triggered from the GitHub Actions UI without a code push.
+
+The relevant section of the workflow file now looks like this:
+
+```
+name: CI
+
+on: 
+  push:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Run a one-line script
+      run: echo Hello, world!
+```
+
+## System Information Gathering
+Extended the workflow with an additional step that prints out system information of the runner.
+
+```
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Run a one-line script
+      run: echo Hello, world!
+    - name: Get system information
+      run: |
+        echo "System Information:"
+        uname -a
+        echo "CPU Information:"
+        lscpu
+        echo "Memory Information:"
+        free -h
+        echo "Disk Information:"
+        df -h
+```
+
+![image](https://github.com/olegogogo/intro-course-labs/assets/45263316/22e9ec64-b3ba-4d6a-b850-b4c450352674)
