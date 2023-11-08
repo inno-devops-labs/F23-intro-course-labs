@@ -27,38 +27,50 @@
         ![Alt text](imgs/workflow.png)
 
 # Task2 - Gathering System Information and Manual Triggering:
-1. Configure a Manual Trigger:
-    - I added a new yaml file named `manual_action_test.yml` with the following content: 
-        ```yaml
-        name:  manual  
-        run-name: ${{ github.actor }} is testing manual Actions 🚀
-        on:
-            workflow_dispatch:
-            inputs:
-                logLevel:
-                description: 'Log level'
-                required: true
-                default: 'warning'
-                type: choice
-                options:
-                    - info
-                    - warning
-                    - debug
-                print_tags:
-                description: 'True to print to STDOUT'
-                required: true
-                type: boolean
-                tags:
-                description: 'Test scenario tags'
-                required: true
-                type: string
-        jobs:
-            print-tag:
-                runs-on: ubuntu-latest
-                if:  ${{ inputs.print_tags }} 
-                steps:
-                    - name: Print the input tag to STDOUT
-                    run: echo  The tags are ${{ inputs.tags }} 
-        ```
-    - This gives the possibility to run the manual work flow from the action tab.
-
+1. I added a new yaml file named `manual_action_test.yml` with the following content: 
+    ```yaml
+    name:  manual  
+    run-name: ${{ github.actor }} is testing manual Actions 🚀
+    on:
+        workflow_dispatch:
+        inputs:
+            logLevel:
+            description: 'Log level'
+            required: true
+            default: 'warning'
+            type: choice
+            options:
+                - info
+                - warning
+                - debug
+            print_tags:
+            description: 'True to print to STDOUT'
+            required: true
+            type: boolean
+            tags:
+            description: 'Test scenario tags'
+            required: true
+            type: string
+    jobs:
+        print-tag:
+            runs-on: ubuntu-latest
+            if:  ${{ inputs.print_tags }} 
+            steps:
+                - name: Print the input tag to STDOUT
+                run: echo  The tags are ${{ inputs.tags }} 
+    ```
+2. This gives the possibility to run the manual work flow
+        ![Alt text](imgs/manual.png)
+3. To gather system info I added the following jobs in `manual_action_test.yml`
+    ```yaml
+            gather_info:
+                    runs-on: ubuntu-latest
+                    steps:
+                        - name: Gather system information
+                        run: |
+                                echo "Runner info:"
+                                echo "OS: $(uname -a)"
+                                echo "Hardware: $(lscpu)"
+                                echo "Memory: $(free -h)"
+    ```
+    ![Alt text](imgs/gather_info.png) 
