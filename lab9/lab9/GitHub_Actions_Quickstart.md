@@ -31,9 +31,10 @@ jobs:
 5. Committed workflow file, which triggered the GitHub Actions workflow.
 
 the output as follow:
-file:///home/ahmad/Pictures/Screenshots/Create%20the%20workflow.png
 
-file:///home/ahmad/Pictures/Screenshots/ready%20Workflow.png
+![Create the workflow](https://github.com/AhmadTaha96/intro-course-labs/assets/91129320/249e3e8b-ac8d-4207-8c07-7968bc1c312c)
+
+![ready Workflow](https://github.com/AhmadTaha96/intro-course-labs/assets/91129320/f3fa710e-ae4c-4afa-994e-2f324d7fd7a4)
 
 
 and the log:
@@ -209,10 +210,13 @@ and the log:
 
 ## Workflow Execution
 
-I made one new commit (adding testing file), I checked the workflow to see that the workflow was triggered automatically and I saw the following output:
-file:///home/ahmad/Pictures/Screenshots/after%20commiting%20new%20file.png
-file:///home/ahmad/Pictures/Screenshots/2nd%20output.png
-file:///home/ahmad/Pictures/Screenshots/it's%20ready%20now.png
+I made one new commit (adding testing file), I checked the workflow to see that the workflow was triggered automatically and I saw the following output (3 screenshot for every stage in the workflow processing):
+
+![after commiting new file](https://github.com/AhmadTaha96/intro-course-labs/assets/91129320/2a6acc35-d51d-45e6-8c96-5708582c8aa0)
+
+![2nd output](https://github.com/AhmadTaha96/intro-course-labs/assets/91129320/05deaef2-7d2c-49cc-87d2-d969f196fbd1)
+
+![ready Workflow](https://github.com/AhmadTaha96/intro-course-labs/assets/91129320/90256900-a15a-4cfd-bb93-8c27c89a8856)
 
 
 Conclusion: The workflow executed without issues, signifying that the configuration was properly established and the runner processed the jobs as intended.
@@ -228,9 +232,9 @@ on:
   push:
   workflow_dispatch:
 ```
-The workflow now can be triggered by any push to the repository as well as manually through the GitHub interface.
+The workflow now can be triggered by any push to the repository as well as manually through the GitHub interface, the follwoing screenshot show how the workflow triggered after this and then it's ready:
 
-file:///home/ahmad/Pictures/Screenshots/Ensbling.png
+![Ensbling](https://github.com/AhmadTaha96/intro-course-labs/assets/91129320/93b38d31-26f5-47ef-b2d3-8b6794461552)
 
 ## Gather Sys Information
 In order to get and gather system information we need to add more to our workflow file we have created as follow (to be add):
