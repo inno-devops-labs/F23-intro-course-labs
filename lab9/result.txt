@@ -1,0 +1,154 @@
+2023-11-08T20:22:39.5790943Z Requested labels: ubuntu-latest
+2023-11-08T20:22:39.5791226Z Job defined at: Pain122/intro-course-labs/.github/workflows/github-actions-demo.yml@refs/heads/lab9
+2023-11-08T20:22:39.5791318Z Waiting for a runner to pick up this job...
+2023-11-08T20:22:40.1309391Z Job is waiting for a hosted runner to come online.
+2023-11-08T20:22:43.6185016Z Job is about to start running on the hosted runner: GitHub Actions 2 (hosted)
+2023-11-08T20:22:46.8459856Z Current runner version: '2.311.0'
+2023-11-08T20:22:46.8484792Z ##[group]Operating System
+2023-11-08T20:22:46.8485429Z Ubuntu
+2023-11-08T20:22:46.8485891Z 22.04.3
+2023-11-08T20:22:46.8486255Z LTS
+2023-11-08T20:22:46.8486596Z ##[endgroup]
+2023-11-08T20:22:46.8487055Z ##[group]Runner Image
+2023-11-08T20:22:46.8487514Z Image: ubuntu-22.04
+2023-11-08T20:22:46.8487882Z Version: 20231030.2.0
+2023-11-08T20:22:46.8489016Z Included Software: https://github.com/actions/runner-images/blob/ubuntu22/20231030.2/images/linux/Ubuntu2204-Readme.md
+2023-11-08T20:22:46.8490445Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu22%2F20231030.2
+2023-11-08T20:22:46.8491302Z ##[endgroup]
+2023-11-08T20:22:46.8491763Z ##[group]Runner Image Provisioner
+2023-11-08T20:22:46.8492250Z 2.0.312.1
+2023-11-08T20:22:46.8492588Z ##[endgroup]
+2023-11-08T20:22:46.8493979Z ##[group]GITHUB_TOKEN Permissions
+2023-11-08T20:22:46.8496251Z Contents: read
+2023-11-08T20:22:46.8497038Z Metadata: read
+2023-11-08T20:22:46.8497857Z Packages: read
+2023-11-08T20:22:46.8498439Z ##[endgroup]
+2023-11-08T20:22:46.8501652Z Secret source: Actions
+2023-11-08T20:22:46.8502222Z Prepare workflow directory
+2023-11-08T20:22:46.9129465Z Prepare all required actions
+2023-11-08T20:22:46.9288888Z Getting action download info
+2023-11-08T20:22:47.1847922Z Download action repository 'actions/checkout@v4' (SHA:b4ffde65f46336ab88eb53be808477a3936bae11)
+2023-11-08T20:22:47.4061438Z Complete job name: Explore-GitHub-Actions
+2023-11-08T20:22:47.4875825Z ##[group]Run echo "🎉 The job was automatically triggered by a push event."
+2023-11-08T20:22:47.4876974Z [36;1mecho "🎉 The job was automatically triggered by a push event."[0m
+2023-11-08T20:22:47.4935701Z shell: /usr/bin/bash -e {0}
+2023-11-08T20:22:47.4936210Z ##[endgroup]
+2023-11-08T20:22:47.5324263Z 🎉 The job was automatically triggered by a push event.
+2023-11-08T20:22:47.5491915Z ##[group]Run echo "🐧 This job is now running on a Linux server hosted by GitHub!"
+2023-11-08T20:22:47.5493016Z [36;1mecho "🐧 This job is now running on a Linux server hosted by GitHub!"[0m
+2023-11-08T20:22:47.5537205Z shell: /usr/bin/bash -e {0}
+2023-11-08T20:22:47.5537755Z ##[endgroup]
+2023-11-08T20:22:47.5603985Z 🐧 This job is now running on a Linux server hosted by GitHub!
+2023-11-08T20:22:47.5642132Z ##[group]Run echo "🔎 The name of your branch is refs/heads/lab9 and your repository is Pain122/intro-course-labs."
+2023-11-08T20:22:47.5643818Z [36;1mecho "🔎 The name of your branch is refs/heads/lab9 and your repository is Pain122/intro-course-labs."[0m
+2023-11-08T20:22:47.5684324Z shell: /usr/bin/bash -e {0}
+2023-11-08T20:22:47.5684851Z ##[endgroup]
+2023-11-08T20:22:47.5749250Z 🔎 The name of your branch is refs/heads/lab9 and your repository is Pain122/intro-course-labs.
+2023-11-08T20:22:47.5880883Z ##[group]Run actions/checkout@v4
+2023-11-08T20:22:47.5881543Z with:
+2023-11-08T20:22:47.5881963Z   repository: Pain122/intro-course-labs
+2023-11-08T20:22:47.5882725Z   token: ***
+2023-11-08T20:22:47.5883163Z   ssh-strict: true
+2023-11-08T20:22:47.5883621Z   persist-credentials: true
+2023-11-08T20:22:47.5884100Z   clean: true
+2023-11-08T20:22:47.5884530Z   sparse-checkout-cone-mode: true
+2023-11-08T20:22:47.5885033Z   fetch-depth: 1
+2023-11-08T20:22:47.5885458Z   fetch-tags: false
+2023-11-08T20:22:47.5885888Z   show-progress: true
+2023-11-08T20:22:47.5886291Z   lfs: false
+2023-11-08T20:22:47.5886666Z   submodules: false
+2023-11-08T20:22:47.5887109Z   set-safe-directory: true
+2023-11-08T20:22:47.5887558Z ##[endgroup]
+2023-11-08T20:22:47.7495610Z Syncing repository: Pain122/intro-course-labs
+2023-11-08T20:22:47.7498535Z ##[group]Getting Git version info
+2023-11-08T20:22:47.7499578Z Working directory is '/home/runner/work/intro-course-labs/intro-course-labs'
+2023-11-08T20:22:47.7501358Z [command]/usr/bin/git version
+2023-11-08T20:22:47.7511850Z git version 2.42.0
+2023-11-08T20:22:47.7541110Z ##[endgroup]
+2023-11-08T20:22:47.7559748Z Temporarily overriding HOME='/home/runner/work/_temp/1f6fb958-9acd-419d-97ec-e8ab218fae2e' before making global git config changes
+2023-11-08T20:22:47.7561754Z Adding repository directory to the temporary git global config as a safe directory
+2023-11-08T20:22:47.7563689Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/intro-course-labs/intro-course-labs
+2023-11-08T20:22:47.7597567Z Deleting the contents of '/home/runner/work/intro-course-labs/intro-course-labs'
+2023-11-08T20:22:47.7604802Z ##[group]Initializing the repository
+2023-11-08T20:22:47.7608469Z [command]/usr/bin/git init /home/runner/work/intro-course-labs/intro-course-labs
+2023-11-08T20:22:47.7686431Z hint: Using 'master' as the name for the initial branch. This default branch name
+2023-11-08T20:22:47.7696237Z hint: is subject to change. To configure the initial branch name to use in all
+2023-11-08T20:22:47.7697743Z hint: of your new repositories, which will suppress this warning, call:
+2023-11-08T20:22:47.7698654Z hint: 
+2023-11-08T20:22:47.7699263Z hint: 	git config --global init.defaultBranch <name>
+2023-11-08T20:22:47.7699893Z hint: 
+2023-11-08T20:22:47.7700651Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2023-11-08T20:22:47.7701987Z hint: 'development'. The just-created branch can be renamed via this command:
+2023-11-08T20:22:47.7702992Z hint: 
+2023-11-08T20:22:47.7703545Z hint: 	git branch -m <name>
+2023-11-08T20:22:47.7704501Z Initialized empty Git repository in /home/runner/work/intro-course-labs/intro-course-labs/.git/
+2023-11-08T20:22:47.7707123Z [command]/usr/bin/git remote add origin https://github.com/Pain122/intro-course-labs
+2023-11-08T20:22:47.7739336Z ##[endgroup]
+2023-11-08T20:22:47.7740087Z ##[group]Disabling automatic garbage collection
+2023-11-08T20:22:47.7742181Z [command]/usr/bin/git config --local gc.auto 0
+2023-11-08T20:22:47.7770544Z ##[endgroup]
+2023-11-08T20:22:47.7771387Z ##[group]Setting up auth
+2023-11-08T20:22:47.7775839Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2023-11-08T20:22:47.7806971Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2023-11-08T20:22:47.8114723Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2023-11-08T20:22:47.8143568Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2023-11-08T20:22:47.8378109Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2023-11-08T20:22:47.8413281Z ##[endgroup]
+2023-11-08T20:22:47.8414551Z ##[group]Fetching the repository
+2023-11-08T20:22:47.8423156Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +a845273c8e5ca11f654e237636cc93e77d5a873c:refs/remotes/origin/lab9
+2023-11-08T20:22:48.2839404Z From https://github.com/Pain122/intro-course-labs
+2023-11-08T20:22:48.2840906Z  * [new ref]         a845273c8e5ca11f654e237636cc93e77d5a873c -> origin/lab9
+2023-11-08T20:22:48.2865386Z ##[endgroup]
+2023-11-08T20:22:48.2866755Z ##[group]Determining the checkout info
+2023-11-08T20:22:48.2868151Z ##[endgroup]
+2023-11-08T20:22:48.2869395Z ##[group]Checking out the ref
+2023-11-08T20:22:48.2873712Z [command]/usr/bin/git checkout --progress --force -B lab9 refs/remotes/origin/lab9
+2023-11-08T20:22:48.2927844Z Switched to a new branch 'lab9'
+2023-11-08T20:22:48.2929353Z branch 'lab9' set up to track 'origin/lab9'.
+2023-11-08T20:22:48.2936340Z ##[endgroup]
+2023-11-08T20:22:48.2969906Z [command]/usr/bin/git log -1 --format='%H'
+2023-11-08T20:22:48.2994255Z 'a845273c8e5ca11f654e237636cc93e77d5a873c'
+2023-11-08T20:22:48.3126668Z ##[group]Run echo "💡 The Pain122/intro-course-labs repository has been cloned to the runner."
+2023-11-08T20:22:48.3128050Z [36;1mecho "💡 The Pain122/intro-course-labs repository has been cloned to the runner."[0m
+2023-11-08T20:22:48.3172746Z shell: /usr/bin/bash -e {0}
+2023-11-08T20:22:48.3173219Z ##[endgroup]
+2023-11-08T20:22:48.3235462Z 💡 The Pain122/intro-course-labs repository has been cloned to the runner.
+2023-11-08T20:22:48.3269860Z ##[group]Run echo "🖥️ The workflow is now ready to test your code on the runner."
+2023-11-08T20:22:48.3271770Z [36;1mecho "🖥️ The workflow is now ready to test your code on the runner."[0m
+2023-11-08T20:22:48.3312502Z shell: /usr/bin/bash -e {0}
+2023-11-08T20:22:48.3313013Z ##[endgroup]
+2023-11-08T20:22:48.3375646Z 🖥️ The workflow is now ready to test your code on the runner.
+2023-11-08T20:22:48.3412518Z ##[group]Run ls /home/runner/work/intro-course-labs/intro-course-labs
+2023-11-08T20:22:48.3413642Z [36;1mls /home/runner/work/intro-course-labs/intro-course-labs[0m
+2023-11-08T20:22:48.3459269Z shell: /usr/bin/bash -e {0}
+2023-11-08T20:22:48.3459887Z ##[endgroup]
+2023-11-08T20:22:48.3534269Z README.md
+2023-11-08T20:22:48.3534688Z index.html
+2023-11-08T20:22:48.3535158Z lab1
+2023-11-08T20:22:48.3535715Z lab10
+2023-11-08T20:22:48.3536251Z lab2
+2023-11-08T20:22:48.3536900Z lab3
+2023-11-08T20:22:48.3537453Z lab4
+2023-11-08T20:22:48.3537963Z lab5
+2023-11-08T20:22:48.3538868Z lab6
+2023-11-08T20:22:48.3539432Z lab7
+2023-11-08T20:22:48.3540038Z lab8
+2023-11-08T20:22:48.3540379Z lab9
+2023-11-08T20:22:48.3577345Z ##[group]Run echo "🍏 This job's status is success."
+2023-11-08T20:22:48.3578121Z [36;1mecho "🍏 This job's status is success."[0m
+2023-11-08T20:22:48.3621977Z shell: /usr/bin/bash -e {0}
+2023-11-08T20:22:48.3622589Z ##[endgroup]
+2023-11-08T20:22:48.3683684Z 🍏 This job's status is success.
+2023-11-08T20:22:48.3774506Z Post job cleanup.
+2023-11-08T20:22:48.4510304Z [command]/usr/bin/git version
+2023-11-08T20:22:48.4559274Z git version 2.42.0
+2023-11-08T20:22:48.4601971Z Temporarily overriding HOME='/home/runner/work/_temp/ea84bf82-5490-4753-b7b4-cba6199dac1f' before making global git config changes
+2023-11-08T20:22:48.4604465Z Adding repository directory to the temporary git global config as a safe directory
+2023-11-08T20:22:48.4607648Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/intro-course-labs/intro-course-labs
+2023-11-08T20:22:48.4642345Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2023-11-08T20:22:48.4675493Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2023-11-08T20:22:48.4921590Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2023-11-08T20:22:48.4941758Z http.https://github.com/.extraheader
+2023-11-08T20:22:48.4955106Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+2023-11-08T20:22:48.4984176Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2023-11-08T20:22:48.5449704Z Cleaning up orphan processes
