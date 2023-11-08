@@ -18,6 +18,6 @@ jobs:
       - run: echo "🍏 This job's status is ${{ job.status }}."
       - name: Print system info
         run: |
-        lscpu
-        lshw -short -C memory
-        uname -a
+          lscpu
+          lshw -short -C memory
+          uname -a
