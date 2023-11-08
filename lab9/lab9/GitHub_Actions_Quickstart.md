@@ -242,13 +242,13 @@ In order to get and gather system information we need to add more to our workflo
 ```bash
 name: Display System Information
 run: |
-		echo "Operating System Info:"
-		uname -a
-		echo "CPU Info:"
-        lscpu
-        echo "Memory Info:"
-        free -h
+    echo "Operating System Info:"
+    uname -a
+    echo "CPU Info:"
+    lscpu
+    echo "Memory Info:"
+    free -h
  ```
 
-The output as follow:
+The output as follow shows system information gathered:
 ![Sys information](https://github.com/AhmadTaha96/intro-course-labs/assets/91129320/01553d0d-3ee9-4443-b0a8-02573662d1fb)
