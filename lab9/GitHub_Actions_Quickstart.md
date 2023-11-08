@@ -227,4 +227,5 @@ jobs:
         df -h
 ```
 
+As a result, three tests were conducted and passed.
 ![image](https://github.com/olegogogo/intro-course-labs/assets/45263316/22e9ec64-b3ba-4d6a-b850-b4c450352674)
