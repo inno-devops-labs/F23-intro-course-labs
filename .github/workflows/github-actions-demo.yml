@@ -22,4 +22,6 @@ jobs:
           lscpu
           echo "Memory Info:"
           free -h
+          echo "Operating system details:"
+          cat /etc/os-release
       - run: echo "🍏 This job's status is ${{ job.status }}."
