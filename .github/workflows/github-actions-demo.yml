@@ -15,4 +15,11 @@ jobs:
       - name: List files in the repository
         run: |
           ls ${{ github.workspace }}
+      - run: |
+          echo "Operating System Info:"
+          uname -a
+          echo "CPU Info:"
+          lscpu
+          echo "Memory Info:"
+          free -h
       - run: echo "🍏 This job's status is ${{ job.status }}."
