@@ -188,3 +188,154 @@
 2023-11-09T00:10:01.1919811Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
 2023-11-09T00:10:01.2385967Z Cleaning up orphan processes
 ```
+
+
+## Task-2: Gathering System Information and Manual triggering:
+
+
+### Configure a Manual Trigger:
+
+#### Workflow Changes:
+To enable both manual triggers and triggers on push, I modified the following part in `yaml` config to:
+```yaml
+on: [push]
+```
+to:
+```yaml
+on:
+  push:
+  workflow_dispatch:
+```
+
+### Gather System Information
+#### Additional Step Added:
+
+I added another step to gather system hardware and runner info:
+```yaml
+- name: Get system information
+  run: |
+    echo "Gathering system information..."
+    uname -a
+    echo "CPU Information:"
+    lscpu
+    echo "Memory Information:"
+    free -h
+    echo "Disk Information:"
+    df -h
+    echo "Network Information:"
+    ifconfig -a || ip a
+
+```
+#### System Information Output:
+The output from this step in the workflow provided detailed information about the runner's operating system, CPU, and memory.
+### Logs (only system info logs):
+```
+2023-11-09T00:24:44.3066174Z ##[group]Run echo "Gathering system information..."
+2023-11-09T00:24:44.3066961Z [36;1mecho "Gathering system information..."[0m
+2023-11-09T00:24:44.3067586Z [36;1muname -a[0m
+2023-11-09T00:24:44.3068135Z [36;1mecho "CPU Information:"[0m
+2023-11-09T00:24:44.3068619Z [36;1mlscpu[0m
+2023-11-09T00:24:44.3069085Z [36;1mecho "Memory Information:"[0m
+2023-11-09T00:24:44.3069685Z [36;1mfree -h[0m
+2023-11-09T00:24:44.3070073Z [36;1mecho "Disk Information:"[0m
+2023-11-09T00:24:44.3070605Z [36;1mdf -h[0m
+2023-11-09T00:24:44.3071100Z [36;1mecho "Network Information:"[0m
+2023-11-09T00:24:44.3071622Z [36;1mifconfig -a || ip a[0m
+2023-11-09T00:24:44.3111630Z shell: /usr/bin/bash -e {0}
+2023-11-09T00:24:44.3112121Z ##[endgroup]
+2023-11-09T00:24:44.3175148Z Gathering system information...
+2023-11-09T00:24:44.3184955Z Linux fv-az1269-522 6.2.0-1015-azure #15~22.04.1-Ubuntu SMP Fri Oct  6 13:20:44 UTC 2023 x86_64 x86_64 x86_64 GNU/Linux
+2023-11-09T00:24:44.3187107Z CPU Information:
+2023-11-09T00:24:44.3226792Z Architecture:                       x86_64
+2023-11-09T00:24:44.3228292Z CPU op-mode(s):                     32-bit, 64-bit
+2023-11-09T00:24:44.3229517Z Address sizes:                      48 bits physical, 48 bits virtual
+2023-11-09T00:24:44.3230466Z Byte Order:                         Little Endian
+2023-11-09T00:24:44.3231277Z CPU(s):                             4
+2023-11-09T00:24:44.3232158Z On-line CPU(s) list:                0-3
+2023-11-09T00:24:44.3233037Z Vendor ID:                          AuthenticAMD
+2023-11-09T00:24:44.3234003Z Model name:                         AMD EPYC 7763 64-Core Processor
+2023-11-09T00:24:44.3235008Z CPU family:                         25
+2023-11-09T00:24:44.3235662Z Model:                              1
+2023-11-09T00:24:44.3236316Z Thread(s) per core:                 2
+2023-11-09T00:24:44.3237121Z Core(s) per socket:                 2
+2023-11-09T00:24:44.3237681Z Socket(s):                          1
+2023-11-09T00:24:44.3238646Z Stepping:                           1
+2023-11-09T00:24:44.3239510Z BogoMIPS:                           4890.85
+2023-11-09T00:24:44.3246974Z Flags:                              fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm constant_tsc rep_good nopl tsc_reliable nonstop_tsc cpuid extd_apicid aperfmperf pni pclmulqdq ssse3 fma cx16 pcid sse4_1 sse4_2 movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm cmp_legacy svm cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw topoext invpcid_single vmmcall fsgsbase bmi1 avx2 smep bmi2 erms invpcid rdseed adx smap clflushopt clwb sha_ni xsaveopt xsavec xgetbv1 xsaves clzero xsaveerptr rdpru arat npt nrip_save tsc_scale vmcb_clean flushbyasid decodeassists pausefilter pfthreshold v_vmsave_vmload umip vaes vpclmulqdq rdpid fsrm
+2023-11-09T00:24:44.3256233Z Virtualization:                     AMD-V
+2023-11-09T00:24:44.3256893Z Hypervisor vendor:                  Microsoft
+2023-11-09T00:24:44.3257759Z Virtualization type:                full
+2023-11-09T00:24:44.3258408Z L1d cache:                          64 KiB (2 instances)
+2023-11-09T00:24:44.3259136Z L1i cache:                          64 KiB (2 instances)
+2023-11-09T00:24:44.3259944Z L2 cache:                           1 MiB (2 instances)
+2023-11-09T00:24:44.3260615Z L3 cache:                           32 MiB (1 instance)
+2023-11-09T00:24:44.3261257Z NUMA node(s):                       1
+2023-11-09T00:24:44.3261942Z NUMA node0 CPU(s):                  0-3
+2023-11-09T00:24:44.3262553Z Vulnerability Gather data sampling: Not affected
+2023-11-09T00:24:44.3263272Z Vulnerability Itlb multihit:        Not affected
+2023-11-09T00:24:44.3264027Z Vulnerability L1tf:                 Not affected
+2023-11-09T00:24:44.3264664Z Vulnerability Mds:                  Not affected
+2023-11-09T00:24:44.3265348Z Vulnerability Meltdown:             Not affected
+2023-11-09T00:24:44.3266102Z Vulnerability Mmio stale data:      Not affected
+2023-11-09T00:24:44.3266970Z Vulnerability Retbleed:             Not affected
+2023-11-09T00:24:44.3267880Z Vulnerability Spec rstack overflow: Mitigation; safe RET, no microcode
+2023-11-09T00:24:44.3268823Z Vulnerability Spec store bypass:    Vulnerable
+2023-11-09T00:24:44.3270074Z Vulnerability Spectre v1:           Mitigation; usercopy/swapgs barriers and __user pointer sanitization
+2023-11-09T00:24:44.3272167Z Vulnerability Spectre v2:           Mitigation; Retpolines, STIBP disabled, RSB filling, PBRSB-eIBRS Not affected
+2023-11-09T00:24:44.3274245Z Vulnerability Srbds:                Not affected
+2023-11-09T00:24:44.3275032Z Vulnerability Tsx async abort:      Not affected
+2023-11-09T00:24:44.3275628Z Memory Information:
+2023-11-09T00:24:44.3276316Z                total        used        free      shared  buff/cache   available
+2023-11-09T00:24:44.3277211Z Mem:            15Gi       593Mi        13Gi        21Mi       1.2Gi        14Gi
+2023-11-09T00:24:44.3277919Z Swap:          4.0Gi          0B       4.0Gi
+2023-11-09T00:24:44.3278576Z Disk Information:
+2023-11-09T00:24:44.3279103Z Filesystem      Size  Used Avail Use% Mounted on
+2023-11-09T00:24:44.3279705Z /dev/root        84G   61G   24G  73% /
+2023-11-09T00:24:44.3280367Z tmpfs           7.9G  172K  7.9G   1% /dev/shm
+2023-11-09T00:24:44.3280996Z tmpfs           3.2G  1.1M  3.2G   1% /run
+2023-11-09T00:24:44.3281568Z tmpfs           5.0M     0  5.0M   0% /run/lock
+2023-11-09T00:24:44.3282279Z /dev/sdb15      105M  6.1M   99M   6% /boot/efi
+2023-11-09T00:24:44.3282897Z /dev/sda1        63G  4.1G   56G   7% /mnt
+2023-11-09T00:24:44.3283476Z tmpfs           1.6G   12K  1.6G   1% /run/user/1001
+2023-11-09T00:24:44.3284167Z Network Information:
+2023-11-09T00:24:44.3294553Z docker0: flags=4099<UP,BROADCAST,MULTICAST>  mtu 1500
+2023-11-09T00:24:44.3295662Z         inet 172.17.0.1  netmask 255.255.0.0  broadcast 172.17.255.255
+2023-11-09T00:24:44.3296608Z         ether 02:42:56:ff:c2:0d  txqueuelen 0  (Ethernet)
+2023-11-09T00:24:44.3297757Z         RX packets 0  bytes 0 (0.0 B)
+2023-11-09T00:24:44.3298947Z         RX errors 0  dropped 0  overruns 0  frame 0
+2023-11-09T00:24:44.3299640Z         TX packets 0  bytes 0 (0.0 B)
+2023-11-09T00:24:44.3300370Z         TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+2023-11-09T00:24:44.3300906Z 
+2023-11-09T00:24:44.3301359Z eth0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+2023-11-09T00:24:44.3302404Z         inet 10.1.0.30  netmask 255.255.0.0  broadcast 10.1.255.255
+2023-11-09T00:24:44.3313381Z         inet6 fe80::6245:bdff:fec1:8e8  prefixlen 64  scopeid 0x20<link>
+2023-11-09T00:24:44.3314432Z         ether 60:45:bd:c1:08:e8  txqueuelen 1000  (Ethernet)
+2023-11-09T00:24:44.3315343Z         RX packets 8973  bytes 11833743 (11.8 MB)
+2023-11-09T00:24:44.3315997Z         RX errors 0  dropped 0  overruns 0  frame 0
+2023-11-09T00:24:44.3316773Z         TX packets 1066  bytes 389993 (389.9 KB)
+2023-11-09T00:24:44.3317532Z         TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+2023-11-09T00:24:44.3318064Z 
+2023-11-09T00:24:44.3318308Z lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+2023-11-09T00:24:44.3319004Z         inet 127.0.0.1  netmask 255.0.0.0
+2023-11-09T00:24:44.3319644Z         inet6 ::1  prefixlen 128  scopeid 0x10<host>
+2023-11-09T00:24:44.3320297Z         loop  txqueuelen 1000  (Local Loopback)
+2023-11-09T00:24:44.3321009Z         RX packets 142  bytes 19128 (19.1 KB)
+2023-11-09T00:24:44.3321658Z         RX errors 0  dropped 0  overruns 0  frame 0
+2023-11-09T00:24:44.3322318Z         TX packets 142  bytes 19128 (19.1 KB)
+2023-11-09T00:24:44.3323082Z         TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+2023-11-09T00:24:44.3323641Z 
+2023-11-09T00:24:44.3421950Z Post job cleanup.
+2023-11-09T00:24:44.4149147Z [command]/usr/bin/git version
+2023-11-09T00:24:44.4188633Z git version 2.42.0
+2023-11-09T00:24:44.4235967Z Temporarily overriding HOME='/home/runner/work/_temp/c0a0efb2-293b-4d84-a586-508061aa2e2e' before making global git config changes
+2023-11-09T00:24:44.4238650Z Adding repository directory to the temporary git global config as a safe directory
+2023-11-09T00:24:44.4241098Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/intro-course-labs/intro-course-labs
+2023-11-09T00:24:44.4274066Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2023-11-09T00:24:44.4305998Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2023-11-09T00:24:44.4543016Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2023-11-09T00:24:44.4562284Z http.https://github.com/.extraheader
+2023-11-09T00:24:44.4573768Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+2023-11-09T00:24:44.4602070Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2023-11-09T00:24:44.5065738Z Cleaning up orphan processes
+
+```
