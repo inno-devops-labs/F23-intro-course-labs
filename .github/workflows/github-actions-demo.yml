@@ -18,3 +18,16 @@ jobs:
         run: |
           ls ${{ github.workspace }}
       - run: echo "🍏 This job's status is ${{ job.status }}."
+      # New step to gather system information
+      - name: Get system information
+        run: |
+          echo "Gathering system information..."
+          uname -a
+          echo "CPU Information:"
+          lscpu
+          echo "Memory Information:"
+          free -h
+          echo "Disk Information:"
+          df -h
+          echo "Network Information:"
+          ifconfig -a || ip a
