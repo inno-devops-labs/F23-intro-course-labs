@@ -230,19 +230,6 @@ I added another step to gather system hardware and runner info:
 The output from this step in the workflow provided detailed information about the runner's operating system, CPU, and memory.
 ### Logs (only system info logs):
 ```
-2023-11-09T00:24:44.3066174Z ##[group]Run echo "Gathering system information..."
-2023-11-09T00:24:44.3066961Z [36;1mecho "Gathering system information..."[0m
-2023-11-09T00:24:44.3067586Z [36;1muname -a[0m
-2023-11-09T00:24:44.3068135Z [36;1mecho "CPU Information:"[0m
-2023-11-09T00:24:44.3068619Z [36;1mlscpu[0m
-2023-11-09T00:24:44.3069085Z [36;1mecho "Memory Information:"[0m
-2023-11-09T00:24:44.3069685Z [36;1mfree -h[0m
-2023-11-09T00:24:44.3070073Z [36;1mecho "Disk Information:"[0m
-2023-11-09T00:24:44.3070605Z [36;1mdf -h[0m
-2023-11-09T00:24:44.3071100Z [36;1mecho "Network Information:"[0m
-2023-11-09T00:24:44.3071622Z [36;1mifconfig -a || ip a[0m
-2023-11-09T00:24:44.3111630Z shell: /usr/bin/bash -e {0}
-2023-11-09T00:24:44.3112121Z ##[endgroup]
 2023-11-09T00:24:44.3175148Z Gathering system information...
 2023-11-09T00:24:44.3184955Z Linux fv-az1269-522 6.2.0-1015-azure #15~22.04.1-Ubuntu SMP Fri Oct  6 13:20:44 UTC 2023 x86_64 x86_64 x86_64 GNU/Linux
 2023-11-09T00:24:44.3187107Z CPU Information:
