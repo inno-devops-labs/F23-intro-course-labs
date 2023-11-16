@@ -33,7 +33,7 @@
 
 # Task 2 - Serverless Computing Platform Research
 
-### AWS Lamda
+### AWS Lambda
 - File processing with **Amazon S3**
 - Data streaming with **Amazon Kinesis**
 - Easy integration with your iOS, Android, Web, and React Native frontends with **AWS Amplify**
