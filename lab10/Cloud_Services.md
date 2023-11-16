@@ -53,3 +53,55 @@ Enables the creation, hosting, and sharing of packages like Maven, npm, NuGet, a
   - Supports various package formats.
   - Allows sharing of code across teams and enterprises.
   - Simplifies complex build jobs.
+
+
+# Task 2: Serverless Computing Platform
+
+## AWS (Amazon Web Services)
+- **AWS Lambda**
+An event-driven, pay-as-you-go compute service to run code without server management.
+  - Key Features:
+    - Supports multiple programming languages.
+    - Event-driven architecture for automatic scaling.
+    - Integration with other AWS services.
+
+- **AWS Fargate**
+A serverless compute engine for ECS and EKS.
+  - Key Features:
+    - Run containers without managing infrastructure.
+    - Works with Amazon ECS and EKS.
+
+- **Application integration services** such as Amazon EventBridge, AWS Step Functions, Amazon SQS, Amazon SNS, Amazon API Gateway, and AWS AppSync.
+
+## GCP (Google Cloud Platform)
+- **Cloud Run**
+A fully-managed platform to develop and deploy scalable containerized applications.
+  - Key Features:
+    - Use any programming language or library.
+    - Charges only for resources used.
+    - Integrates with Cloud Build and Cloud Code.
+
+- **Cloud Functions**
+  A scalable FaaS platform for running code in response to events.
+  - Key Features:
+    - Supports multiple runtime environments.
+    - Event-driven architecture.
+    - No need to manage servers or containers.
+
+## Azure
+- **Azure Serverless Compute**
+Enables building applications faster by managing the infrastructure.
+  - Key Features:
+    - Eliminates the need to manage infrastructure for code and containers.
+
+- **Azure Functions**
+An event-driven compute service for executing code in various languages.
+  - Key Features:
+    - Scale on demand and pay only for compute time.
+    - Works on multiple destinations including Kubernetes and Azure IoT Edge.
+
+- **Azure App Service**
+A platform for running and scaling web, mobile, and API applications.
+  - Key Features:
+    - High-productivity, fully managed environment.
+    - Suitable for a wide range of applications.
