@@ -1,5 +1,4 @@
-
-# Cloud Computing Lab - Artifact Registries
+# Task 1: Cloud Computing Lab - Artifact Registries
 
 ## AWS (Amazon Web Services)
 
