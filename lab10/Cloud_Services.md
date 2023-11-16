@@ -34,7 +34,7 @@ A single place for managing container images and language packages like Maven an
   - Integration with Google Cloud’s tooling and runtimes.
   - Supports native artifact protocols for easy CI/CD integration.
 
-## Azure
+## Microsoft Azure
 
 A registry for Docker and OCI images, supporting all OCI artifacts.
 - **Key Features**:
@@ -87,7 +87,7 @@ A fully-managed platform to develop and deploy scalable containerized applicatio
     - Event-driven architecture.
     - No need to manage servers or containers.
 
-## Azure
+## Microsoft Azure
 - **Azure Serverless Compute**
 Enables building applications faster by managing the infrastructure.
   - Key Features:
